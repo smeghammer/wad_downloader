@@ -2,6 +2,9 @@
 Created on 9 Jan 2021
 
 @author: smegh
+
+TODO:
+ - logging
 '''
 import argparse
 
