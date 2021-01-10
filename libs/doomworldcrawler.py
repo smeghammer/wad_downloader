@@ -57,7 +57,7 @@ class DoomworldCrawler(AbstractCrawler):
         print(self.downloadRoot + linkData['dir']+linkData['filename'])
         obj = {
             'url' : self.downloadRoot + linkData['dir']+linkData['filename'],
-            'retrieved' : False,
+            'state' : 'NOTFETCHED', #or PENDNG or FETCHED
             'source':'doomworld',
             'metadata':linkData
             }
