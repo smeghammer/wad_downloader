@@ -28,14 +28,11 @@ class DoomworldCrawler(AbstractCrawler):
     instantiating in the start module:
     '''
     
-    def __init__(self,url,apiroot,downloadRoot,database):
-        self.url = url
+    def __init__(self,startnode,crawlroot,downloadRoot,database):
+        self.url = crawlroot + startnode
         self.downloadRoot = downloadRoot
-        self._dwapiroot = apiroot
+        self._dwapiroot = crawlroot
         self.db = database
-        
-        print()
-
         
     '''
     stub
@@ -53,19 +50,10 @@ class DoomworldCrawler(AbstractCrawler):
     push the download link to the database, assembling as needed and
     flag as not fetched
     '''
-    def storeDownloadLink(self,linkData):
+    def storeDownloadLink(self,linkData):                                                    #or PENDNG or FETCHED
         print(self.downloadRoot + linkData['dir']+linkData['filename'])
-        obj = {
-            'url' : self.downloadRoot + linkData['dir']+linkData['filename'],
-            'state' : 'NOTFETCHED', #or PENDNG or FETCHED
-            'source':'doomworld',
-            'metadata':linkData
-            }
-        
+        obj = {  'url' : self.downloadRoot + linkData['dir']+linkData['filename'], 'state' : 'NOTFETCHED', 'source':'doomworld',  'metadata':linkData  }
         self.db.storeDownloadLinkObj(obj)
-    
-        
-        print(obj)
     
     '''
     load the URL and - for the case of JSON, load it as a dict.
@@ -86,8 +74,8 @@ class DoomworldCrawler(AbstractCrawler):
         print('crawling...')
         
         '''
-        We know the JSON structure for ID Games API, so test for eithe rfiles or directories
-        (pretty sure there are no dirs that list dub-dirs AND files but this soul dhandle that
+        We know the JSON structure for ID Games API, so test for either files or directories
+        (pretty sure there are no dirs that list dub-dirs AND files but this sould handle that
         anyway):
         '''
         if 'dir' in self.data['content'] and self.data['content']['dir']:
