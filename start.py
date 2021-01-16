@@ -49,7 +49,7 @@ crawlerData = {
             'name':'WAD Archive',
             'module':'wadarchivecrawler',
             'class':'WADArchiveCrawler',
-            'startAt':'',
+            'startAt':'Category/WADs/',
             'crawlroot':'https://www.wad-archive.com/',
             'downloadroot':'https://assets.wad-archive.com/wadarchive/files/',
             'storeIn':'wad-archive/'
@@ -58,7 +58,7 @@ crawlerData = {
             'name':'Sentinels Playground',
             'module':'tspgcrawler',
             'class':'SentinelsPlaygroundCrawler',
-            'startAt':'',
+            'startAt':'zandronum/wads.php',
             'crawlroot':'https://allfearthesentinel.net/',
             'downloadroot':'https://allfearthesentinel.net/zandronum/download.php?file=',
             'storeIn':'tspg/'
