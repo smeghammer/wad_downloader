@@ -16,15 +16,7 @@ storeIn - filesystem root location for downloaded files. The trailing slash is e
 
 '''
 crawlerData = {
-    'D':{
-            'name':'Doomworld',
-            'module':'doomworldcrawler',
-            'class':'DoomworldCrawler',
-            'startAt':6,
-            'crawlroot':'https://www.doomworld.com/idgames/api/api.php?action=getcontents&out=json&id=',
-            'downloadroot':'ftp://ftp.fu-berlin.de/pc/games/idgames/',
-            'storeIn':'doomworld/'
-        },
+    
     'W':{
             'name':'WAD Archive',
             'module':'wadarchivecrawler',
@@ -33,6 +25,15 @@ crawlerData = {
             'crawlroot':'https://www.wad-archive.com/',
             'downloadroot':'https://assets.wad-archive.com/wadarchive/files/',
             'storeIn':'wad-archive/'
+        },
+    'D':{
+            'name':'Doomworld',
+            'module':'doomworldcrawler',
+            'class':'DoomworldCrawler',
+            'startAt':6,
+            'crawlroot':'https://www.doomworld.com/idgames/api/api.php?action=getcontents&out=json&id=',
+            'downloadroot':'ftp://ftp.fu-berlin.de/pc/games/idgames/',
+            'storeIn':'doomworld/'
         },
     'T':{
             'name':'Sentinels Playground',

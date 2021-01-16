@@ -9,7 +9,6 @@ is a crazy idea...
 Once the file metadata is stored in mongo, I can run a downloader against that and flag each
 enntry as retrieved appropriately. That way, I do not have to run the retriever in one go.
 '''
-import json
 import lxml
 import requests
 from libs.abstractcrawler import AbstractCrawler

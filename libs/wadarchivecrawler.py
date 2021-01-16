@@ -7,9 +7,9 @@ the crawler is desiged to collect metadata only - having a recursive download fu
 is a crazy idea...
 
 Once the file metadata is stored in mongo, I can run a downloader against that and flag each
-enntry as retrieved appropriately. That way, I do not have to run the retriever in one go.
+entry as retrieved appropriately. That way, I do not have to run the retriever in one go.
 '''
-import json
+
 import requests
 from libs.abstractcrawler import AbstractCrawler
 from bs4 import BeautifulSoup
