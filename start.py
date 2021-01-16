@@ -23,6 +23,16 @@ parser.add_argument( '-p', '--dbport', help='Mongo DB port [int]', required=Fals
 parser.add_argument( '-n', '--database', help='Mongo database name [string]', required=False,default='DoomWadDownloader')
 args = parser.parse_args()
 
+'''
+These blocks define a crawling target.
+
+name - arbitrary string. The name of the source
+module - the filename (without extension) tha contains the relevant concrete crawler implementation
+class - the python classname to load dynamically
+crawlroot - the base url from which crawl URLs are constructed
+downloadroot - the base url from which download URLs are constructed
+storeIn - filesystem root location for downloaded files. The trailing slash is essential.
+'''
 crawlerData = {
     'D':{
             'name':'Doomworld',
