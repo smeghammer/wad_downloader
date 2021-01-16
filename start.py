@@ -9,16 +9,18 @@ TODO:
 import argparse
 import importlib
 
-from libs.doomworldcrawler import DoomworldCrawler
+# from libs.doomworldcrawler import DoomworldCrawler
 from libs.database import MongoConnection
 
 '''
 capture CLI args:
 '''
 parser = argparse.ArgumentParser(description='Start metadata collection with startnode, db server, db port and DB name')
+# Required args:
 parser.add_argument( '-a', '--archive', help='archive source (D=doomworld, W=wad archive, S=sentinels playground)', required=True)
 parser.add_argument( '-d', '--dbserver', help='Mongo DB server IP [string]', required=True)  
-parser.add_argument( '-s', '--startnode', help='node ID to start crawl from [int]', required=False,default="")
+
+# optional args
 parser.add_argument( '-p', '--dbport', help='Mongo DB port [int]', required=False, default=27017)  
 parser.add_argument( '-n', '--database', help='Mongo database name [string]', required=False,default='DoomWadDownloader')
 args = parser.parse_args()
@@ -38,6 +40,7 @@ crawlerData = {
             'name':'Doomworld',
             'module':'doomworldcrawler',
             'class':'DoomworldCrawler',
+            'startAt':6,
             'crawlroot':'https://www.doomworld.com/idgames/api/api.php?action=getcontents&out=json&id=',
             'downloadroot':'ftp://ftp.fu-berlin.de/pc/games/idgames/',
             'storeIn':'doomworld/'
@@ -46,6 +49,7 @@ crawlerData = {
             'name':'WAD Archive',
             'module':'wadarchivecrawler',
             'class':'WADArchiveCrawler',
+            'startAt':'',
             'crawlroot':'https://www.wad-archive.com/',
             'downloadroot':'https://assets.wad-archive.com/wadarchive/files/',
             'storeIn':'wad-archive/'
@@ -54,12 +58,22 @@ crawlerData = {
             'name':'Sentinels Playground',
             'module':'tspgcrawler',
             'class':'SentinelsPlaygroundCrawler',
+            'startAt':'',
             'crawlroot':'https://allfearthesentinel.net/',
             'downloadroot':'https://allfearthesentinel.net/zandronum/download.php?file=',
             'storeIn':'tspg/'
         }
     }
 
+'''
+called from __main__. Dynamically loads the configured module, based on the crawlerId. Current allowed values are:
+
+D - Doomworld config
+W - WAD Archive config
+T - Sentinels Playground
+
+Note that these will likely be extended, and perhaps abstracted to actual config files...
+'''
 def selectCrawler(crawlerId,db):
     print("Using crawler ", crawlerData[crawlerId])
     '''
@@ -68,11 +82,16 @@ def selectCrawler(crawlerId,db):
     try:
         mod = importlib.import_module('libs.' + crawlerData[crawlerId]['module'], crawlerData[crawlerId]['class'])
         clss = getattr(mod, crawlerData[crawlerId]['class'])  
-        inst = clss(str(args.startnode), crawlerData[args.archive]['crawlroot'], crawlerData[args.archive]['downloadroot'],db) #pass on loglevel to scraper module
+        inst = clss(str(crawlerData[args.archive]['startAt']), crawlerData[args.archive]['crawlroot'], crawlerData[args.archive]['downloadroot'],db) #pass on loglevel to scraper module
         return(inst)  #this method must exist on your class
     except Exception as err:
         return({'status' : 'error','message' : str(err)})
 
+
+'''
+Entry point:
+
+'''
 if __name__ == '__main__':
     print('starting crawler with ' + crawlerData[args.archive]['name'] )
     db = MongoConnection(args.dbserver,args.dbport,args.database,crawlerData[args.archive]['storeIn'])

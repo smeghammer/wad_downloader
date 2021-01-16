@@ -7,4 +7,4 @@ rem -n dbname for an alternate database name
 rem make sure to use the actual name of your python3 alias!
 
 echo Run the crawler
-python start.py -d 192.168.1.106 -s 6
+python start.py -d 192.168.1.106 -a D

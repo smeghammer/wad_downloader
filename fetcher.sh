@@ -5,14 +5,13 @@ do
 	# call fetcher.py with python alias.
 	# required args:
 	#
-	# -s startpos
 	# -d nnn.nnn.nnn.nnn
 	# 
-	# where nnn.nnn.nnn.nnn is the ip address of the mongoDB server and startpos is teh location to staret the crawl
+	# where nnn.nnn.nnn.nnn is the ip address of the mongoDB server
 	# optional args:
 	# 
-	# -p nnnnn
-	# -n dbstring
+	# -p nnnnn alternate database port
+	# -n dbstring for alternate database collection name
 	# 
 	# where nnnnn is mongoDB port and dbstring is the name of the mongoDB collection to use
 	

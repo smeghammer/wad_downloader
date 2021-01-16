@@ -15,7 +15,6 @@ capture CLI args:
 parser = argparse.ArgumentParser(description='Start  server, port and DB server')
 parser.add_argument( '-d', '--dbserver', help='DB server IP [string]', required=True)  
 parser.add_argument( '-p', '--dbport', help='DB port [int]', required=False, default=27017)  
-parser.add_argument( '-s', '--source', help='retrieve files from specified source', required=False, default=27017)  
 parser.add_argument( '-n', '--database', help='DB name [string]', required=False,default='DoomWadDownloader')
 args = parser.parse_args()
 
