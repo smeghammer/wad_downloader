@@ -1,4 +1,5 @@
 #!/bin/sh
+set +v
 
 # call start.py with python alias.
 # required args:
@@ -13,7 +14,23 @@
 # -n dbstring
 # 
 # where nnnnn is mongoDB port and dbstring is the name of the mongoDB collection to use
+
+
+if [ $# -lt 2 ];
+
+	then
+		echo "Please supply all positional arguments:";
+		echo
+		echo "./crawler.sh \$1 \$2"
+		echo
+		echo "where:"
+		echo "  \$1=IP address of mongo database"
+		echo "  \$2=Download source flag (D, W ot T currently)"
+	else
+		DATABASEIP="$1"
+		DOWNLOADSOURCE="$2"
 	
-python3.6 start.py -d 192.168.1.106 -a D
+		python3.6 start.py -d ${DATABASEIP} -a ${DOWNLOADSOURCE}
+fi
 
 

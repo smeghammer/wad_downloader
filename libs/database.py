@@ -16,8 +16,6 @@ class MongoConnection(object):
     '''
     classdocs
     '''
-
-
     def __init__(self, mongoIp='127.0.0.1', mongoPort=27017,databaseName='DoomWadDownloader',storeIn = 'other/'):
         '''
         Constructor
@@ -76,14 +74,14 @@ class MongoConnection(object):
             
             #http only
             try:
-                print('trying with requests')
+                print('trying with requests...')
                 r = requests.get(_res['url'])
                 with open(self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'] + _res['metadata']['filename'], 'wb') as outfile:
                     outfile.write(r.content)
                     _fetched = True
             #ftp
             except Exception as ex:
-                print('requests lib failed, trying with urllib')
+                print('requests lib failed, trying with urllib...')
                 try:
                     urllib.request.urlretrieve(_res['url'], self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'] + _res['metadata']['filename'])
                     _fetched = True
@@ -93,6 +91,7 @@ class MongoConnection(object):
                     
             
             if _fetched:
+                print('fetched OK. Stored in ' + self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'])
                 self.db['downloads'].update({'url':_res['url']},{'$set':{'state':'FETCHED'}})
             else:
                 self.db['downloads'].update({'url':_res['url']},{'$set':{'state':'FAILED'}})
