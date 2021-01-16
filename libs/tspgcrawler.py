@@ -90,8 +90,11 @@ class SentinelsPlaygroundCrawler(AbstractCrawler):
         '''
 
         while self.counter < 271:
-            '''  look for download links and store them  '''
-            downloadLinks = self.data.select('#zandronum td:nth-child(3) a')
+            '''  look for download links and store them
+            You may need to fiddle with this selector as the column has changed at least
+            once...
+              '''
+            downloadLinks = self.data.select('#zandronum td:nth-child(2) a:nth-child(2)')
             if not len(downloadLinks):
                 crawl = False
             for downloadLink in downloadLinks:
@@ -100,7 +103,7 @@ class SentinelsPlaygroundCrawler(AbstractCrawler):
                 self.storeDownloadLink({
                     '_id' : downloadLink['href'][29:],
                     'href' : downloadLink['href'],
-                    'filename' : downloadLink.contents[0],
+                    'filename' : downloadLink['title'][9:],
                     'dir' : 'page' + str(self.counter) + '/'
                     })
             
