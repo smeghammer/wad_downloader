@@ -16,6 +16,6 @@ do
 	# 
 	# where nnnnn is mongoDB port and dbstring is the name of the mongoDB collection to use
 	
-	python3.6 fetcher.py -d 192.168.1.106 - 6
+	python3.6 fetcher.py -d 192.168.1.106 -s 6
 done
 
