@@ -65,6 +65,7 @@ Extra python packages thtat are needed:
  - urllib.request
  - pymongo
  - pathlib (also may be already deployed)
+ - lxml (html scraping)
  
 
 ## Future
