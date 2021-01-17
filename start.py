@@ -43,10 +43,11 @@ def selectCrawler(crawlerId,db):
     try:
         mod = importlib.import_module('libs.' + crawlerData[crawlerId]['module'], crawlerData[crawlerId]['class'])
         clss = getattr(mod, crawlerData[crawlerId]['class'])  
-        inst = clss(str(crawlerData[args.archive]['startAt']), crawlerData[args.archive]['crawlroot'], crawlerData[args.archive]['downloadroot'],db) #pass on loglevel to scraper module
+        inst = clss(crawlerId, str(crawlerData[args.archive]['startAt']), crawlerData[args.archive]['crawlroot'], crawlerData[args.archive]['downloadroot'],db) #pass on loglevel to scraper module
         return(inst)  #this method must exist on your class
     except Exception as err:
-        return({'status' : 'error','message' : str(err)})
+        print({'status' : 'error','message' : str(err)})
+        exit()
 
 
 '''

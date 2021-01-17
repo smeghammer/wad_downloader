@@ -28,34 +28,34 @@ class DoomworldCrawler(AbstractCrawler):
     instantiating in the start module:
     '''
     
-    def __init__(self,startnode,crawlroot,downloadRoot,database):
+    def __init__(self,crawlerId,startnode,crawlroot,downloadRoot,database):
         self.url = crawlroot + startnode
         self.downloadRoot = downloadRoot
         self._dwapiroot = crawlroot
         self.db = database
+        self.crawlerId = crawlerId
         
-    '''
-    stub
-    '''
-    def findSpiderLinks(self):
-        print('spider links')
     
     '''
-    stub
-    '''
-    def findDownloadLinks(self):
-        print('download links')
-        
-    '''
+    Overrides method from abstract class:
+    
     push the download link to the database, assembling as needed and
     flag as not fetched
     '''
     def storeDownloadLink(self,linkData):                                                    #or PENDNG or FETCHED
         print(self.downloadRoot + linkData['dir']+linkData['filename'])
-        obj = {  'url' : self.downloadRoot + linkData['dir']+linkData['filename'], 'state' : 'NOTFETCHED', 'source':'doomworld',  'metadata':linkData  }
+        obj = {  
+#             '_id':linkData['_id'],
+            'url' : self.downloadRoot + linkData['dir']+linkData['filename'], 
+            'state' : 'NOTFETCHED', 
+            'source':self.crawlerId,  
+            'metadata':linkData  
+            }
         self.db.storeDownloadLinkObj(obj)
     
     '''
+    Overrides method from abstract class:
+    
     load the URL and - for the case of JSON, load it as a dict.
     '''
     def open(self):
@@ -83,9 +83,13 @@ class DoomworldCrawler(AbstractCrawler):
                 print(item['id'])
                 '''
                 recursively instantiate the crawler with each new directory URL:
+                
+                Rather than re-instantiate, RESET it:
                 '''
-                _crawler = DoomworldCrawler(self._dwapiroot + str(item['id']),self._dwapiroot,self.downloadRoot,self.db)
+                _crawler = DoomworldCrawler(self.crawlerId, self._dwapiroot + str(item['id']),self._dwapiroot,self.downloadRoot,self.db)
                 _crawler.open()
+                
+                
         if 'file' in self.data['content'] and self.data['content']['file']:
             for item in self.data['content']['file']: 
                 try:
@@ -93,7 +97,14 @@ class DoomworldCrawler(AbstractCrawler):
                     se have a file listing, so process it (into mongoDB) for
                     subsequent download:
                     '''
+                    item['_id'] = item['id']
                     print(item['title'])
+                    
+                    '''
+                    I cannot call the base class method recursively. There may be a method of doing so,
+                    and I'll update as appropriate. For now, this crawler has standalone __init__()
+                    and storeDownloadLink() and 
+                    '''
                     self.storeDownloadLink(item)
                 except Exception as ex:
                     print(ex)

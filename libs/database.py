@@ -16,7 +16,7 @@ class MongoConnection(object):
     '''
     classdocs
     '''
-    def __init__(self, mongoIp='127.0.0.1', mongoPort=27017,databaseName='DoomWadDownloader',storeIn = 'other/'):
+    def __init__(self, mongoIp='127.0.0.1', mongoPort=27017, databaseName='DoomWadDownloader',storeIn = 'other/'):
         '''
         Constructor
         '''
@@ -26,13 +26,10 @@ class MongoConnection(object):
         self.downloadBase = 'downloads/'
         self.downloadPath = storeIn             #frpm dowloader initialisation
         
-        #self.db = MongoClient(host=dbServer,port=dbPort)[treecreeperDBName]
         client = MongoClient(connect=False, localThresholdMS=100, host=mongoIp, port=mongoPort)
         self.db = client[databaseName]
     
             
-#     def setDatabase(self,mongoIp='127.0.0.1', mongoPort=27017):
-
     def storeDownloadLinkObj(self,linkobj):
         try:
             if not self.isStored('downloads',linkobj['url']):
@@ -45,15 +42,12 @@ class MongoConnection(object):
             print(ex)
             return False
         
-       
-        
     '''
     have we got this link already?
     collection is 'downloads' or 'crawl'
     '''
     def isStored(self,collection,url): 
         return(self.db[collection].find({'url':url}).count())
-    
     
     
     def fetchFile(self):

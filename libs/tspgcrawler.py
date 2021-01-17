@@ -2,12 +2,6 @@
 Created on 9 Jan 2021
 
 @author: smegh
-
-the crawler is desiged to collect metadata only - having a recursive download function
-is a crazy idea...
-
-Once the file metadata is stored in mongo, I can run a downloader against that and flag each
-enntry as retrieved appropriately. That way, I do not have to run the retriever in one go.
 '''
 import json
 import lxml
@@ -16,55 +10,17 @@ from libs.abstractcrawler import AbstractCrawler
 from bs4 import BeautifulSoup
 
 '''
-the crawler is desiged to collect metadata only - having a recursive download function
+the crawler is designed to collect metadata only - having a recursive download function
 is a crazy idea...
 
 Once the file metadata is stored in mongo, I can run a downloader against that and flag each
-enntry as retrieved appropriately. That way, I do not have to run the retriever in one go.
+entry as retrieved appropriately. That way, I do not have to run the retriever in one go.
+
+This superclass uses the base class methods __init__() and storeDownloadLink()
 '''
 
 
 class SentinelsPlaygroundCrawler(AbstractCrawler):
-
-    '''
-    initialise class instance with the url, root of API, root for downloads and a database 
-    object - we only want to instantiate the database object one time, so pass it around after
-    instantiating in the start module:
-    '''
-    
-    def __init__(self,startnode,crawlroot,downloadRoot,database,counter=1):
-        self.url = crawlroot + startnode
-        self.downloadRoot = downloadRoot
-        self.crawlroot = crawlroot
-        self.db = database
-        self.soup = None
-        self.counter=counter
-        
-    '''
-    stub
-    '''
-    def findSpiderLinks(self):
-        print('spider links')
-    
-    '''
-    stub
-    '''
-    def findDownloadLinks(self):
-        print('download links')
-        
-    '''
-    push the download link to the database, assembling as needed and
-    flag as not fetched
-    '''
-    def storeDownloadLink(self,linkData):               
-        print(linkData)
-        obj = { 
-            '_id':linkData['_id'], 
-            'url' : self.downloadRoot + linkData['filename'], 
-            'state' : 'NOTFETCHED', 'source':'tspg',  
-            'metadata':linkData  
-            }
-        self.db.storeDownloadLinkObj(obj)
     
     '''
     load the URL and - for the case of JSON, load it as a dict.
@@ -86,7 +42,8 @@ class SentinelsPlaygroundCrawler(AbstractCrawler):
         I know there are 270 pages of downloads, so I  can  count up to this
         and build corresponding URLs.
         
-        I don't need to recurse.
+        I don't need to recurse, therefore I can use the base class methods
+        TODO: I need to find out about recursive base class methods!!
         '''
 
         while self.counter < 271:
@@ -105,7 +62,11 @@ class SentinelsPlaygroundCrawler(AbstractCrawler):
                     'href' : downloadLink['href'],
                     'filename' : downloadLink['title'][9:],
                     'dir' : 'page' + str(self.counter) + '/'
-                    })
+                    },
+                    self.downloadRoot,
+                    self.crawlerId,
+                    self.db         #from base class
+                )
             
             ''' and load the next page '''
             self.counter+=1

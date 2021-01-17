@@ -42,5 +42,14 @@ crawlerData = {
             'crawlroot':'https://allfearthesentinel.net/',
             'downloadroot':'https://allfearthesentinel.net/zandronum/download.php?file=',
             'storeIn':'tspg/'
+        },
+    'DWS':{
+            'name':'Doom WAD Station',
+            'module':'dwscrawler',
+            'class':'WADStationCrawler',
+            'startAt':'mega/',
+            'crawlroot':'http://www.doomwadstation.net/',
+            'downloadroot':'http://www.doomwadstation.net/mega/',
+            'storeIn':'dws/'
         }
     }
