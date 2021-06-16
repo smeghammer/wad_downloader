@@ -41,7 +41,23 @@ class MongoConnection(object):
         except Exception as ex:
             print(ex)
             return False
-        
+    
+    '''
+    R667
+    '''
+    def storeRepoPageObj(self,linkobj):
+        try:
+            if not self.isStored('r667repopage',linkobj['url']):
+                print('storing')
+                self.db['r667repopage'].insert(linkobj)
+                return True
+            print('already stored')
+            return False
+        except Exception as ex:
+            print(ex)
+            return False
+    
+    
     '''
     have we got this link already?
     collection is 'downloads' or 'crawl'

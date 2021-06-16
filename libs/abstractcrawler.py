@@ -35,15 +35,19 @@ class AbstractCrawler(ABC):
     flag as not fetched
     '''
     @classmethod
-    def storeDownloadLink(self,linkData=None, downloadRoot='', crawlerId='', db=None):
+    def storeDownloadLink(self,linkData=None, downloadRoot='', crawlerId='', db=None,coll=None):
         print(linkData)
         obj = { 
             '_id':linkData['_id'], 
-            'url' : downloadRoot + linkData['_id'] + '/' + linkData['filename'], 
+            'url' : linkData['href'], 
             'state' : 'NOTFETCHED', 
             'source':crawlerId,  
             'metadata':linkData  
             }
+#         if coll and coll=='r667':
+#             db.storeRepoPageObj(obj)
+#         else:
+#             db.storeDownloadLinkObj(obj)
         db.storeDownloadLinkObj(obj)
     
     @abstractmethod

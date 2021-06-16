@@ -51,5 +51,14 @@ crawlerData = {
             'crawlroot':'http://www.doomwadstation.net/',
             'downloadroot':'http://www.doomwadstation.net/mega/',
             'storeIn':'dws/'
+        },
+    'R667':{
+            'name':'Realm 667',
+            'module':'r667crawler',
+            'class':'R667Crawler',
+            'startAt':'armory-mainmenu-157-97317/doom-style-mainmenu-158-94349',
+            'crawlroot':'https://www.realm667.com/index.php/en/',
+            'downloadroot':'https://www.realm667.com/index.php/en/',
+            'storeIn':'r667/'
         }
     }
