@@ -28,10 +28,46 @@ class R667Crawler(AbstractCrawler):
         self.data = BeautifulSoup(response.content,'html.parser')
         self.crawl()
 
-    def crawl__(self):
+    def __crawl(self):
         print('TEST')
-        fish = b'<h2 class="rl_tabs-title nn_tabs-title">\n<a class="anchor rl_tabs-sm-scroll nn_tabs-sm-scroll" id=" anchor-info"></a>\nInfo</h2><br/><strong>Name:</strong> 40mm Grenade Launcher<br/><strong>Class: </strong> 5<br/><strong>Type:</strong> Projectile<br/><strong>Palette:</strong>  Doom<br/><strong>Summon:</strong> 40mmGrenadeLauncher<br/><strong>Ammotype:</strong>  40mmGrenades<br/><strong>AltFire:</strong> Yes<br/><strong>Powered Mode:</strong>  No<br/><strong>Brightmaps:</strong> No<br/><strong>Added States:</strong> No<br/><strong>ACS: </strong> No<br/>'
-        self.extractItemInfo(fish)
+        _crawllink = 'http://localhost:8008/test.htm'
+        _response = requests.get(_crawllink)
+        '''  second pass: get the individual item blocks:'''
+
+        _dataitems = dict()
+        _soup = BeautifulSoup(_response.content,'html.parser')
+        _currdataitems = _soup.select('div.separated-item-8')
+#         _crawllinks = dict()
+#         _crawllinks[_crawllink]
+        for _currdataitem in _currdataitems:
+            ''' and fron each item block, extract somedetails about the thing '''
+            _itemtitle = _currdataitem.select('article > h2')[0].text.strip()
+            print(_currdataitem)
+            _info = {}
+            try:
+                ''' INFO '''
+                _info = self.extractItemInfo(_currdataitem.select('div.tab-content > div.tab-pane:nth-of-type(2)')[0].encode_contents())
+            except:
+                pass
+            
+            ''' CREDITS '''
+            _credits = {}
+            try:
+                _credits = self.extractItemInfo(_currdataitem.select('div.tab-content > div.tab-pane:nth-of-type(3)')[0].encode_contents())
+            except:
+                pass
+            
+            print(_info)
+            try:
+                _dataitems[_itemtitle] = {
+                    'info':_info,
+                    'credits':_credits,
+    #                 'topic':_crawllinks[_crawllink]['topic'],
+    #                 'section':_crawllinks[_crawllink]['section']
+                }
+            except Exception as ex:
+                print(ex)
+        print(_dataitems)
 
 
     def crawl(self):
@@ -47,7 +83,7 @@ class R667Crawler(AbstractCrawler):
          them together...
         '''
         #.item-194
-        crawlLinks = self.data.select('div.bd-vmenu-1:nth-child(2) li > div > ul > li ');
+        crawlLinks = self.data.select('div.bd-vmenu-1:nth-child(2) li > div > ul > li ')
         _counter = 1
         _data = None
         _soup = None
@@ -135,7 +171,7 @@ class R667Crawler(AbstractCrawler):
             Once we have the list of pages, load each one and grab the data from the DOM
             [I might want to cache the pages, otherwise I will be loading the top level ones twice...]
             '''
-        with open('output.json','w') as f :
+        with open('r667output.json','w') as f :
             f.write(json.dumps(_dataitems))
             
         
@@ -143,9 +179,47 @@ class R667Crawler(AbstractCrawler):
             Finally, put the JSON im in the database
             '''
         print('done')
-        
+    
+    
+    
     def extractItemInfo(self,bytestr):
-        htmlstr = bytestr.decode('utf-8')
+        htmlstr = bytestr.decode('utf-8').replace('\n', ' ').replace('\r', '')
+        print('---------ITEM INPUT-------------')
+        print(htmlstr)
+        print('---------END ITEM INPUT-------------')
+        _soup = BeautifulSoup(htmlstr,'html.parser')
+        _title = _soup.select('h2')[0].text.strip()
+        print('---------TITLE-------------')
+        print(_title)
+        print('---------/TITLE-------------')
+        _out = {'title':_title,'entries':[]}
+        ''' split on BR (crappy HTML) '''
+#         _items = htmlstr.split('<br/>')
+        _items = htmlstr.split('<strong>')
+        _items.pop(0)   #remove first entry as we already have the title:
+        for _item in _items:
+            print('---------ITEM-------------')
+            print(_item)
+            print('---------/ITEM-------------')
+            try:
+                #split on cloding stong tag:
+                _param = _item.split('</strong>')[0].replace('<br/>','').strip()
+                _val = _item.split('</strong>')[1].replace('<br/>','').strip()
+                ''' will ignore the first entry (title) '''
+#                 _s = BeautifulSoup(_item,'html.parser')
+#                 ''' assumes a given structure '''
+#                 print(_s.find('strong'))
+#                 print(_s.contents[1].strip())
+                _out['entries'].append({_param : _val})
+            except Exception as ex:
+                print(ex)
+                pass
+        print(_out)
+        return(_out)
+    
+    ''' original '''
+    def _extractItemInfo(self,bytestr):
+        htmlstr = bytestr.decode('utf-8').replace('\n', ' ').replace('\r', '')
         print('---------ITEM INPUT-------------')
         print(htmlstr)
         print('---------END ITEM INPUT-------------')
