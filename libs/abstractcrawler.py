@@ -16,7 +16,7 @@ class AbstractCrawler(ABC):
     You may over-ride if needed in the superclass:
     '''
     @classmethod
-    def __init__(self,crawlerId,startnode,crawlroot,downloadRoot,database):
+    def __init__(self,crawlerId,startnode,crawlroot,downloadRoot,database,args=None):
         self.url = crawlroot + startnode
         self.downloadRoot = downloadRoot
         self.crawlroot = crawlroot
@@ -24,6 +24,7 @@ class AbstractCrawler(ABC):
         self.soup = None
         self.counter=0
         self.crawlerId = crawlerId
+        self.args = args    #just in case I need them
 
     
 #     @abstractmethod

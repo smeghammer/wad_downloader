@@ -24,6 +24,7 @@ So far, there are four implementations:
  - [WAD Archive](https://www.wad-archive.com/) (HTTP crawling, as of 16th Jan 2021, this site is returning a 'downloads are unavailable' text file for the downloads)
  - [The Sentinels Playground](https://allfearthesentinel.net/) (HTTP crawling, source HTML seems quite variable)
  - [Doom WAD Station](http://www.doomwadstation.net/mega/) - A single page of downloads
+ - [Realm 667 repository](https://www.realm667.com/index.php/en/armory-mainmenu-157-97317/doom-style-mainmenu-158-94349) - The repo section.
  
 #### Example
 The current ID Games concrete implementation of a crawler uses the Doomworld API and the root endpoint is
@@ -67,6 +68,8 @@ Extra python packages thtat are needed:
  - pymongo
  - pathlib (also may be already deployed)
  
+# Realm 667
+This crawls the repository section and collects structured metadata as a big JSON output and also collects image files.
 
 ## Future
 I may build this as a PIPENV eventually with python3.6, but for now, additional package requirements are as listed above.

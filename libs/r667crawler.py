@@ -4,9 +4,11 @@ Created on 9 Jan 2021
 @author: smegh
 '''
 import requests
+import os
 from libs.abstractcrawler import AbstractCrawler
 from bs4 import BeautifulSoup
 from abc import ABC, abstractmethod
+import urllib
 import json
 
 '''
@@ -74,9 +76,7 @@ class R667Crawler(AbstractCrawler):
         print('crawling...')
         '''
         For R667, I want to collect the metadata for each download (and possibly the download binary itself).
-        '''
-        
-        '''
+
         Identify any download links and associated surrounding HTML that defines
         metadata and extract that as JSON
          - the download link can go into the mongoDD, and wan probably put the metadata JSON in there too to associate 
@@ -109,9 +109,7 @@ class R667Crawler(AbstractCrawler):
             '''
             here, we find footer pagination links for more pages holding repository items
             and also the repo items on the current page. TODO: work out what is put into DB and what is processed at runtime
-            '''
 
-            '''
             find paginarion links:
             '''
             _pagination = _soup.select('div > ul.pagination > li > a')
@@ -142,8 +140,19 @@ class R667Crawler(AbstractCrawler):
             for _currdataitem in _currdataitems:
                 ''' and fron each item block, extract somedetails about the thing '''
                 _itemtitle = _currdataitem.select('article > h2')[0].text.strip()
+                _filename = _itemtitle.replace(' ','').replace('\'','').replace(',','').replace('.','').replace(':','').replace('!','')+'.zip'
                 print(_currdataitem)
                 _info = {}
+                
+                ''' image. See https://stackoverflow.com/questions/61530606/how-to-save-pictures-from-a-website-to-a-local-folder '''
+                try:
+                    ''' image '''
+#                     _img = _currdataitem.select('div.tab-content > div.tab-pane:nth-of-type(1)')
+                    _img = self.extractImageInfo(_currdataitem.select('div.tab-content > div.tab-pane:nth-of-type(1)')[0].encode_contents())
+                    
+                except:
+                    pass
+
                 try:
                     ''' INFO '''
                     _info = self.extractItemInfo(_currdataitem.select('div.tab-content > div.tab-pane:nth-of-type(2)')[0].encode_contents())
@@ -159,28 +168,51 @@ class R667Crawler(AbstractCrawler):
                 
                 print(_info)
                 _dataitems[_itemtitle] = {
+                    'filename':_filename,
+                    'imagefile':_img,
                     'info':_info,
                     'credits':_credits,
                     'topic':_crawllinks[_crawllink]['topic'],
                     'section':_crawllinks[_crawllink]['section']
                 }
-            
-            
-            
+
             '''
             Once we have the list of pages, load each one and grab the data from the DOM
             [I might want to cache the pages, otherwise I will be loading the top level ones twice...]
             '''
         with open('r667output.json','w') as f :
             f.write(json.dumps(_dataitems))
-            
-        
+
             '''
             Finally, put the JSON im in the database
             '''
         print('done')
-    
-    
+        
+    ''' pull out src and alt. Create image in folder corresponding to path '''
+    def extractImageInfo(self,bytestr):
+        _root =  'https://www.realm667.com'
+        htmlstr = bytestr.decode('utf-8').replace('\n', ' ').replace('\r', '')
+        print('---------ITEM INPUT-------------')
+        print(htmlstr)
+        print('---------END ITEM INPUT-------------')
+        _soup = BeautifulSoup(htmlstr,'html.parser')
+        _img = _soup.select('img')[0]
+        _src = _img.get('src').replace('\\', '/')
+        _alt = _img.get('alt').replace('\\', '/')
+        
+        try:
+            _imagename = _src.split('/')[-1]
+            _sp = self.args.savepath+ '/r667/'+ _imagename
+            print(_sp)
+            with urllib.request.urlopen(_root + _src) as response, open(_sp, 'wb') as out_file:
+                data = response.read() # a `bytes` object
+                out_file.write(data)
+        except Exception as ex:
+            print(ex)
+        
+        print(_img)
+        return(_imagename)
+
     
     def extractItemInfo(self,bytestr):
         htmlstr = bytestr.decode('utf-8').replace('\n', ' ').replace('\r', '')

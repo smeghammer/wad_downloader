@@ -1,0 +1,1 @@
+directory for realm 667 item images
