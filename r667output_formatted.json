@@ -1,5 +1,6 @@
 {
    "40mm Grenade Launcher":{
+      "filename":"40mmGrenadeLauncher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -71,6 +72,7 @@
       "section":"Doom Style"
    },
    "AA12 Shotgun":{
+      "filename":"AA12Shotgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -130,6 +132,7 @@
       "section":"Doom Style"
    },
    "Action Machinegun":{
+      "filename":"ActionMachinegun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -189,6 +192,7 @@
       "section":"Doom Style"
    },
    "AK47":{
+      "filename":"AK47.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -248,6 +252,7 @@
       "section":"Doom Style"
    },
    "Ammo Satchels":{
+      "filename":"AmmoSatchels.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -310,6 +315,7 @@
       "section":"Doom Style"
    },
    "Angled Pistol":{
+      "filename":"AngledPistol.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -366,6 +372,7 @@
       "section":"Doom Style"
    },
    "ASMD Shock Rifle":{
+      "filename":"ASMDShockRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -434,6 +441,7 @@
       "section":"Doom Style"
    },
    "Auto Shotgun":{
+      "filename":"AutoShotgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -496,6 +504,7 @@
       "section":"Doom Style"
    },
    "Axe":{
+      "filename":"Axe.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -564,6 +573,7 @@
       "section":"Doom Style"
    },
    "B.R.P.S.":{
+      "filename":"BRPS.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -629,6 +639,7 @@
       "section":"Doom Style"
    },
    "Baphomet's Heart":{
+      "filename":"BaphometsHeart.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -685,6 +696,7 @@
       "section":"Doom Style"
    },
    "Bayonet Rifle":{
+      "filename":"BayonetRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -747,6 +759,7 @@
       "section":"Doom Style"
    },
    "BFG 2704":{
+      "filename":"BFG2704.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -815,6 +828,7 @@
       "section":"Doom Style"
    },
    "BFG10k":{
+      "filename":"BFG10k.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -880,6 +894,7 @@
       "section":"Doom Style"
    },
    "Bio Pipebomb Launcher":{
+      "filename":"BioPipebombLauncher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -945,6 +960,7 @@
       "section":"Doom Style"
    },
    "Black Hole Generator":{
+      "filename":"BlackHoleGenerator.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1001,6 +1017,7 @@
       "section":"Doom Style"
    },
    "Butcher (Gun)":{
+      "filename":"Butcher(Gun).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1057,6 +1074,7 @@
       "section":"Doom Style"
    },
    "Channeler":{
+      "filename":"Channeler.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1116,6 +1134,7 @@
       "section":"Doom Style"
    },
    "Claymore Mines":{
+      "filename":"ClaymoreMines.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1178,6 +1197,7 @@
       "section":"Doom Style"
    },
    "Coachgun":{
+      "filename":"Coachgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1234,6 +1254,7 @@
       "section":"Doom Style"
    },
    "Colt 45":{
+      "filename":"Colt45.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1293,6 +1314,7 @@
       "section":"Doom Style"
    },
    "CryoBow":{
+      "filename":"CryoBow.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1352,6 +1374,7 @@
       "section":"Doom Style"
    },
    "Demonic Leech":{
+      "filename":"DemonicLeech.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1417,6 +1440,7 @@
       "section":"Doom Style"
    },
    "Doom 2.5 SSG":{
+      "filename":"Doom25SSG.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1470,6 +1494,7 @@
       "section":"Doom Style"
    },
    "Double Bladed Chainsaw":{
+      "filename":"DoubleBladedChainsaw.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1526,6 +1551,7 @@
       "section":"Doom Style"
    },
    "Double Grenade Launcher":{
+      "filename":"DoubleGrenadeLauncher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1588,6 +1614,7 @@
       "section":"Doom Style"
    },
    "Dual Barrel Laser Rifle":{
+      "filename":"DualBarrelLaserRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1650,6 +1677,7 @@
       "section":"Doom Style"
    },
    "Duke Shotgun":{
+      "filename":"DukeShotgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1715,6 +1743,7 @@
       "section":"Doom Style"
    },
    "Ego Smasher":{
+      "filename":"EgoSmasher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1780,6 +1809,7 @@
       "section":"Doom Style"
    },
    "Electro Gun":{
+      "filename":"ElectroGun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1845,6 +1875,7 @@
       "section":"Doom Style"
    },
    "EMS Rifle":{
+      "filename":"EMSRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1913,6 +1944,7 @@
       "section":"Doom Style"
    },
    "Explosive Super Shotgun":{
+      "filename":"ExplosiveSuperShotgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -1978,6 +2010,7 @@
       "section":"Doom Style"
    },
    "Fist Redux":{
+      "filename":"FistRedux.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2037,6 +2070,7 @@
       "section":"Doom Style"
    },
    "Fists of Fury":{
+      "filename":"FistsofFury.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2102,6 +2136,7 @@
       "section":"Doom Style"
    },
    "Flak Cannon":{
+      "filename":"FlakCannon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2176,6 +2211,7 @@
       "section":"Doom Style"
    },
    "Flamer":{
+      "filename":"Flamer.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2241,6 +2277,7 @@
       "section":"Doom Style"
    },
    "Flamethrower":{
+      "filename":"Flamethrower.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2303,6 +2340,7 @@
       "section":"Doom Style"
    },
    "Flashlight":{
+      "filename":"Flashlight.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2368,6 +2406,7 @@
       "section":"Doom Style"
    },
    "Frag Grenade":{
+      "filename":"FragGrenade.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2433,6 +2472,7 @@
       "section":"Doom Style"
    },
    "Freeze Rifle":{
+      "filename":"FreezeRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2486,6 +2526,7 @@
       "section":"Doom Style"
    },
    "Gatling Laser":{
+      "filename":"GatlingLaser.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2551,6 +2592,7 @@
       "section":"Doom Style"
    },
    "Glock 18":{
+      "filename":"Glock18.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2610,6 +2652,7 @@
       "section":"Doom Style"
    },
    "Glock 21":{
+      "filename":"Glock21.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2669,6 +2712,7 @@
       "section":"Doom Style"
    },
    "Grenade Launcher":{
+      "filename":"GrenadeLauncher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2734,6 +2778,7 @@
       "section":"Doom Style"
    },
    "Grenade Launcher (KDiZD)":{
+      "filename":"GrenadeLauncher(KDiZD).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2796,6 +2841,7 @@
       "section":"Doom Style"
    },
    "Hand Grenade":{
+      "filename":"HandGrenade.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2855,6 +2901,7 @@
       "section":"Doom Style"
    },
    "Heavy Carbine":{
+      "filename":"HeavyCarbine.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2911,6 +2958,7 @@
       "section":"Doom Style"
    },
    "Heavy Chaingun":{
+      "filename":"HeavyChaingun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -2970,6 +3018,7 @@
       "section":"Doom Style"
    },
    "Heavy Machinegun":{
+      "filename":"HeavyMachinegun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3029,6 +3078,7 @@
       "section":"Doom Style"
    },
    "Heavy Rifle":{
+      "filename":"HeavyRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3085,6 +3135,7 @@
       "section":"Doom Style"
    },
    "Hellstorm Cannon":{
+      "filename":"HellstormCannon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3153,6 +3204,7 @@
       "section":"Doom Style"
    },
    "Hunting Rifle":{
+      "filename":"HuntingRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3215,6 +3267,7 @@
       "section":"Doom Style"
    },
    "iGun":{
+      "filename":"iGun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3271,6 +3324,7 @@
       "section":"Doom Style"
    },
    "Ionspray":{
+      "filename":"Ionspray.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3327,6 +3381,7 @@
       "section":"Doom Style"
    },
    "Karasawa":{
+      "filename":"Karasawa.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3389,6 +3444,7 @@
       "section":"Doom Style"
    },
    "Knife":{
+      "filename":"Knife.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3439,6 +3495,7 @@
       "section":"Doom Style"
    },
    "LandMine Layer":{
+      "filename":"LandMineLayer.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3507,6 +3564,7 @@
       "section":"Doom Style"
    },
    "Laser Cannon":{
+      "filename":"LaserCannon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3569,6 +3627,7 @@
       "section":"Doom Style"
    },
    "Light Machinegun":{
+      "filename":"LightMachinegun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3628,6 +3687,7 @@
       "section":"Doom Style"
    },
    "M16":{
+      "filename":"M16.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3644,6 +3704,7 @@
       "section":"Doom Style"
    },
    "M40A1 Sniper Rifle":{
+      "filename":"M40A1SniperRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3660,6 +3721,7 @@
       "section":"Doom Style"
    },
    "M79":{
+      "filename":"M79.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3722,6 +3784,7 @@
       "section":"Doom Style"
    },
    "Machete":{
+      "filename":"Machete.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3778,6 +3841,7 @@
       "section":"Doom Style"
    },
    "Machine Gun":{
+      "filename":"MachineGun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3834,6 +3898,7 @@
       "section":"Doom Style"
    },
    "Mag .60":{
+      "filename":"Mag60.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3896,6 +3961,7 @@
       "section":"Doom Style"
    },
    "Mancubus Arm":{
+      "filename":"MancubusArm.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -3964,6 +4030,7 @@
       "section":"Doom Style"
    },
    "Micro Uzi":{
+      "filename":"MicroUzi.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4023,6 +4090,7 @@
       "section":"Doom Style"
    },
    "Minigun":{
+      "filename":"Minigun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4088,6 +4156,7 @@
       "section":"Doom Style"
    },
    "Mismatched Pistols":{
+      "filename":"MismatchedPistols.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4153,6 +4222,7 @@
       "section":"Doom Style"
    },
    "Model 1887":{
+      "filename":"Model1887.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4212,6 +4282,7 @@
       "section":"Doom Style"
    },
    "MP40":{
+      "filename":"MP40.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4271,6 +4342,7 @@
       "section":"Doom Style"
    },
    "MP5":{
+      "filename":"MP5.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4336,6 +4408,7 @@
       "section":"Doom Style"
    },
    "Nailgun (MG)":{
+      "filename":"Nailgun(MG).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4392,6 +4465,7 @@
       "section":"Doom Style"
    },
    "Nailgun (SG)":{
+      "filename":"Nailgun(SG).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4454,6 +4528,7 @@
       "section":"Doom Style"
    },
    "Nuclear Missile Launcher":{
+      "filename":"NuclearMissileLauncher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4513,6 +4588,7 @@
       "section":"Doom Style"
    },
    "Pipe Bombs":{
+      "filename":"PipeBombs.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4569,6 +4645,7 @@
       "section":"Doom Style"
    },
    "Plasma Beam":{
+      "filename":"PlasmaBeam.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4625,6 +4702,7 @@
       "section":"Doom Style"
    },
    "Plasma Bolter":{
+      "filename":"PlasmaBolter.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4684,6 +4762,7 @@
       "section":"Doom Style"
    },
    "Plasma Pistol":{
+      "filename":"PlasmaPistol.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4743,6 +4822,7 @@
       "section":"Doom Style"
    },
    "Plasma Repeater":{
+      "filename":"PlasmaRepeater.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4808,6 +4888,7 @@
       "section":"Doom Style"
    },
    "Plasma Shotgun":{
+      "filename":"PlasmaShotgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4864,6 +4945,7 @@
       "section":"Doom Style"
    },
    "Plasma Splitter":{
+      "filename":"PlasmaSplitter.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4929,6 +5011,7 @@
       "section":"Doom Style"
    },
    "Prox Launcher":{
+      "filename":"ProxLauncher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -4988,6 +5071,7 @@
       "section":"Doom Style"
    },
    "Pulse Nailgun":{
+      "filename":"PulseNailgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5053,6 +5137,7 @@
       "section":"Doom Style"
    },
    "Pulse Rifle":{
+      "filename":"PulseRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5112,6 +5197,7 @@
       "section":"Doom Style"
    },
    "Pump-Action Shotgun":{
+      "filename":"Pump-ActionShotgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5168,6 +5254,7 @@
       "section":"Doom Style"
    },
    "Quad Shotgun":{
+      "filename":"QuadShotgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5233,6 +5320,7 @@
       "section":"Doom Style"
    },
    "Railgun":{
+      "filename":"Railgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5289,6 +5377,7 @@
       "section":"Doom Style"
    },
    "Raptor Handgun":{
+      "filename":"RaptorHandgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5342,6 +5431,7 @@
       "section":"Doom Style"
    },
    "Ray Gun":{
+      "filename":"RayGun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5404,6 +5494,7 @@
       "section":"Doom Style"
    },
    "Reaper":{
+      "filename":"Reaper.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5463,6 +5554,7 @@
       "section":"Doom Style"
    },
    "Repeater":{
+      "filename":"Repeater.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5522,6 +5614,7 @@
       "section":"Doom Style"
    },
    "Rifle":{
+      "filename":"Rifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5581,6 +5674,7 @@
       "section":"Doom Style"
    },
    "Riot Nerve Gas Launcher":{
+      "filename":"RiotNerveGasLauncher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5646,6 +5740,7 @@
       "section":"Doom Style"
    },
    "Rivet Gun":{
+      "filename":"RivetGun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5702,6 +5797,7 @@
       "section":"Doom Style"
    },
    "Scatter Pistol":{
+      "filename":"ScatterPistol.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5764,6 +5860,7 @@
       "section":"Doom Style"
    },
    "Shield Gun":{
+      "filename":"ShieldGun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5826,6 +5923,7 @@
       "section":"Doom Style"
    },
    "Side-By-Side Shotgun":{
+      "filename":"Side-By-SideShotgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5885,6 +5983,7 @@
       "section":"Doom Style"
    },
    "Silenced Pistol":{
+      "filename":"SilencedPistol.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -5947,6 +6046,7 @@
       "section":"Doom Style"
    },
    "Single Barrel Shotgun":{
+      "filename":"SingleBarrelShotgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6012,6 +6112,7 @@
       "section":"Doom Style"
    },
    "Skeletal Revenge":{
+      "filename":"SkeletalRevenge.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6077,6 +6178,7 @@
       "section":"Doom Style"
    },
    "Smart Gun":{
+      "filename":"SmartGun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6136,6 +6238,7 @@
       "section":"Doom Style"
    },
    "Smasher":{
+      "filename":"Smasher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6198,6 +6301,7 @@
       "section":"Doom Style"
    },
    "Sniper Rifle":{
+      "filename":"SniperRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6254,6 +6358,7 @@
       "section":"Doom Style"
    },
    "SPAS-12":{
+      "filename":"SPAS-12.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6313,6 +6418,7 @@
       "section":"Doom Style"
    },
    "Spray Cannon":{
+      "filename":"SprayCannon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6381,6 +6487,7 @@
       "section":"Doom Style"
    },
    "Strife Pistol":{
+      "filename":"StrifePistol.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6437,6 +6544,7 @@
       "section":"Doom Style"
    },
    "Stunner Rifle":{
+      "filename":"StunnerRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6496,6 +6604,7 @@
       "section":"Doom Style"
    },
    "Super Shotgun (KDiZD)":{
+      "filename":"SuperShotgun(KDiZD).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6549,6 +6658,7 @@
       "section":"Doom Style"
    },
    "Swat Shotgun":{
+      "filename":"SwatShotgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6611,6 +6721,7 @@
       "section":"Doom Style"
    },
    "Tactical Shotgun":{
+      "filename":"TacticalShotgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6676,6 +6787,7 @@
       "section":"Doom Style"
    },
    "Thompson SMG":{
+      "filename":"ThompsonSMG.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6741,6 +6853,7 @@
       "section":"Doom Style"
    },
    "Toaster":{
+      "filename":"Toaster.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6797,6 +6910,7 @@
       "section":"Doom Style"
    },
    "UAC Plasmatic Rifle":{
+      "filename":"UACPlasmaticRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6865,6 +6979,7 @@
       "section":"Doom Style"
    },
    "UAC Sniper Rifle":{
+      "filename":"UACSniperRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6927,6 +7042,7 @@
       "section":"Doom Style"
    },
    "Uber Minigun":{
+      "filename":"UberMinigun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6983,6 +7099,7 @@
       "section":"Doom Style"
    },
    "Unmaker":{
+      "filename":"Unmaker.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -6999,6 +7116,7 @@
       "section":"Doom Style"
    },
    "UTNT Pyro-Cannon":{
+      "filename":"UTNTPyro-Cannon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7058,6 +7176,7 @@
       "section":"Doom Style"
    },
    "Uzi":{
+      "filename":"Uzi.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7120,6 +7239,7 @@
       "section":"Doom Style"
    },
    "Western Shotgun":{
+      "filename":"WesternShotgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7179,6 +7299,7 @@
       "section":"Doom Style"
    },
    "Winchester Yellowboy":{
+      "filename":"WinchesterYellowboy.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7241,6 +7362,7 @@
       "section":"Doom Style"
    },
    "Zombieman Rifle":{
+      "filename":"ZombiemanRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7300,6 +7422,7 @@
       "section":"Doom Style"
    },
    "Apotheosis":{
+      "filename":"Apotheosis.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7365,6 +7488,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Arbalest o.t. Ancients":{
+      "filename":"ArbalestotAncients.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7418,6 +7542,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Blood Scepter":{
+      "filename":"BloodScepter.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7477,6 +7602,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Bow":{
+      "filename":"Bow.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7536,6 +7662,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Cult of the Serpent Staff":{
+      "filename":"CultoftheSerpentStaff.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7604,6 +7731,7 @@
       "section":"Heretic / Hexen Style"
    },
    "D'sparil Staff":{
+      "filename":"DsparilStaff.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7669,6 +7797,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Fire Blast":{
+      "filename":"FireBlast.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7734,6 +7863,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Fire Crystal":{
+      "filename":"FireCrystal.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7796,6 +7926,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Frost Fang":{
+      "filename":"FrostFang.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7858,6 +7989,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Holy Snow":{
+      "filename":"HolySnow.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7923,6 +8055,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Impaler Crossbow":{
+      "filename":"ImpalerCrossbow.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -7988,6 +8121,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Iron Crossbow":{
+      "filename":"IronCrossbow.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8050,6 +8184,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Jade Wand":{
+      "filename":"JadeWand.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8103,6 +8238,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Lightbringer":{
+      "filename":"Lightbringer.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8168,6 +8304,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Lightening Rod":{
+      "filename":"LighteningRod.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8184,6 +8321,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Necronomicon":{
+      "filename":"Necronomicon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8246,6 +8384,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Raven Staff":{
+      "filename":"RavenStaff.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8305,6 +8444,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Scepter of Souls":{
+      "filename":"ScepterofSouls.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8364,6 +8504,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Skull Staff":{
+      "filename":"SkullStaff.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8380,6 +8521,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Spell Binder":{
+      "filename":"SpellBinder.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8430,6 +8572,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Super Crossbow":{
+      "filename":"SuperCrossbow.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8495,6 +8638,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Vile Staff":{
+      "filename":"VileStaff.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8554,6 +8698,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Wand of Embers":{
+      "filename":"WandofEmbers.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8610,6 +8755,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Bearkiller":{
+      "filename":"Bearkiller.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8626,6 +8772,7 @@
       "section":"Other Sources / Styles"
    },
    "Nail Gun":{
+      "filename":"NailGun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8682,6 +8829,7 @@
       "section":"Other Sources / Styles"
    },
    "Blaster Rifle":{
+      "filename":"BlasterRifle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8738,6 +8886,7 @@
       "section":"Other Sources / Styles"
    },
    "Napalm Launcher":{
+      "filename":"NapalmLauncher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8803,6 +8952,7 @@
       "section":"Other Sources / Styles"
    },
    "Devastators":{
+      "filename":"Devastators.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8859,6 +9009,7 @@
       "section":"Other Sources / Styles"
    },
    "Necrovision MG40":{
+      "filename":"NecrovisionMG40.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8915,6 +9066,7 @@
       "section":"Other Sources / Styles"
    },
    "Deviation Launcher":{
+      "filename":"DeviationLauncher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -8971,6 +9123,7 @@
       "section":"Other Sources / Styles"
    },
    "Plasma Gun":{
+      "filename":"PlasmaGun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9030,6 +9183,7 @@
       "section":"Other Sources / Styles"
    },
    "DP-28":{
+      "filename":"DP-28.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9089,6 +9243,7 @@
       "section":"Other Sources / Styles"
    },
    "Poly Morph":{
+      "filename":"PolyMorph.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9154,6 +9309,7 @@
       "section":"Other Sources / Styles"
    },
    "Drummle":{
+      "filename":"Drummle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9210,6 +9366,7 @@
       "section":"Other Sources / Styles"
    },
    "Pulse Machinegun":{
+      "filename":"PulseMachinegun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9266,6 +9423,7 @@
       "section":"Other Sources / Styles"
    },
    "Enforcer":{
+      "filename":"Enforcer.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9328,6 +9486,7 @@
       "section":"Other Sources / Styles"
    },
    "Pyro Cannon":{
+      "filename":"PyroCannon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9387,6 +9546,7 @@
       "section":"Other Sources / Styles"
    },
    "Fajita Maker":{
+      "filename":"FajitaMaker.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9455,6 +9615,7 @@
       "section":"Other Sources / Styles"
    },
    "Quake II Chaingun":{
+      "filename":"QuakeIIChaingun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9511,6 +9672,7 @@
       "section":"Other Sources / Styles"
    },
    "FlareGun":{
+      "filename":"FlareGun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9567,6 +9729,7 @@
       "section":"Other Sources / Styles"
    },
    "Revolver (PS)":{
+      "filename":"Revolver(PS).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9623,6 +9786,7 @@
       "section":"Other Sources / Styles"
    },
    "Heat-Seeker Launcher":{
+      "filename":"Heat-SeekerLauncher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9688,6 +9852,7 @@
       "section":"Other Sources / Styles"
    },
    "Saw Thrower":{
+      "filename":"SawThrower.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9741,6 +9906,7 @@
       "section":"Other Sources / Styles"
    },
    "Hunter Shotgun":{
+      "filename":"HunterShotgun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9800,6 +9966,7 @@
       "section":"Other Sources / Styles"
    },
    "Sawed Off":{
+      "filename":"SawedOff.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9856,6 +10023,7 @@
       "section":"Other Sources / Styles"
    },
    "Jackbomb":{
+      "filename":"Jackbomb.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9918,6 +10086,7 @@
       "section":"Other Sources / Styles"
    },
    "Seeker Bazooka":{
+      "filename":"SeekerBazooka.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -9971,6 +10140,7 @@
       "section":"Other Sources / Styles"
    },
    "M60":{
+      "filename":"M60.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10024,6 +10194,7 @@
       "section":"Other Sources / Styles"
    },
    "SMG":{
+      "filename":"SMG.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10080,6 +10251,7 @@
       "section":"Other Sources / Styles"
    },
    "Magnet Saw":{
+      "filename":"MagnetSaw.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10127,6 +10299,7 @@
       "section":"Other Sources / Styles"
    },
    "Swarm Plasma Gun":{
+      "filename":"SwarmPlasmaGun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10192,6 +10365,7 @@
       "section":"Other Sources / Styles"
    },
    "Mosin-Nagant":{
+      "filename":"Mosin-Nagant.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10251,6 +10425,7 @@
       "section":"Other Sources / Styles"
    },
    "Tesla Cannon":{
+      "filename":"TeslaCannon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10304,6 +10479,7 @@
       "section":"Other Sources / Styles"
    },
    "Thunderbolt":{
+      "filename":"Thunderbolt.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10363,6 +10539,7 @@
       "section":"Other Sources / Styles"
    },
    "TommyGun":{
+      "filename":"TommyGun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10419,6 +10596,7 @@
       "section":"Other Sources / Styles"
    },
    "Abaddon":{
+      "filename":"Abaddon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10481,6 +10659,7 @@
       "section":"Doom Style"
    },
    "Afrit":{
+      "filename":"Afrit.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10543,6 +10722,7 @@
       "section":"Doom Style"
    },
    "Agathodemon":{
+      "filename":"Agathodemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10605,6 +10785,7 @@
       "section":"Doom Style"
    },
    "Agaures":{
+      "filename":"Agaures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10664,6 +10845,7 @@
       "section":"Doom Style"
    },
    "Allied Marines Pack":{
+      "filename":"AlliedMarinesPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10726,6 +10908,7 @@
       "section":"Doom Style"
    },
    "Annihilator":{
+      "filename":"Annihilator.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10791,6 +10974,7 @@
       "section":"Doom Style"
    },
    "Arachnobaron":{
+      "filename":"Arachnobaron.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10853,6 +11037,7 @@
       "section":"Doom Style"
    },
    "Arachnophyte":{
+      "filename":"Arachnophyte.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10915,6 +11100,7 @@
       "section":"Doom Style"
    },
    "Aracnorb":{
+      "filename":"Aracnorb.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -10974,6 +11160,7 @@
       "section":"Doom Style"
    },
    "Aracnorb Queen":{
+      "filename":"AracnorbQueen.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11036,6 +11223,7 @@
       "section":"Doom Style"
    },
    "Archon of Hell":{
+      "filename":"ArchonofHell.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11101,6 +11289,7 @@
       "section":"Doom Style"
    },
    "Augmented Arachnotron":{
+      "filename":"AugmentedArachnotron.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11163,6 +11352,7 @@
       "section":"Doom Style"
    },
    "Auto Shotgun Guy":{
+      "filename":"AutoShotgunGuy.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11228,6 +11418,7 @@
       "section":"Doom Style"
    },
    "Azazel":{
+      "filename":"Azazel.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11287,6 +11478,7 @@
       "section":"Doom Style"
    },
    "Baby Cacodemon":{
+      "filename":"BabyCacodemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11352,6 +11544,7 @@
       "section":"Doom Style"
    },
    "Bad":{
+      "filename":"Bad.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11408,6 +11601,7 @@
       "section":"Doom Style"
    },
    "Baphomet's Eyes":{
+      "filename":"BaphometsEyes.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11464,6 +11658,7 @@
       "section":"Doom Style"
    },
    "Beam Revenant":{
+      "filename":"BeamRevenant.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11529,6 +11724,7 @@
       "section":"Doom Style"
    },
    "Beam Zombie":{
+      "filename":"BeamZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11591,6 +11787,7 @@
       "section":"Doom Style"
    },
    "Beheaded Kamikaze":{
+      "filename":"BeheadedKamikaze.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11641,6 +11838,7 @@
       "section":"Doom Style"
    },
    "Belphegor":{
+      "filename":"Belphegor.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11706,6 +11904,7 @@
       "section":"Doom Style"
    },
    "BFG Commando":{
+      "filename":"BFGCommando.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11765,6 +11964,7 @@
       "section":"Doom Style"
    },
    "Blind Pinky":{
+      "filename":"BlindPinky.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11824,6 +12024,7 @@
       "section":"Doom Style"
    },
    "Blood Demon":{
+      "filename":"BloodDemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11889,6 +12090,7 @@
       "section":"Doom Style"
    },
    "Blood Fiend":{
+      "filename":"BloodFiend.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -11954,6 +12156,7 @@
       "section":"Doom Style"
    },
    "Blood Ghost":{
+      "filename":"BloodGhost.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12016,6 +12219,7 @@
       "section":"Doom Style"
    },
    "Blood Skull":{
+      "filename":"BloodSkull.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12078,6 +12282,7 @@
       "section":"Doom Style"
    },
    "Blot":{
+      "filename":"Blot.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12131,6 +12336,7 @@
       "section":"Doom Style"
    },
    "Bruiser Demon":{
+      "filename":"BruiserDemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12193,6 +12399,7 @@
       "section":"Doom Style"
    },
    "Caco Lich":{
+      "filename":"CacoLich.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12252,6 +12459,7 @@
       "section":"Doom Style"
    },
    "Cacolantern":{
+      "filename":"Cacolantern.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12311,6 +12519,7 @@
       "section":"Doom Style"
    },
    "Catharsi":{
+      "filename":"Catharsi.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12376,6 +12585,7 @@
       "section":"Doom Style"
    },
    "Chaingun Demon":{
+      "filename":"ChaingunDemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12435,6 +12645,7 @@
       "section":"Doom Style"
    },
    "Chaingun Major":{
+      "filename":"ChaingunMajor.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12497,6 +12708,7 @@
       "section":"Doom Style"
    },
    "Chaingun Spider":{
+      "filename":"ChaingunSpider.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12553,6 +12765,7 @@
       "section":"Doom Style"
    },
    "Chainsaw Zombie":{
+      "filename":"ChainsawZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12603,6 +12816,7 @@
       "section":"Doom Style"
    },
    "Cheshire Cacodemon":{
+      "filename":"CheshireCacodemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12659,6 +12873,7 @@
       "section":"Doom Style"
    },
    "Chubbs":{
+      "filename":"Chubbs.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12721,6 +12936,7 @@
       "section":"Doom Style"
    },
    "Core Tentacle":{
+      "filename":"CoreTentacle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12780,6 +12996,7 @@
       "section":"Doom Style"
    },
    "Cracko Demon":{
+      "filename":"CrackoDemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12836,6 +13053,7 @@
       "section":"Doom Style"
    },
    "Crash":{
+      "filename":"Crash.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12901,6 +13119,7 @@
       "section":"Doom Style"
    },
    "Cyber Baron":{
+      "filename":"CyberBaron.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -12957,6 +13176,7 @@
       "section":"Doom Style"
    },
    "Cyber Imp":{
+      "filename":"CyberImp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13022,6 +13242,7 @@
       "section":"Doom Style"
    },
    "Cyber Mastermind":{
+      "filename":"CyberMastermind.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13078,6 +13299,7 @@
       "section":"Doom Style"
    },
    "CyberFiend":{
+      "filename":"CyberFiend.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13134,6 +13356,7 @@
       "section":"Doom Style"
    },
    "Cybruiser":{
+      "filename":"Cybruiser.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13199,6 +13422,7 @@
       "section":"Doom Style"
    },
    "Dark Cardinal":{
+      "filename":"DarkCardinal.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13255,6 +13479,7 @@
       "section":"Doom Style"
    },
    "Dark Imp Pack":{
+      "filename":"DarkImpPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13317,6 +13542,7 @@
       "section":"Doom Style"
    },
    "Darkness Rift":{
+      "filename":"DarknessRift.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13382,6 +13608,7 @@
       "section":"Doom Style"
    },
    "Death Incarnate":{
+      "filename":"DeathIncarnate.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13447,6 +13674,7 @@
       "section":"Doom Style"
    },
    "Deep One":{
+      "filename":"DeepOne.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13506,6 +13734,7 @@
       "section":"Doom Style"
    },
    "Defiler":{
+      "filename":"Defiler.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13562,6 +13791,7 @@
       "section":"Doom Style"
    },
    "Demolisher":{
+      "filename":"Demolisher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13624,6 +13854,7 @@
       "section":"Doom Style"
    },
    "Devastator Zombie":{
+      "filename":"DevastatorZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13686,6 +13917,7 @@
       "section":"Doom Style"
    },
    "Devil":{
+      "filename":"Devil.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13742,6 +13974,7 @@
       "section":"Doom Style"
    },
    "Diabolist":{
+      "filename":"Diabolist.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13807,6 +14040,7 @@
       "section":"Doom Style"
    },
    "Divine Shadow":{
+      "filename":"DivineShadow.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13872,6 +14106,7 @@
       "section":"Doom Style"
    },
    "Doom RPG Ghoul":{
+      "filename":"DoomRPGGhoul.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -13940,6 +14175,7 @@
       "section":"Doom Style"
    },
    "Double Chaingunner":{
+      "filename":"DoubleChaingunner.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14005,6 +14241,7 @@
       "section":"Doom Style"
    },
    "Dune Warrior":{
+      "filename":"DuneWarrior.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14064,6 +14301,7 @@
       "section":"Doom Style"
    },
    "Enhanced Cacodemon":{
+      "filename":"EnhancedCacodemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14123,6 +14361,7 @@
       "section":"Doom Style"
    },
    "Ethereal Soul":{
+      "filename":"EtherealSoul.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14185,6 +14424,7 @@
       "section":"Doom Style"
    },
    "Exterminator":{
+      "filename":"Exterminator.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14250,6 +14490,7 @@
       "section":"Doom Style"
    },
    "Fallen":{
+      "filename":"Fallen.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14312,6 +14553,7 @@
       "section":"Doom Style"
    },
    "Female Scientist":{
+      "filename":"FemaleScientist.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14374,6 +14616,7 @@
       "section":"Doom Style"
    },
    "Female Zombie Pack":{
+      "filename":"FemaleZombiePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14430,6 +14673,7 @@
       "section":"Doom Style"
    },
    "Flamer Zombie":{
+      "filename":"FlamerZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14495,6 +14739,7 @@
       "section":"Doom Style"
    },
    "Flesh Spawn":{
+      "filename":"FleshSpawn.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14554,6 +14799,7 @@
       "section":"Doom Style"
    },
    "Flesh Wizard":{
+      "filename":"FleshWizard.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14613,6 +14859,7 @@
       "section":"Doom Style"
    },
    "Fly King":{
+      "filename":"FlyKing.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14675,6 +14922,7 @@
       "section":"Doom Style"
    },
    "Flying Imp":{
+      "filename":"FlyingImp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14734,6 +14982,7 @@
       "section":"Doom Style"
    },
    "Forgotten One":{
+      "filename":"ForgottenOne.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14796,6 +15045,7 @@
       "section":"Doom Style"
    },
    "Former Ranger":{
+      "filename":"FormerRanger.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14861,6 +15111,7 @@
       "section":"Doom Style"
    },
    "Former Scientists":{
+      "filename":"FormerScientists.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14923,6 +15174,7 @@
       "section":"Doom Style"
    },
    "Former Scientists Pack 2":{
+      "filename":"FormerScientistsPack2.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -14985,6 +15237,7 @@
       "section":"Doom Style"
    },
    "Freezer Zombie":{
+      "filename":"FreezerZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15047,6 +15300,7 @@
       "section":"Doom Style"
    },
    "Fusion Arachno":{
+      "filename":"FusionArachno.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15109,6 +15363,7 @@
       "section":"Doom Style"
    },
    "Ghost Revenant":{
+      "filename":"GhostRevenant.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15174,6 +15429,7 @@
       "section":"Doom Style"
    },
    "Grell":{
+      "filename":"Grell.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15236,6 +15492,7 @@
       "section":"Doom Style"
    },
    "Grin":{
+      "filename":"Grin.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15295,6 +15552,7 @@
       "section":"Doom Style"
    },
    "Guardian Cube":{
+      "filename":"GuardianCube.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15360,6 +15618,7 @@
       "section":"Doom Style"
    },
    "Hades Elemental":{
+      "filename":"HadesElemental.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15419,6 +15678,7 @@
       "section":"Doom Style"
    },
    "Hades Sphere":{
+      "filename":"HadesSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15484,6 +15744,7 @@
       "section":"Doom Style"
    },
    "Haedexebus":{
+      "filename":"Haedexebus.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15543,6 +15804,7 @@
       "section":"Doom Style"
    },
    "Hangman":{
+      "filename":"Hangman.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15602,6 +15864,7 @@
       "section":"Doom Style"
    },
    "Hazmat Zombie":{
+      "filename":"HazmatZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15667,6 +15930,7 @@
       "section":"Doom Style"
    },
    "Headless Zombie Scientist":{
+      "filename":"HeadlessZombieScientist.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15732,6 +15996,7 @@
       "section":"Doom Style"
    },
    "Heaven Guard":{
+      "filename":"HeavenGuard.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15797,6 +16062,7 @@
       "section":"Doom Style"
    },
    "Heavy Carbine Zombieman":{
+      "filename":"HeavyCarbineZombieman.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15859,6 +16125,7 @@
       "section":"Doom Style"
    },
    "Hectebus":{
+      "filename":"Hectebus.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15921,6 +16188,7 @@
       "section":"Doom Style"
    },
    "Hell Paladin":{
+      "filename":"HellPaladin.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -15983,6 +16251,7 @@
       "section":"Doom Style"
    },
    "Hell Warrior":{
+      "filename":"HellWarrior.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16048,6 +16317,7 @@
       "section":"Doom Style"
    },
    "Hell's Fury":{
+      "filename":"HellsFury.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16110,6 +16380,7 @@
       "section":"Doom Style"
    },
    "Hellion":{
+      "filename":"Hellion.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16175,6 +16446,7 @@
       "section":"Doom Style"
    },
    "Hellstorm Archon":{
+      "filename":"HellstormArchon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16234,6 +16506,7 @@
       "section":"Doom Style"
    },
    "Hierophant":{
+      "filename":"Hierophant.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16299,6 +16572,7 @@
       "section":"Doom Style"
    },
    "Illus":{
+      "filename":"Illus.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16315,6 +16589,7 @@
       "section":"Doom Style"
    },
    "Imp Trite":{
+      "filename":"ImpTrite.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16368,6 +16643,7 @@
       "section":"Doom Style"
    },
    "Imp Variants":{
+      "filename":"ImpVariants.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16421,6 +16697,7 @@
       "section":"Doom Style"
    },
    "Inferno":{
+      "filename":"Inferno.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16486,6 +16763,7 @@
       "section":"Doom Style"
    },
    "Jetpack Zombie":{
+      "filename":"JetpackZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16539,6 +16817,7 @@
       "section":"Doom Style"
    },
    "Karasawa Zombie":{
+      "filename":"KarasawaZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16604,6 +16883,7 @@
       "section":"Doom Style"
    },
    "Lesser Mutant":{
+      "filename":"LesserMutant.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16660,6 +16940,7 @@
       "section":"Doom Style"
    },
    "Lord of Heresy":{
+      "filename":"LordofHeresy.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16722,6 +17003,7 @@
       "section":"Doom Style"
    },
    "Machinegun Zombieman":{
+      "filename":"MachinegunZombieman.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16787,6 +17069,7 @@
       "section":"Doom Style"
    },
    "Main Battle Tank":{
+      "filename":"MainBattleTank.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16852,6 +17135,7 @@
       "section":"Doom Style"
    },
    "Mauler Demon":{
+      "filename":"MaulerDemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16917,6 +17201,7 @@
       "section":"Doom Style"
    },
    "Melee Revenant":{
+      "filename":"MeleeRevenant.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -16979,6 +17264,7 @@
       "section":"Doom Style"
    },
    "Minigunner":{
+      "filename":"Minigunner.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17044,6 +17330,7 @@
       "section":"Doom Style"
    },
    "Nailborg":{
+      "filename":"Nailborg.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17103,6 +17390,7 @@
       "section":"Doom Style"
    },
    "Nailborg Commando":{
+      "filename":"NailborgCommando.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17162,6 +17450,7 @@
       "section":"Doom Style"
    },
    "Nightmare":{
+      "filename":"Nightmare.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17224,6 +17513,7 @@
       "section":"Doom Style"
    },
    "Nightmare Demon":{
+      "filename":"NightmareDemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17280,6 +17570,7 @@
       "section":"Doom Style"
    },
    "Nightmare Spectre":{
+      "filename":"NightmareSpectre.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17336,6 +17627,7 @@
       "section":"Doom Style"
    },
    "Nightshade":{
+      "filename":"Nightshade.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17392,6 +17684,7 @@
       "section":"Doom Style"
    },
    "Obsidian Statue":{
+      "filename":"ObsidianStatue.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17448,6 +17741,7 @@
       "section":"Doom Style"
    },
    "Overlord":{
+      "filename":"Overlord.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17507,6 +17801,7 @@
       "section":"Doom Style"
    },
    "Phantasm":{
+      "filename":"Phantasm.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17572,6 +17867,7 @@
       "section":"Doom Style"
    },
    "Phantom":{
+      "filename":"Phantom.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17628,6 +17924,7 @@
       "section":"Doom Style"
    },
    "Phase Imp":{
+      "filename":"PhaseImp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17687,6 +17984,7 @@
       "section":"Doom Style"
    },
    "Plasma Demon":{
+      "filename":"PlasmaDemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17743,6 +18041,7 @@
       "section":"Doom Style"
    },
    "Plasma Elemental":{
+      "filename":"PlasmaElemental.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17799,6 +18098,7 @@
       "section":"Doom Style"
    },
    "Plasma Zombie":{
+      "filename":"PlasmaZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17861,6 +18161,7 @@
       "section":"Doom Style"
    },
    "Poe":{
+      "filename":"Poe.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17920,6 +18221,7 @@
       "section":"Doom Style"
    },
    "Poison Soul":{
+      "filename":"PoisonSoul.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -17976,6 +18278,7 @@
       "section":"Doom Style"
    },
    "Poltergeist":{
+      "filename":"Poltergeist.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18041,6 +18344,7 @@
       "section":"Doom Style"
    },
    "Profane One":{
+      "filename":"ProfaneOne.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18097,6 +18401,7 @@
       "section":"Doom Style"
    },
    "Psychic Soul":{
+      "filename":"PsychicSoul.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18156,6 +18461,7 @@
       "section":"Doom Style"
    },
    "Pulse Nailgun Zombie":{
+      "filename":"PulseNailgunZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18215,6 +18521,7 @@
       "section":"Doom Style"
    },
    "Pyro Demon":{
+      "filename":"PyroDemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18274,6 +18581,7 @@
       "section":"Doom Style"
    },
    "Pyro Zombie":{
+      "filename":"PyroZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18339,6 +18647,7 @@
       "section":"Doom Style"
    },
    "PyroImp":{
+      "filename":"PyroImp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18395,6 +18704,7 @@
       "section":"Doom Style"
    },
    "Pyropork":{
+      "filename":"Pyropork.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18451,6 +18761,7 @@
       "section":"Doom Style"
    },
    "Quad-Shotgun Zombie":{
+      "filename":"Quad-ShotgunZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18516,6 +18827,7 @@
       "section":"Doom Style"
    },
    "Rail Arachnotron":{
+      "filename":"RailArachnotron.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18581,6 +18893,7 @@
       "section":"Doom Style"
    },
    "Rapid Fire Trooper":{
+      "filename":"RapidFireTrooper.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18643,6 +18956,7 @@
       "section":"Doom Style"
    },
    "Repeater Zombie":{
+      "filename":"RepeaterZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18702,6 +19016,7 @@
       "section":"Doom Style"
    },
    "Rictus":{
+      "filename":"Rictus.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18767,6 +19082,7 @@
       "section":"Doom Style"
    },
    "Rifle Commando":{
+      "filename":"RifleCommando.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18829,6 +19145,7 @@
       "section":"Doom Style"
    },
    "Rifle Zombieman":{
+      "filename":"RifleZombieman.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18894,6 +19211,7 @@
       "section":"Doom Style"
    },
    "Roach":{
+      "filename":"Roach.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -18956,6 +19274,7 @@
       "section":"Doom Style"
    },
    "Rocket Imp":{
+      "filename":"RocketImp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19018,6 +19337,7 @@
       "section":"Doom Style"
    },
    "Rocket Zombie":{
+      "filename":"RocketZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19080,6 +19400,7 @@
       "section":"Doom Style"
    },
    "Rocket Zombie II":{
+      "filename":"RocketZombieII.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19142,6 +19463,7 @@
       "section":"Doom Style"
    },
    "Rocketman":{
+      "filename":"Rocketman.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19201,6 +19523,7 @@
       "section":"Doom Style"
    },
    "Rottweiler":{
+      "filename":"Rottweiler.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19263,6 +19586,7 @@
       "section":"Doom Style"
    },
    "Satyr":{
+      "filename":"Satyr.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19325,6 +19649,7 @@
       "section":"Doom Style"
    },
    "SawedOff Zombie":{
+      "filename":"SawedOffZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19387,6 +19712,7 @@
       "section":"Doom Style"
    },
    "Segway Zombie":{
+      "filename":"SegwayZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19440,6 +19766,7 @@
       "section":"Doom Style"
    },
    "Shade":{
+      "filename":"Shade.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19496,6 +19823,7 @@
       "section":"Doom Style"
    },
    "Shadow":{
+      "filename":"Shadow.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19558,6 +19886,7 @@
       "section":"Doom Style"
    },
    "Shadow Hunter":{
+      "filename":"ShadowHunter.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19617,6 +19946,7 @@
       "section":"Doom Style"
    },
    "Shadow Trooper":{
+      "filename":"ShadowTrooper.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19682,6 +20012,7 @@
       "section":"Doom Style"
    },
    "Slime Imp":{
+      "filename":"SlimeImp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19738,6 +20069,7 @@
       "section":"Doom Style"
    },
    "Slime Worm":{
+      "filename":"SlimeWorm.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19791,6 +20123,7 @@
       "section":"Doom Style"
    },
    "Small Rat":{
+      "filename":"SmallRat.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19853,6 +20186,7 @@
       "section":"Doom Style"
    },
    "SMG Zombie":{
+      "filename":"SMGZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19918,6 +20252,7 @@
       "section":"Doom Style"
    },
    "Smoke Monster":{
+      "filename":"SmokeMonster.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -19974,6 +20309,7 @@
       "section":"Doom Style"
    },
    "Snake Imp":{
+      "filename":"SnakeImp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20030,6 +20366,7 @@
       "section":"Doom Style"
    },
    "Sniper Commando Zombie":{
+      "filename":"SniperCommandoZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20092,6 +20429,7 @@
       "section":"Doom Style"
    },
    "Sniper Zombie":{
+      "filename":"SniperZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20154,6 +20492,7 @@
       "section":"Doom Style"
    },
    "Sonic Railgun Zombie":{
+      "filename":"SonicRailgunZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20216,6 +20555,7 @@
       "section":"Doom Style"
    },
    "Soul Harvester":{
+      "filename":"SoulHarvester.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20278,6 +20618,7 @@
       "section":"Doom Style"
    },
    "Spirit Imp":{
+      "filename":"SpiritImp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20340,6 +20681,7 @@
       "section":"Doom Style"
    },
    "Squire":{
+      "filename":"Squire.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20396,6 +20738,7 @@
       "section":"Doom Style"
    },
    "Stalker":{
+      "filename":"Stalker.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20452,6 +20795,7 @@
       "section":"Doom Style"
    },
    "Stealth Fighter":{
+      "filename":"StealthFighter.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20505,6 +20849,7 @@
       "section":"Doom Style"
    },
    "Stone Demon":{
+      "filename":"StoneDemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20561,6 +20906,7 @@
       "section":"Doom Style"
    },
    "Stone Imp":{
+      "filename":"StoneImp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20620,6 +20966,7 @@
       "section":"Doom Style"
    },
    "Suicide Bomber":{
+      "filename":"SuicideBomber.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20685,6 +21032,7 @@
       "section":"Doom Style"
    },
    "Super Demon":{
+      "filename":"SuperDemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20741,6 +21089,7 @@
       "section":"Doom Style"
    },
    "Super Devil":{
+      "filename":"SuperDevil.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20800,6 +21149,7 @@
       "section":"Doom Style"
    },
    "Super Flying Imp":{
+      "filename":"SuperFlyingImp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20856,6 +21206,7 @@
       "section":"Doom Style"
    },
    "Super Imp":{
+      "filename":"SuperImp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20909,6 +21260,7 @@
       "section":"Doom Style"
    },
    "Super Shotgun Zombie":{
+      "filename":"SuperShotgunZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -20968,6 +21320,7 @@
       "section":"Doom Style"
    },
    "Supreme Fiend":{
+      "filename":"SupremeFiend.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21027,6 +21380,7 @@
       "section":"Doom Style"
    },
    "Swarm":{
+      "filename":"Swarm.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21083,6 +21437,7 @@
       "section":"Doom Style"
    },
    "Tentacled Commando":{
+      "filename":"TentacledCommando.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21145,6 +21500,7 @@
       "section":"Doom Style"
    },
    "Terminator":{
+      "filename":"Terminator.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21204,6 +21560,7 @@
       "section":"Doom Style"
    },
    "Terror":{
+      "filename":"Terror.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21257,6 +21614,7 @@
       "section":"Doom Style"
    },
    "TeslaCoil":{
+      "filename":"TeslaCoil.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21313,6 +21671,7 @@
       "section":"Doom Style"
    },
    "Thamuz":{
+      "filename":"Thamuz.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21369,6 +21728,7 @@
       "section":"Doom Style"
    },
    "Time Imp":{
+      "filename":"TimeImp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21425,6 +21785,7 @@
       "section":"Doom Style"
    },
    "Tornado Demon":{
+      "filename":"TornadoDemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21481,6 +21842,7 @@
       "section":"Doom Style"
    },
    "Tortured Soul":{
+      "filename":"TorturedSoul.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21540,6 +21902,7 @@
       "section":"Doom Style"
    },
    "Trite":{
+      "filename":"Trite.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21602,6 +21965,7 @@
       "section":"Doom Style"
    },
    "UAC Bot":{
+      "filename":"UACBot.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21655,6 +22019,7 @@
       "section":"Doom Style"
    },
    "Uber Chaingunner":{
+      "filename":"UberChaingunner.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21717,6 +22082,7 @@
       "section":"Doom Style"
    },
    "Undead Hunter":{
+      "filename":"UndeadHunter.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21779,6 +22145,7 @@
       "section":"Doom Style"
    },
    "Undead Priest":{
+      "filename":"UndeadPriest.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21835,6 +22202,7 @@
       "section":"Doom Style"
    },
    "Unmaker Zombie":{
+      "filename":"UnmakerZombie.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21891,6 +22259,7 @@
       "section":"Doom Style"
    },
    "Volacubi":{
+      "filename":"Volacubi.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -21950,6 +22319,7 @@
       "section":"Doom Style"
    },
    "Vulgar":{
+      "filename":"Vulgar.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22012,6 +22382,7 @@
       "section":"Doom Style"
    },
    "Warlord of Hell":{
+      "filename":"WarlordofHell.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22068,6 +22439,7 @@
       "section":"Doom Style"
    },
    "Watcher":{
+      "filename":"Watcher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22130,6 +22502,7 @@
       "section":"Doom Style"
    },
    "Weakener":{
+      "filename":"Weakener.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22192,6 +22565,7 @@
       "section":"Doom Style"
    },
    "Wicked":{
+      "filename":"Wicked.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22254,6 +22628,7 @@
       "section":"Doom Style"
    },
    "Wraith (D3)":{
+      "filename":"Wraith(D3).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22316,6 +22691,7 @@
       "section":"Doom Style"
    },
    "Z Sec":{
+      "filename":"ZSec.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22375,6 +22751,7 @@
       "section":"Doom Style"
    },
    "Zombie Flyer":{
+      "filename":"ZombieFlyer.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22437,6 +22814,7 @@
       "section":"Doom Style"
    },
    "Zombie Fodder":{
+      "filename":"ZombieFodder.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22499,6 +22877,7 @@
       "section":"Doom Style"
    },
    "Zombie Henchman":{
+      "filename":"ZombieHenchman.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22555,6 +22934,7 @@
       "section":"Doom Style"
    },
    "Zombie Marine":{
+      "filename":"ZombieMarine.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22611,6 +22991,7 @@
       "section":"Doom Style"
    },
    "Zombie Missile Tank":{
+      "filename":"ZombieMissileTank.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22679,6 +23060,7 @@
       "section":"Doom Style"
    },
    "Zombie Plasma Scientist":{
+      "filename":"ZombiePlasmaScientist.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22744,6 +23126,7 @@
       "section":"Doom Style"
    },
    "Zombie Plasma Tank":{
+      "filename":"ZombiePlasmaTank.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22803,6 +23186,7 @@
       "section":"Doom Style"
    },
    "Zombie Railgunner":{
+      "filename":"ZombieRailgunner.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22865,6 +23249,7 @@
       "section":"Doom Style"
    },
    "Zombie Scientist":{
+      "filename":"ZombieScientist.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22927,6 +23312,7 @@
       "section":"Doom Style"
    },
    "Zombie Tank":{
+      "filename":"ZombieTank.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -22989,6 +23375,7 @@
       "section":"Doom Style"
    },
    "ZSpecOps":{
+      "filename":"ZSpecOps.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23051,6 +23438,7 @@
       "section":"Doom Style"
    },
    "Acolyte":{
+      "filename":"Acolyte.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23116,6 +23504,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Apprentice of D'Sparil":{
+      "filename":"ApprenticeofDSparil.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23178,6 +23567,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Avatar":{
+      "filename":"Avatar.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23243,6 +23633,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Banshee":{
+      "filename":"Banshee.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23296,6 +23687,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Blood Lich":{
+      "filename":"BloodLich.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23355,6 +23747,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Bormereth":{
+      "filename":"Bormereth.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23408,6 +23801,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Boss Shooters":{
+      "filename":"BossShooters.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23470,6 +23864,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Butcher":{
+      "filename":"Butcher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23532,6 +23927,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Chainmail Ettin":{
+      "filename":"ChainmailEttin.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23594,6 +23990,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Chaos Cube":{
+      "filename":"ChaosCube.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23656,6 +24053,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Chaos Wyvern":{
+      "filename":"ChaosWyvern.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23718,6 +24116,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Chiller":{
+      "filename":"Chiller.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23774,6 +24173,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Crimson Disciple":{
+      "filename":"CrimsonDisciple.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23836,6 +24236,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Cultist":{
+      "filename":"Cultist.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23898,6 +24299,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Dark Clink":{
+      "filename":"DarkClink.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -23963,6 +24365,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Dark Gargoyle":{
+      "filename":"DarkGargoyle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24016,6 +24419,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Death Knight":{
+      "filename":"DeathKnight.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24081,6 +24485,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Demon Wizard":{
+      "filename":"DemonWizard.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24143,6 +24548,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Disciple":{
+      "filename":"Disciple.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24208,6 +24614,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Disciple (with melee)":{
+      "filename":"Disciple(withmelee).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24276,6 +24683,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Ghoul":{
+      "filename":"Ghoul.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24341,6 +24749,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Gold Lich":{
+      "filename":"GoldLich.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24403,6 +24812,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Harpy":{
+      "filename":"Harpy.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24462,6 +24872,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Hell Apprentice":{
+      "filename":"HellApprentice.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24527,6 +24938,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Hell Smith":{
+      "filename":"HellSmith.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24592,6 +25004,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Hell's Guard":{
+      "filename":"HellsGuard.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24648,6 +25061,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Hex Prism":{
+      "filename":"HexPrism.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24710,6 +25124,7 @@
       "section":"Heretic / Hexen Style"
    },
    "HornBeast":{
+      "filename":"HornBeast.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24763,6 +25178,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Hornet":{
+      "filename":"Hornet.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24816,6 +25232,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Ice Golem":{
+      "filename":"IceGolem.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24875,6 +25292,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Ice Lich":{
+      "filename":"IceLich.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24928,6 +25346,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Ice Stalker":{
+      "filename":"IceStalker.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -24984,6 +25403,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Imp Warlord":{
+      "filename":"ImpWarlord.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25040,6 +25460,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Inferno Demon":{
+      "filename":"InfernoDemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25096,6 +25517,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Invisible Warrior":{
+      "filename":"InvisibleWarrior.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25152,6 +25574,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Knight Archer":{
+      "filename":"KnightArcher.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25208,6 +25631,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Lava & Mud Golems":{
+      "filename":"Lava&MudGolems.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25267,6 +25691,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Lava Demon":{
+      "filename":"LavaDemon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25329,6 +25754,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Lost Spirit":{
+      "filename":"LostSpirit.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25394,6 +25820,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Magma Serpent":{
+      "filename":"MagmaSerpent.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25447,6 +25874,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Medusa":{
+      "filename":"Medusa.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25512,6 +25940,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Nosferati":{
+      "filename":"Nosferati.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25577,6 +26006,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Plague Imp":{
+      "filename":"PlagueImp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25636,6 +26066,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Pyro Succubus":{
+      "filename":"PyroSuccubus.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25695,6 +26126,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Rot Wraith":{
+      "filename":"RotWraith.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25745,6 +26177,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Scimitar":{
+      "filename":"Scimitar.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25795,6 +26228,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Sentient Glowing Mushroom":{
+      "filename":"SentientGlowingMushroom.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25860,6 +26294,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Sentient Mushroom":{
+      "filename":"SentientMushroom.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25922,6 +26357,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Sentinel":{
+      "filename":"Sentinel.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -25987,6 +26423,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Shadow Beast":{
+      "filename":"ShadowBeast.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26040,6 +26477,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Thor":{
+      "filename":"Thor.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26102,6 +26540,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Undead Knight (dual axe)":{
+      "filename":"UndeadKnight(dualaxe).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26155,6 +26594,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Vampire":{
+      "filename":"Vampire.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26208,6 +26648,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Wraith":{
+      "filename":"Wraith.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26267,6 +26708,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Zardaz":{
+      "filename":"Zardaz.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26320,6 +26762,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Black Ops":{
+      "filename":"BlackOps.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26379,6 +26822,7 @@
       "section":"Strife Style"
    },
    "Dark Inquisitor":{
+      "filename":"DarkInquisitor.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26441,6 +26885,7 @@
       "section":"Strife Style"
    },
    "Kull Warrior":{
+      "filename":"KullWarrior.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26497,6 +26942,7 @@
       "section":"Strife Style"
    },
    "Laser-Scout":{
+      "filename":"Laser-Scout.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26562,6 +27008,7 @@
       "section":"Strife Style"
    },
    "Liquidator":{
+      "filename":"Liquidator.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26627,6 +27074,7 @@
       "section":"Strife Style"
    },
    "Paladin":{
+      "filename":"Paladin.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26686,6 +27134,7 @@
       "section":"Strife Style"
    },
    "Prison Guard":{
+      "filename":"PrisonGuard.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26745,6 +27194,7 @@
       "section":"Strife Style"
    },
    "Rebels Pack":{
+      "filename":"RebelsPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26810,6 +27260,7 @@
       "section":"Strife Style"
    },
    "Rocket Turret":{
+      "filename":"RocketTurret.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26872,6 +27323,7 @@
       "section":"Strife Style"
    },
    "Security Drone":{
+      "filename":"SecurityDrone.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26937,6 +27389,7 @@
       "section":"Strife Style"
    },
    "Bat":{
+      "filename":"Bat.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -26987,6 +27440,7 @@
       "section":"Other Style"
    },
    "Cheogh":{
+      "filename":"Cheogh.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27034,6 +27488,7 @@
       "section":"Other Style"
    },
    "Converted Legionnaire":{
+      "filename":"ConvertedLegionnaire.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27096,6 +27551,7 @@
       "section":"Other Style"
    },
    "Daggerfall Skeleton":{
+      "filename":"DaggerfallSkeleton.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27167,6 +27623,7 @@
       "section":"Other Style"
    },
    "Devil Worms":{
+      "filename":"DevilWorms.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27217,6 +27674,7 @@
       "section":"Other Style"
    },
    "Drone":{
+      "filename":"Drone.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27279,6 +27737,7 @@
       "section":"Other Style"
    },
    "Elite Guard":{
+      "filename":"EliteGuard.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27341,6 +27800,7 @@
       "section":"Other Style"
    },
    "Evil Knight":{
+      "filename":"EvilKnight.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27394,6 +27854,7 @@
       "section":"Other Style"
    },
    "Fire Serpents":{
+      "filename":"FireSerpents.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27444,6 +27905,7 @@
       "section":"Other Style"
    },
    "Flemoidus Arachnus":{
+      "filename":"FlemoidusArachnus.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27500,6 +27962,7 @@
       "section":"Other Style"
    },
    "Flemoidus Tenacious":{
+      "filename":"FlemoidusTenacious.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27556,6 +28019,7 @@
       "section":"Other Style"
    },
    "Gatekeeper":{
+      "filename":"Gatekeeper.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27612,6 +28076,7 @@
       "section":"Other Style"
    },
    "Giant Bat":{
+      "filename":"GiantBat.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27662,6 +28127,7 @@
       "section":"Other Style"
    },
    "Giant Rat":{
+      "filename":"GiantRat.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27721,6 +28187,7 @@
       "section":"Other Style"
    },
    "Head Monster":{
+      "filename":"HeadMonster.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27783,6 +28250,7 @@
       "section":"Other Style"
    },
    "Hell Hound":{
+      "filename":"HellHound.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27845,6 +28313,7 @@
       "section":"Other Style"
    },
    "Hell Rose":{
+      "filename":"HellRose.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27898,6 +28367,7 @@
       "section":"Other Style"
    },
    "Incubus":{
+      "filename":"Incubus.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -27957,6 +28427,7 @@
       "section":"Other Style"
    },
    "Infernal Spider":{
+      "filename":"InfernalSpider.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28025,6 +28496,7 @@
       "section":"Other Style"
    },
    "Juggernaut":{
+      "filename":"Juggernaut.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28078,6 +28550,7 @@
       "section":"Other Style"
    },
    "Loper":{
+      "filename":"Loper.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28140,6 +28613,7 @@
       "section":"Other Style"
    },
    "Maephisto":{
+      "filename":"Maephisto.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28193,6 +28667,7 @@
       "section":"Other Style"
    },
    "Moloch":{
+      "filename":"Moloch.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28255,6 +28730,7 @@
       "section":"Other Style"
    },
    "Netherworld Drone":{
+      "filename":"NetherworldDrone.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28305,6 +28781,7 @@
       "section":"Other Style"
    },
    "Netherworld Queen":{
+      "filename":"NetherworldQueen.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28361,6 +28838,7 @@
       "section":"Other Style"
    },
    "Pustule":{
+      "filename":"Pustule.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28414,6 +28892,7 @@
       "section":"Other Style"
    },
    "Shark":{
+      "filename":"Shark.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28476,6 +28955,7 @@
       "section":"Other Style"
    },
    "Shark with Laser":{
+      "filename":"SharkwithLaser.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28541,6 +29021,7 @@
       "section":"Other Style"
    },
    "Skeleton":{
+      "filename":"Skeleton.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28591,6 +29072,7 @@
       "section":"Gore & Corpses"
    },
    "Source Guardian":{
+      "filename":"SourceGuardian.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28653,6 +29135,7 @@
       "section":"Other Style"
    },
    "Trash Monster":{
+      "filename":"TrashMonster.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28703,6 +29186,7 @@
       "section":"Other Style"
    },
    "Cyberfonter":{
+      "filename":"Cyberfonter.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28762,6 +29246,7 @@
       "section":"Technical"
    },
    "DBIGFONT Plain":{
+      "filename":"DBIGFONTPlain.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28824,6 +29309,7 @@
       "section":"Technical"
    },
    "Doom 93":{
+      "filename":"Doom93.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28880,6 +29366,7 @@
       "section":"Technical"
    },
    "Doom Smallfont Square":{
+      "filename":"DoomSmallfontSquare.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28936,6 +29423,7 @@
       "section":"Technical"
    },
    "Enlightening Big":{
+      "filename":"EnlighteningBig.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -28992,6 +29480,7 @@
       "section":"Technical"
    },
    "Enlightening Small":{
+      "filename":"EnlighteningSmall.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29048,6 +29537,7 @@
       "section":"Technical"
    },
    "Id":{
+      "filename":"Id.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29101,6 +29591,7 @@
       "section":"Technical"
    },
    "Id Big":{
+      "filename":"IdBig.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29154,6 +29645,7 @@
       "section":"Technical"
    },
    "Id Condensed":{
+      "filename":"IdCondensed.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29207,6 +29699,7 @@
       "section":"Technical"
    },
    "Id Shadowed":{
+      "filename":"IdShadowed.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29260,6 +29753,7 @@
       "section":"Technical"
    },
    "Id Upper":{
+      "filename":"IdUpper.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29313,6 +29807,7 @@
       "section":"Technical"
    },
    "Id Upper Bold":{
+      "filename":"IdUpperBold.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29366,6 +29861,7 @@
       "section":"Technical"
    },
    "Improved DBigFont + Variants":{
+      "filename":"ImprovedDBigFont+Variants.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29422,6 +29918,7 @@
       "section":"Technical"
    },
    "Jenocide Big":{
+      "filename":"JenocideBig.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29478,6 +29975,7 @@
       "section":"Technical"
    },
    "Jenocide Bold":{
+      "filename":"JenocideBold.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29534,6 +30032,7 @@
       "section":"Technical"
    },
    "Jenocide Small":{
+      "filename":"JenocideSmall.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29590,6 +30089,7 @@
       "section":"Technical"
    },
    "Miniplicity":{
+      "filename":"Miniplicity.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29646,6 +30146,7 @@
       "section":"Technical"
    },
    "Nought Point Four":{
+      "filename":"NoughtPointFour.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29702,6 +30203,7 @@
       "section":"Technical"
    },
    "Quake 2 Small":{
+      "filename":"Quake2Small.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29755,6 +30257,7 @@
       "section":"Technical"
    },
    "Simply Unreal":{
+      "filename":"SimplyUnreal.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29808,6 +30311,7 @@
       "section":"Technical"
    },
    "Solid Snake Big":{
+      "filename":"SolidSnakeBig.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29864,6 +30368,7 @@
       "section":"Technical"
    },
    "Solid Snake Small":{
+      "filename":"SolidSnakeSmall.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29920,6 +30425,7 @@
       "section":"Technical"
    },
    "Status Report Big":{
+      "filename":"StatusReportBig.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -29973,6 +30479,7 @@
       "section":"Technical"
    },
    "ZDoom 2012":{
+      "filename":"ZDoom2012.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30026,6 +30533,7 @@
       "section":"Technical"
    },
    "ZDoom 2012 Big":{
+      "filename":"ZDoom2012Big.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30082,6 +30590,7 @@
       "section":"Technical"
    },
    "ZDoom 2012 Upper":{
+      "filename":"ZDoom2012Upper.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30135,6 +30644,7 @@
       "section":"Technical"
    },
    "Apostasy":{
+      "filename":"Apostasy.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30191,6 +30701,7 @@
       "section":"Medieval"
    },
    "Gargoyle Wing":{
+      "filename":"GargoyleWing.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30247,6 +30758,7 @@
       "section":"Medieval"
    },
    "Gargoyle Wing Small":{
+      "filename":"GargoyleWingSmall.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30300,6 +30812,7 @@
       "section":"Medieval"
    },
    "Chugga Chug":{
+      "filename":"ChuggaChug.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30353,6 +30866,7 @@
       "section":"General"
    },
    "Diet Log":{
+      "filename":"DietLog.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30409,6 +30923,7 @@
       "section":"General"
    },
    "Diogenes":{
+      "filename":"Diogenes.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30465,6 +30980,7 @@
       "section":"General"
    },
    "Duke Nukem Atomic":{
+      "filename":"DukeNukemAtomic.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30518,6 +31034,7 @@
       "section":"General"
    },
    "Duke Nukem Big":{
+      "filename":"DukeNukemBig.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30571,6 +31088,7 @@
       "section":"General"
    },
    "Duke Nukem Small":{
+      "filename":"DukeNukemSmall.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30624,6 +31142,7 @@
       "section":"General"
    },
    "Lycanthrope":{
+      "filename":"Lycanthrope.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30680,6 +31199,7 @@
       "section":"General"
    },
    "Mementwo Big":{
+      "filename":"MementwoBig.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30733,6 +31253,7 @@
       "section":"General"
    },
    "Mementwo Small":{
+      "filename":"MementwoSmall.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30786,6 +31307,7 @@
       "section":"General"
    },
    "Minecraftia":{
+      "filename":"Minecraftia.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30839,6 +31361,7 @@
       "section":"General"
    },
    "Status Report":{
+      "filename":"StatusReport.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30898,6 +31421,7 @@
       "section":"General"
    },
    "Teevee Gold":{
+      "filename":"TeeveeGold.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -30954,6 +31478,7 @@
       "section":"General"
    },
    "Tormentstein 3D":{
+      "filename":"Tormentstein3D.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31010,6 +31535,7 @@
       "section":"General"
    },
    "Ammo Sphere":{
+      "filename":"AmmoSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31026,6 +31552,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Ankh of Life":{
+      "filename":"AnkhofLife.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31079,6 +31606,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Armor Sphere":{
+      "filename":"ArmorSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31129,6 +31657,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Berserk Sphere":{
+      "filename":"BerserkSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31179,6 +31708,7 @@
       "section":"PowerUps & Artifacts"
    },
    "BioSphere":{
+      "filename":"BioSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31232,6 +31762,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Blood Amulet":{
+      "filename":"BloodAmulet.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31288,6 +31819,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Bloodlust Sphere":{
+      "filename":"BloodlustSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31341,6 +31873,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Book of the Dead":{
+      "filename":"BookoftheDead.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31391,6 +31924,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Boots of the North":{
+      "filename":"BootsoftheNorth.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31407,6 +31941,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Bracers of Force":{
+      "filename":"BracersofForce.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31451,6 +31986,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Crucifix Rosary":{
+      "filename":"CrucifixRosary.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31510,6 +32046,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Deflection Sphere":{
+      "filename":"DeflectionSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31569,6 +32106,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Doom Sphere":{
+      "filename":"DoomSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31585,6 +32123,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Double Damage Sphere":{
+      "filename":"DoubleDamageSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31635,6 +32174,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Emerald Amulet":{
+      "filename":"EmeraldAmulet.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31685,6 +32225,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Familiar Summon":{
+      "filename":"FamiliarSummon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31747,6 +32288,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Flight Sphere":{
+      "filename":"FlightSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31800,6 +32342,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Golden Fleece Sheep":{
+      "filename":"GoldenFleeceSheep.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31859,6 +32402,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Guard Sphere":{
+      "filename":"GuardSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31906,6 +32450,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Hand of the Wraith":{
+      "filename":"HandoftheWraith.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31956,6 +32501,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Haste Sphere":{
+      "filename":"HasteSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -31972,6 +32518,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Hazmat Suit":{
+      "filename":"HazmatSuit.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32031,6 +32578,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Icon of the Raven":{
+      "filename":"IconoftheRaven.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32072,6 +32620,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Insanity Sphere":{
+      "filename":"InsanitySphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32134,6 +32683,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Invisibility Sphere":{
+      "filename":"InvisibilitySphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32184,6 +32734,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Jet Thruster":{
+      "filename":"JetThruster.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32200,6 +32751,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Legend Sphere":{
+      "filename":"LegendSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32259,6 +32811,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Lich Skull":{
+      "filename":"LichSkull.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32275,6 +32828,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Life Sphere":{
+      "filename":"LifeSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32325,6 +32879,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Lifeshield Sphere":{
+      "filename":"LifeshieldSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32381,6 +32936,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Magic Squirrel":{
+      "filename":"MagicSquirrel.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32437,6 +32993,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Mask of Terror":{
+      "filename":"MaskofTerror.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32481,6 +33038,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Morph Cheddar":{
+      "filename":"MorphCheddar.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32534,6 +33092,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Mutant Sphere":{
+      "filename":"MutantSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32593,6 +33152,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Possession Sphere":{
+      "filename":"PossessionSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32649,6 +33209,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Potion of Fire Resistance":{
+      "filename":"PotionofFireResistance.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32699,6 +33260,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Power Stimpack":{
+      "filename":"PowerStimpack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32749,6 +33311,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Rage Sphere":{
+      "filename":"RageSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32802,6 +33365,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Rebreather":{
+      "filename":"Rebreather.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32846,6 +33410,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Recharge Items":{
+      "filename":"RechargeItems.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32905,6 +33470,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Regeneration Sphere":{
+      "filename":"RegenerationSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32921,6 +33487,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Resistance Rings":{
+      "filename":"ResistanceRings.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -32974,6 +33541,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Ring of Regeneration":{
+      "filename":"RingofRegeneration.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33018,6 +33586,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Ring of the Owl":{
+      "filename":"RingoftheOwl.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33062,6 +33631,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Ritual Knife":{
+      "filename":"RitualKnife.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33124,6 +33694,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Salvation Sphere":{
+      "filename":"SalvationSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33174,6 +33745,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Scroll of Hellfire":{
+      "filename":"ScrollofHellfire.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33227,6 +33799,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Shield Sphere":{
+      "filename":"ShieldSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33277,6 +33850,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Shrink Sphere":{
+      "filename":"ShrinkSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33330,6 +33904,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Starving Rat":{
+      "filename":"StarvingRat.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33386,6 +33961,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Summon Sphere":{
+      "filename":"SummonSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33433,6 +34009,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Talisman":{
+      "filename":"Talisman.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33486,6 +34063,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Talisman of the Depths":{
+      "filename":"TalismanoftheDepths.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33533,6 +34111,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Terror Sphere":{
+      "filename":"TerrorSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33549,6 +34128,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Time Freeze Sphere":{
+      "filename":"TimeFreezeSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33602,6 +34182,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Tome of the Forsaken":{
+      "filename":"TomeoftheForsaken.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33658,6 +34239,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Tome of the Unholy":{
+      "filename":"TomeoftheUnholy.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33708,6 +34290,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Turbo Sphere":{
+      "filename":"TurboSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33755,6 +34338,7 @@
       "section":"PowerUps & Artifacts"
    },
    "Airstrike Marker":{
+      "filename":"AirstrikeMarker.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33817,6 +34401,7 @@
       "section":"Keys & Puzzle"
    },
    "Cross Keys":{
+      "filename":"CrossKeys.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33876,6 +34461,7 @@
       "section":"Keys & Puzzle"
    },
    "Doom 3 Keycards":{
+      "filename":"Doom3Keycards.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33929,6 +34515,7 @@
       "section":"Keys & Puzzle"
    },
    "Power Cube":{
+      "filename":"PowerCube.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -33988,6 +34575,7 @@
       "section":"Keys & Puzzle"
    },
    "Skull Orbs":{
+      "filename":"SkullOrbs.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34047,6 +34635,7 @@
       "section":"Keys & Puzzle"
    },
    "Supply Chest Key":{
+      "filename":"SupplyChestKey.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34100,6 +34689,7 @@
       "section":"Keys & Puzzle"
    },
    "Various Doom Keys":{
+      "filename":"VariousDoomKeys.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34159,6 +34749,7 @@
       "section":"Keys & Puzzle"
    },
    "Adrenaline Kit":{
+      "filename":"AdrenalineKit.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34203,6 +34794,7 @@
       "section":"Others"
    },
    "Ammo Belt":{
+      "filename":"AmmoBelt.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34219,6 +34811,7 @@
       "section":"Others"
    },
    "Armor Belt":{
+      "filename":"ArmorBelt.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34275,6 +34868,7 @@
       "section":"Others"
    },
    "Armor Converter":{
+      "filename":"ArmorConverter.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34334,6 +34928,7 @@
       "section":"Others"
    },
    "Armor Set":{
+      "filename":"ArmorSet.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34384,6 +34979,7 @@
       "section":"Others"
    },
    "Armor Shard":{
+      "filename":"ArmorShard.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34440,6 +35036,7 @@
       "section":"Others"
    },
    "Beacon":{
+      "filename":"Beacon.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34487,6 +35084,7 @@
       "section":"Others"
    },
    "Biosuit":{
+      "filename":"Biosuit.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34534,6 +35132,7 @@
       "section":"Others"
    },
    "Blaze Orb":{
+      "filename":"BlazeOrb.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34584,6 +35183,7 @@
       "section":"Others"
    },
    "Bullet Ant Venom":{
+      "filename":"BulletAntVenom.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34640,6 +35240,7 @@
       "section":"Others"
    },
    "Bullet Cartridge":{
+      "filename":"BulletCartridge.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34661,6 +35262,7 @@
       "section":"Others"
    },
    "Bullet Kit":{
+      "filename":"BulletKit.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34705,6 +35307,7 @@
       "section":"Others"
    },
    "Cell Kit":{
+      "filename":"CellKit.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34721,6 +35324,7 @@
       "section":"Others"
    },
    "Combat Pack":{
+      "filename":"CombatPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34737,6 +35341,7 @@
       "section":"Others"
    },
    "Crusader Shield":{
+      "filename":"CrusaderShield.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34799,6 +35404,7 @@
       "section":"Others"
    },
    "Crystal Gem":{
+      "filename":"CrystalGem.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34849,6 +35455,7 @@
       "section":"Others"
    },
    "Deployable Sentry Gun":{
+      "filename":"DeployableSentryGun.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34902,6 +35509,7 @@
       "section":"Others"
    },
    "Deployable Shield":{
+      "filename":"DeployableShield.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34958,6 +35566,7 @@
       "section":"Others"
    },
    "Electric Bolt Bundle":{
+      "filename":"ElectricBoltBundle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -34979,6 +35588,7 @@
       "section":"Others"
    },
    "Electric Pod":{
+      "filename":"ElectricPod.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35029,6 +35639,7 @@
       "section":"Others"
    },
    "Elemental Gems":{
+      "filename":"ElementalGems.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35088,6 +35699,7 @@
       "section":"Others"
    },
    "Energy Kit":{
+      "filename":"EnergyKit.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35111,6 +35723,7 @@
       "section":"Others"
    },
    "Ethereal Arrow Bundle":{
+      "filename":"EtherealArrowBundle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35161,6 +35774,7 @@
       "section":"Others"
    },
    "Field Kit":{
+      "filename":"FieldKit.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35208,6 +35822,7 @@
       "section":"Others"
    },
    "Flame Turret":{
+      "filename":"FlameTurret.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35261,6 +35876,7 @@
       "section":"Others"
    },
    "Flares":{
+      "filename":"Flares.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35277,6 +35893,7 @@
       "section":"Others"
    },
    "Food Barrels":{
+      "filename":"FoodBarrels.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35324,6 +35941,7 @@
       "section":"Others"
    },
    "Greater Mace Sphere":{
+      "filename":"GreaterMaceSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35371,6 +35989,7 @@
       "section":"Others"
    },
    "HE Grenade Box":{
+      "filename":"HEGrenadeBox.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35392,6 +36011,7 @@
       "section":"Others"
    },
    "Heavy Armor":{
+      "filename":"HeavyArmor.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35445,6 +36065,7 @@
       "section":"Others"
    },
    "Jump Boots":{
+      "filename":"JumpBoots.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35504,6 +36125,7 @@
       "section":"Others"
    },
    "Large Blood Container":{
+      "filename":"LargeBloodContainer.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35554,6 +36176,7 @@
       "section":"Others"
    },
    "Magic Apples":{
+      "filename":"MagicApples.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35610,6 +36233,7 @@
       "section":"Others"
    },
    "Marine Supply Pack":{
+      "filename":"MarineSupplyPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35666,6 +36290,7 @@
       "section":"Others"
    },
    "Median Runes":{
+      "filename":"MedianRunes.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35722,6 +36347,7 @@
       "section":"Others"
    },
    "Medical Backpack":{
+      "filename":"MedicalBackpack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35784,6 +36410,7 @@
       "section":"Others"
    },
    "Medipack":{
+      "filename":"Medipack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35800,6 +36427,7 @@
       "section":"Others"
    },
    "Mega Map":{
+      "filename":"MegaMap.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35816,6 +36444,7 @@
       "section":"Others"
    },
    "Megapack":{
+      "filename":"Megapack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35866,6 +36495,7 @@
       "section":"Others"
    },
    "Mini Missile Bundle":{
+      "filename":"MiniMissileBundle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35887,6 +36517,7 @@
       "section":"Others"
    },
    "Missile Pod":{
+      "filename":"MissilePod.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35940,6 +36571,7 @@
       "section":"Others"
    },
    "Oxygen Canister":{
+      "filename":"OxygenCanister.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -35999,6 +36631,7 @@
       "section":"Others"
    },
    "PDA":{
+      "filename":"PDA.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36043,6 +36676,7 @@
       "section":"Others"
    },
    "Pentacle of Projection":{
+      "filename":"PentacleofProjection.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36102,6 +36736,7 @@
       "section":"Others"
    },
    "Phosphorus Grenade Box":{
+      "filename":"PhosphorusGrenadeBox.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36123,6 +36758,7 @@
       "section":"Others"
    },
    "Poison Bolt Bundle":{
+      "filename":"PoisonBoltBundle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36144,6 +36780,7 @@
       "section":"Others"
    },
    "Portable Rejuvenation Unit":{
+      "filename":"PortableRejuvenationUnit.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36200,6 +36837,7 @@
       "section":"Others"
    },
    "Potion Variants":{
+      "filename":"PotionVariants.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36216,6 +36854,7 @@
       "section":"Others"
    },
    "Power Orb":{
+      "filename":"PowerOrb.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36266,6 +36905,7 @@
       "section":"Others"
    },
    "Quake Item Pack":{
+      "filename":"QuakeItemPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36287,6 +36927,7 @@
       "section":"Others"
    },
    "Rocket Pile":{
+      "filename":"RocketPile.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36331,6 +36972,7 @@
       "section":"Others"
    },
    "Score Treasury":{
+      "filename":"ScoreTreasury.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36390,6 +37032,7 @@
       "section":"Others"
    },
    "Shell Kit":{
+      "filename":"ShellKit.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36406,6 +37049,7 @@
       "section":"Others"
    },
    "Shield Spells":{
+      "filename":"ShieldSpells.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36459,6 +37103,7 @@
       "section":"Others"
    },
    "Sigil Scroll":{
+      "filename":"SigilScroll.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36515,6 +37160,7 @@
       "section":"Others"
    },
    "Small Blood Container":{
+      "filename":"SmallBloodContainer.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36565,6 +37211,7 @@
       "section":"Others"
    },
    "Spiritual Armor Orb":{
+      "filename":"SpiritualArmorOrb.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36591,6 +37238,7 @@
       "section":"Others"
    },
    "Spring Mine":{
+      "filename":"SpringMine.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36647,6 +37295,7 @@
       "section":"Others"
    },
    "Stim Bonus":{
+      "filename":"StimBonus.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36663,6 +37312,7 @@
       "section":"Others"
    },
    "Super Armor Bonus":{
+      "filename":"SuperArmorBonus.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36719,6 +37369,7 @@
       "section":"Others"
    },
    "Super Shield":{
+      "filename":"SuperShield.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36769,6 +37420,7 @@
       "section":"Others"
    },
    "SuperStim":{
+      "filename":"SuperStim.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36822,6 +37474,7 @@
       "section":"Others"
    },
    "Supply Box":{
+      "filename":"SupplyBox.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36866,6 +37519,7 @@
       "section":"Others"
    },
    "Swarmers":{
+      "filename":"Swarmers.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36922,6 +37576,7 @@
       "section":"Others"
    },
    "Tech Armor":{
+      "filename":"TechArmor.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -36972,6 +37627,7 @@
       "section":"Others"
    },
    "Vitality Serum":{
+      "filename":"VitalitySerum.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37028,6 +37684,7 @@
       "section":"Others"
    },
    "Beach Umbrella":{
+      "filename":"BeachUmbrella.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37081,6 +37738,7 @@
       "section":"Tech & Industrial"
    },
    "Box":{
+      "filename":"Box.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37134,6 +37792,7 @@
       "section":"Tech & Industrial"
    },
    "Breakable Hydrant Variants":{
+      "filename":"BreakableHydrantVariants.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37193,6 +37852,7 @@
       "section":"Tech & Industrial"
    },
    "Broken Lamp":{
+      "filename":"BrokenLamp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37243,6 +37903,7 @@
       "section":"Tech & Industrial"
    },
    "Brown Metal Barrel":{
+      "filename":"BrownMetalBarrel.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37293,6 +37954,7 @@
       "section":"Tech & Industrial"
    },
    "Chair":{
+      "filename":"Chair.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37343,6 +38005,7 @@
       "section":"Tech & Industrial"
    },
    "Czech Hedgehog":{
+      "filename":"CzechHedgehog.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37408,6 +38071,7 @@
       "section":"Tech & Industrial"
    },
    "Doom Doll":{
+      "filename":"DoomDoll.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37455,6 +38119,7 @@
       "section":"Tech & Industrial"
    },
    "Empty Nukage Barrel":{
+      "filename":"EmptyNukageBarrel.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37505,6 +38170,7 @@
       "section":"Tech & Industrial"
    },
    "Enemy Dolls Pack":{
+      "filename":"EnemyDollsPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37561,6 +38227,7 @@
       "section":"Tech & Industrial"
    },
    "Food":{
+      "filename":"Food.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37577,6 +38244,7 @@
       "section":"Tech & Industrial"
    },
    "Glass Tech Pillars":{
+      "filename":"GlassTechPillars.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37639,6 +38307,7 @@
       "section":"Tech & Industrial"
    },
    "Grey Metal Barrel":{
+      "filename":"GreyMetalBarrel.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37689,6 +38358,7 @@
       "section":"Tech & Industrial"
    },
    "Junk Piles":{
+      "filename":"JunkPiles.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37745,6 +38415,7 @@
       "section":"Tech & Industrial"
    },
    "Laboratory Glass":{
+      "filename":"LaboratoryGlass.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37761,6 +38432,7 @@
       "section":"Tech & Industrial"
    },
    "Marine Stuff":{
+      "filename":"MarineStuff.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37814,6 +38486,7 @@
       "section":"Tech & Industrial"
    },
    "Necrodome Barrels":{
+      "filename":"NecrodomeBarrels.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37830,6 +38503,7 @@
       "section":"Tech & Industrial"
    },
    "Oil Barrel":{
+      "filename":"OilBarrel.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37886,6 +38560,7 @@
       "section":"Tech & Industrial"
    },
    "Pipe Pack":{
+      "filename":"PipePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37939,6 +38614,7 @@
       "section":"Tech & Industrial"
    },
    "Plasma Globe":{
+      "filename":"PlasmaGlobe.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -37986,6 +38662,7 @@
       "section":"Tech & Industrial"
    },
    "Power Globes":{
+      "filename":"PowerGlobes.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38057,6 +38734,7 @@
       "section":"Tech & Industrial"
    },
    "Radioactive Barrel":{
+      "filename":"RadioactiveBarrel.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38113,6 +38791,7 @@
       "section":"Tech & Industrial"
    },
    "Sea Mine":{
+      "filename":"SeaMine.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38129,6 +38808,7 @@
       "section":"Tech & Industrial"
    },
    "Specimen Tank":{
+      "filename":"SpecimenTank.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38185,6 +38865,7 @@
       "section":"Tech & Industrial"
    },
    "Strife Doll":{
+      "filename":"StrifeDoll.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38247,6 +38928,7 @@
       "section":"Tech & Industrial"
    },
    "Strife Holograms":{
+      "filename":"StrifeHolograms.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38291,6 +38973,7 @@
       "section":"Tech & Industrial"
    },
    "Switchable Tech Lamp":{
+      "filename":"SwitchableTechLamp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38338,6 +39021,7 @@
       "section":"Tech & Industrial"
    },
    "Tech Barrels":{
+      "filename":"TechBarrels.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38391,6 +39075,7 @@
       "section":"Tech & Industrial"
    },
    "Tech Gizmos":{
+      "filename":"TechGizmos.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38444,6 +39129,7 @@
       "section":"Tech & Industrial"
    },
    "Toilet":{
+      "filename":"Toilet.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38460,6 +39146,7 @@
       "section":"Tech & Industrial"
    },
    "Trash Cans":{
+      "filename":"TrashCans.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38513,6 +39200,7 @@
       "section":"Tech & Industrial"
    },
    "UAC Holograms":{
+      "filename":"UACHolograms.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38566,6 +39254,7 @@
       "section":"Tech & Industrial"
    },
    "Zapper":{
+      "filename":"Zapper.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38622,6 +39311,7 @@
       "section":"Tech & Industrial"
    },
    "Bushes":{
+      "filename":"Bushes.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38678,6 +39368,7 @@
       "section":"Natural & Vegetation"
    },
    "Cacti (slim)":{
+      "filename":"Cacti(slim).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38694,6 +39385,7 @@
       "section":"Natural & Vegetation"
    },
    "Cactus":{
+      "filename":"Cactus.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38744,6 +39436,7 @@
       "section":"Natural & Vegetation"
    },
    "Dead/Swamp Trees":{
+      "filename":"Dead/SwampTrees.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38797,6 +39490,7 @@
       "section":"Natural & Vegetation"
    },
    "Garden Trees":{
+      "filename":"GardenTrees.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38813,6 +39507,7 @@
       "section":"Natural & Vegetation"
    },
    "Glowing Mushrooms":{
+      "filename":"GlowingMushrooms.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38866,6 +39561,7 @@
       "section":"Natural & Vegetation"
    },
    "Hell Trees":{
+      "filename":"HellTrees.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38882,6 +39578,7 @@
       "section":"Natural & Vegetation"
    },
    "Hexen Tree & Leaf Variants":{
+      "filename":"HexenTree&LeafVariants.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38941,6 +39638,7 @@
       "section":"Natural & Vegetation"
    },
    "Ice Stalagmites":{
+      "filename":"IceStalagmites.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -38988,6 +39686,7 @@
       "section":"Natural & Vegetation"
    },
    "Limestone Cave Formations":{
+      "filename":"LimestoneCaveFormations.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39038,6 +39737,7 @@
       "section":"Natural & Vegetation"
    },
    "Liquid Fountains":{
+      "filename":"LiquidFountains.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39054,6 +39754,7 @@
       "section":"Natural & Vegetation"
    },
    "Mushrooms":{
+      "filename":"Mushrooms.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39104,6 +39805,7 @@
       "section":"Natural & Vegetation"
    },
    "Necrodome Rocks":{
+      "filename":"NecrodomeRocks.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39157,6 +39859,7 @@
       "section":"Natural & Vegetation"
    },
    "Palmtrees":{
+      "filename":"Palmtrees.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39173,6 +39876,7 @@
       "section":"Natural & Vegetation"
    },
    "Palmtrees (burnt stumps)":{
+      "filename":"Palmtrees(burntstumps).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39229,6 +39933,7 @@
       "section":"Natural & Vegetation"
    },
    "Phobos Rocks":{
+      "filename":"PhobosRocks.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39276,6 +39981,7 @@
       "section":"Natural & Vegetation"
    },
    "Root Pack":{
+      "filename":"RootPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39326,6 +40032,7 @@
       "section":"Natural & Vegetation"
    },
    "Seaweed":{
+      "filename":"Seaweed.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39379,6 +40086,7 @@
       "section":"Natural & Vegetation"
    },
    "Skull Tree":{
+      "filename":"SkullTree.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39426,6 +40134,7 @@
       "section":"Natural & Vegetation"
    },
    "Small trees & bushes":{
+      "filename":"Smalltrees&bushes.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39442,6 +40151,7 @@
       "section":"Natural & Vegetation"
    },
    "Stalagmites and Stalactite":{
+      "filename":"StalagmitesandStalactite.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39489,6 +40199,7 @@
       "section":"Natural & Vegetation"
    },
    "Winter Tree Spawner":{
+      "filename":"WinterTreeSpawner.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39542,6 +40253,7 @@
       "section":"Natural & Vegetation"
    },
    "Black Torch":{
+      "filename":"BlackTorch.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39592,6 +40304,7 @@
       "section":"Light & Fire"
    },
    "Bronze Lights":{
+      "filename":"BronzeLights.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39648,6 +40361,7 @@
       "section":"Light & Fire"
    },
    "Candle Color Variations":{
+      "filename":"CandleColorVariations.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39710,6 +40424,7 @@
       "section":"Light & Fire"
    },
    "Ceiling Brazier":{
+      "filename":"CeilingBrazier.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39769,6 +40484,7 @@
       "section":"Light & Fire"
    },
    "Ceiling Lamp":{
+      "filename":"CeilingLamp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39819,6 +40535,7 @@
       "section":"Light & Fire"
    },
    "Chandelier Pack":{
+      "filename":"ChandelierPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39878,6 +40595,7 @@
       "section":"Light & Fire"
    },
    "Creature Lamps":{
+      "filename":"CreatureLamps.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39934,6 +40652,7 @@
       "section":"Light & Fire"
    },
    "Demon Lamp":{
+      "filename":"DemonLamp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -39990,6 +40709,7 @@
       "section":"Light & Fire"
    },
    "Doom64 Lights":{
+      "filename":"Doom64Lights.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40043,6 +40763,7 @@
       "section":"Light & Fire"
    },
    "Doom64 Torches":{
+      "filename":"Doom64Torches.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40108,6 +40829,7 @@
       "section":"Light & Fire"
    },
    "Fire Bowl":{
+      "filename":"FireBowl.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40167,6 +40889,7 @@
       "section":"Light & Fire"
    },
    "Fire Pillars (Strife)":{
+      "filename":"FirePillars(Strife).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40208,6 +40931,7 @@
       "section":"Light & Fire"
    },
    "FIREBLU Torches":{
+      "filename":"FIREBLUTorches.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40273,6 +40997,7 @@
       "section":"Light & Fire"
    },
    "Firewood":{
+      "filename":"Firewood.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40335,6 +41060,7 @@
       "section":"Light & Fire"
    },
    "Floor and Ceiling Lanterns":{
+      "filename":"FloorandCeilingLanterns.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40397,6 +41123,7 @@
       "section":"Light & Fire"
    },
    "Grey Lamp":{
+      "filename":"GreyLamp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40450,6 +41177,7 @@
       "section":"Light & Fire"
    },
    "Lamps":{
+      "filename":"Lamps.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40503,6 +41231,7 @@
       "section":"Light & Fire"
    },
    "Lava Cauldron":{
+      "filename":"LavaCauldron.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40559,6 +41288,7 @@
       "section":"Light & Fire"
    },
    "Light Column Variations":{
+      "filename":"LightColumnVariations.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40615,6 +41345,7 @@
       "section":"Light & Fire"
    },
    "Marble Brazier":{
+      "filename":"MarbleBrazier.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40674,6 +41405,7 @@
       "section":"Light & Fire"
    },
    "Metal Torches":{
+      "filename":"MetalTorches.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40733,6 +41465,7 @@
       "section":"Light & Fire"
    },
    "Roof Lights":{
+      "filename":"RoofLights.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40786,6 +41519,7 @@
       "section":"Light & Fire"
    },
    "Serpent Braziers":{
+      "filename":"SerpentBraziers.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40839,6 +41573,7 @@
       "section":"Light & Fire"
    },
    "Skull Lamp":{
+      "filename":"SkullLamp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40892,6 +41627,7 @@
       "section":"Light & Fire"
    },
    "Stone Torch":{
+      "filename":"StoneTorch.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -40945,6 +41681,7 @@
       "section":"Light & Fire"
    },
    "Strife Columns":{
+      "filename":"StrifeColumns.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41007,6 +41744,7 @@
       "section":"Light & Fire"
    },
    "Strobe Lights":{
+      "filename":"StrobeLights.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41060,6 +41798,7 @@
       "section":"Light & Fire"
    },
    "Torch Variations":{
+      "filename":"TorchVariations.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41116,6 +41855,7 @@
       "section":"Light & Fire"
    },
    "Wall Torches":{
+      "filename":"WallTorches.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41169,6 +41909,7 @@
       "section":"Light & Fire"
    },
    "Worklights":{
+      "filename":"Worklights.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41234,6 +41975,7 @@
       "section":"Light & Fire"
    },
    "Yellow Lamp":{
+      "filename":"YellowLamp.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41287,6 +42029,7 @@
       "section":"Light & Fire"
    },
    "Bloody Chain":{
+      "filename":"BloodyChain.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41337,6 +42080,7 @@
       "section":"Gore & Corpses"
    },
    "Bloody Heads":{
+      "filename":"BloodyHeads.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41390,6 +42134,7 @@
       "section":"Gore & Corpses"
    },
    "Bone Pile":{
+      "filename":"BonePile.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41406,6 +42151,7 @@
       "section":"Gore & Corpses"
    },
    "Bound Marines":{
+      "filename":"BoundMarines.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41462,6 +42208,7 @@
       "section":"Gore & Corpses"
    },
    "Brown Scientist Carcass":{
+      "filename":"BrownScientistCarcass.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41512,6 +42259,7 @@
       "section":"Gore & Corpses"
    },
    "Burning Corpse (Doom)":{
+      "filename":"BurningCorpse(Doom).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41565,6 +42313,7 @@
       "section":"Gore & Corpses"
    },
    "Burning Corpse (Hexen)":{
+      "filename":"BurningCorpse(Hexen).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41621,6 +42370,7 @@
       "section":"Gore & Corpses"
    },
    "Corpse Pile":{
+      "filename":"CorpsePile.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41677,6 +42427,7 @@
       "section":"Gore & Corpses"
    },
    "Cow Skulls":{
+      "filename":"CowSkulls.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41727,6 +42478,7 @@
       "section":"Gore & Corpses"
    },
    "Crucified Corpses":{
+      "filename":"CrucifiedCorpses.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41780,6 +42532,7 @@
       "section":"Gore & Corpses"
    },
    "Cyberdemon Gore":{
+      "filename":"CyberdemonGore.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41833,6 +42586,7 @@
       "section":"Gore & Corpses"
    },
    "Daisy Scenes":{
+      "filename":"DaisyScenes.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41886,6 +42640,7 @@
       "section":"Gore & Corpses"
    },
    "Dead Corvus":{
+      "filename":"DeadCorvus.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41939,6 +42694,7 @@
       "section":"Gore & Corpses"
    },
    "Dead General":{
+      "filename":"DeadGeneral.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -41989,6 +42745,7 @@
       "section":"Gore & Corpses"
    },
    "Dead Scientists":{
+      "filename":"DeadScientists.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42045,6 +42802,7 @@
       "section":"Gore & Corpses"
    },
    "Demonic Arm":{
+      "filename":"DemonicArm.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42095,6 +42853,7 @@
       "section":"Gore & Corpses"
    },
    "Devilish Bust":{
+      "filename":"DevilishBust.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42154,6 +42913,7 @@
       "section":"Gore & Corpses"
    },
    "Gore Decorations":{
+      "filename":"GoreDecorations.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42170,6 +42930,7 @@
       "section":"Gore & Corpses"
    },
    "Gore Pack":{
+      "filename":"GorePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42223,6 +42984,7 @@
       "section":"Gore & Corpses"
    },
    "Half Cut Soldier":{
+      "filename":"HalfCutSoldier.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42273,6 +43035,7 @@
       "section":"Gore & Corpses"
    },
    "Hanged Bloody Skeleton":{
+      "filename":"HangedBloodySkeleton.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42323,6 +43086,7 @@
       "section":"Gore & Corpses"
    },
    "Hanged Imps":{
+      "filename":"HangedImps.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42385,6 +43149,7 @@
       "section":"Gore & Corpses"
    },
    "Hanged Marines":{
+      "filename":"HangedMarines.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42435,6 +43200,7 @@
       "section":"Gore & Corpses"
    },
    "Hanged Player":{
+      "filename":"HangedPlayer.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42485,6 +43251,7 @@
       "section":"Gore & Corpses"
    },
    "Hanging Corpse Pack":{
+      "filename":"HangingCorpsePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42538,6 +43305,7 @@
       "section":"Gore & Corpses"
    },
    "Hanging Duke":{
+      "filename":"HangingDuke.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42585,6 +43353,7 @@
       "section":"Gore & Corpses"
    },
    "Hanging Marine Meat":{
+      "filename":"HangingMarineMeat.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42641,6 +43410,7 @@
       "section":"Gore & Corpses"
    },
    "Hanging Marines":{
+      "filename":"HangingMarines.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42694,6 +43464,7 @@
       "section":"Gore & Corpses"
    },
    "Hanging Marines 2":{
+      "filename":"HangingMarines2.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42753,6 +43524,7 @@
       "section":"Gore & Corpses"
    },
    "Hanging Wizard Corpse":{
+      "filename":"HangingWizardCorpse.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42812,6 +43584,7 @@
       "section":"Gore & Corpses"
    },
    "Head Sticks":{
+      "filename":"HeadSticks.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42874,6 +43647,7 @@
       "section":"Gore & Corpses"
    },
    "Imp Stick":{
+      "filename":"ImpStick.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42927,6 +43701,7 @@
       "section":"Gore & Corpses"
    },
    "Impaled Corpses":{
+      "filename":"ImpaledCorpses.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -42980,6 +43755,7 @@
       "section":"Gore & Corpses"
    },
    "Impaled Dog Heads":{
+      "filename":"ImpaledDogHeads.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43030,6 +43806,7 @@
       "section":"Gore & Corpses"
    },
    "Impaled Marines":{
+      "filename":"ImpaledMarines.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43086,6 +43863,7 @@
       "section":"Gore & Corpses"
    },
    "Impaled Rebels":{
+      "filename":"ImpaledRebels.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43124,6 +43902,7 @@
       "section":"Gore & Corpses"
    },
    "Impaled Rocket Guy":{
+      "filename":"ImpaledRocketGuy.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43174,6 +43953,7 @@
       "section":"Gore & Corpses"
    },
    "Impaled Scientists":{
+      "filename":"ImpaledScientists.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43224,6 +44004,7 @@
       "section":"Gore & Corpses"
    },
    "Marine Corpses":{
+      "filename":"MarineCorpses.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43274,6 +44055,7 @@
       "section":"Gore & Corpses"
    },
    "Marine Victim":{
+      "filename":"MarineVictim.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43324,6 +44106,7 @@
       "section":"Gore & Corpses"
    },
    "Monster Head":{
+      "filename":"MonsterHead.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43374,6 +44157,7 @@
       "section":"Gore & Corpses"
    },
    "Radioactive Corpses":{
+      "filename":"RadioactiveCorpses.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43433,6 +44217,7 @@
       "section":"Gore & Corpses"
    },
    "Revenant Gore":{
+      "filename":"RevenantGore.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43495,6 +44280,7 @@
       "section":"Gore & Corpses"
    },
    "Romero's Doom Dump Gore":{
+      "filename":"RomerosDoomDumpGore.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43560,6 +44346,7 @@
       "section":"Gore & Corpses"
    },
    "Shirtless Beheaded Marine":{
+      "filename":"ShirtlessBeheadedMarine.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43610,6 +44397,7 @@
       "section":"Gore & Corpses"
    },
    "Shirtless Marine Carcass":{
+      "filename":"ShirtlessMarineCarcass.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43660,6 +44448,7 @@
       "section":"Gore & Corpses"
    },
    "Shootable Impaled Humans":{
+      "filename":"ShootableImpaledHumans.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43713,6 +44502,7 @@
       "section":"Gore & Corpses"
    },
    "Sitting Corpses":{
+      "filename":"SittingCorpses.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43760,6 +44550,7 @@
       "section":"Gore & Corpses"
    },
    "Skewered Corpses":{
+      "filename":"SkeweredCorpses.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43810,6 +44601,7 @@
       "section":"Gore & Corpses"
    },
    "Skulltag Gore":{
+      "filename":"SkulltagGore.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43866,6 +44658,7 @@
       "section":"Gore & Corpses"
    },
    "Torn Corpse":{
+      "filename":"TornCorpse.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43916,6 +44709,7 @@
       "section":"Gore & Corpses"
    },
    "Tortured Baron":{
+      "filename":"TorturedBaron.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -43969,6 +44763,7 @@
       "section":"Gore & Corpses"
    },
    "Upside Down Corpses":{
+      "filename":"UpsideDownCorpses.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44019,6 +44814,7 @@
       "section":"Gore & Corpses"
    },
    "Wolfenstein Gore":{
+      "filename":"WolfensteinGore.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44072,6 +44868,7 @@
       "section":"Gore & Corpses"
    },
    "Ancient Hell Pillars":{
+      "filename":"AncientHellPillars.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44088,6 +44885,7 @@
       "section":"Hell & Magic"
    },
    "Bible":{
+      "filename":"Bible.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44138,6 +44936,7 @@
       "section":"Hell & Magic"
    },
    "Bloody Chalice":{
+      "filename":"BloodyChalice.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44188,6 +44987,7 @@
       "section":"Hell & Magic"
    },
    "Ceramic Pottery":{
+      "filename":"CeramicPottery.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44204,6 +45004,7 @@
       "section":"Hell & Magic"
    },
    "Chaos Sphere":{
+      "filename":"ChaosSphere.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44257,6 +45058,7 @@
       "section":"Hell & Magic"
    },
    "Crimson Banners":{
+      "filename":"CrimsonBanners.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44319,6 +45121,7 @@
       "section":"Hell & Magic"
    },
    "D'Sparil Statue":{
+      "filename":"DSparilStatue.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44369,6 +45172,7 @@
       "section":"Hell & Magic"
    },
    "Demonic Props":{
+      "filename":"DemonicProps.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44425,6 +45229,7 @@
       "section":"Hell & Magic"
    },
    "Destructible Fantasy Props":{
+      "filename":"DestructibleFantasyProps.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44481,6 +45286,7 @@
       "section":"Hell & Magic"
    },
    "Doom Statues":{
+      "filename":"DoomStatues.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44540,6 +45346,7 @@
       "section":"Hell & Magic"
    },
    "Evil Eye Variations":{
+      "filename":"EvilEyeVariations.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44593,6 +45400,7 @@
       "section":"Hell & Magic"
    },
    "Fire Pillars (Doom)":{
+      "filename":"FirePillars(Doom).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44652,6 +45460,7 @@
       "section":"Hell & Magic"
    },
    "Fire Pillars (Hexen)":{
+      "filename":"FirePillars(Hexen).zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44711,6 +45520,7 @@
       "section":"Hell & Magic"
    },
    "Flesh Pillars":{
+      "filename":"FleshPillars.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44764,6 +45574,7 @@
       "section":"Hell & Magic"
    },
    "Flesh Pods":{
+      "filename":"FleshPods.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44820,6 +45631,7 @@
       "section":"Hell & Magic"
    },
    "Gold Stand Gizmos":{
+      "filename":"GoldStandGizmos.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44873,6 +45685,7 @@
       "section":"Hell & Magic"
    },
    "Golden Eagle Statue":{
+      "filename":"GoldenEagleStatue.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44923,6 +45736,7 @@
       "section":"Hell & Magic"
    },
    "Hell Gizmos":{
+      "filename":"HellGizmos.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -44976,6 +45790,7 @@
       "section":"Hell & Magic"
    },
    "Hell Growth":{
+      "filename":"HellGrowth.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45032,6 +45847,7 @@
       "section":"Hell & Magic"
    },
    "Heretic Gizmos":{
+      "filename":"HereticGizmos.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45085,6 +45901,7 @@
       "section":"Hell & Magic"
    },
    "Marble Columns":{
+      "filename":"MarbleColumns.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45138,6 +45955,7 @@
       "section":"Hell & Magic"
    },
    "Marble Urn":{
+      "filename":"MarbleUrn.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45191,6 +46009,7 @@
       "section":"Hell & Magic"
    },
    "Necrodome Tombstones":{
+      "filename":"NecrodomeTombstones.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45244,6 +46063,7 @@
       "section":"Hell & Magic"
    },
    "Pillar Gizmos":{
+      "filename":"PillarGizmos.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45306,6 +46126,7 @@
       "section":"Hell & Magic"
    },
    "Rune Skull Pillars":{
+      "filename":"RuneSkullPillars.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45359,6 +46180,7 @@
       "section":"Hell & Magic"
    },
    "Skull Candle":{
+      "filename":"SkullCandle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45375,6 +46197,7 @@
       "section":"Hell & Magic"
    },
    "Small Key Gizmos":{
+      "filename":"SmallKeyGizmos.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45434,6 +46257,7 @@
       "section":"Hell & Magic"
    },
    "Stone Heads":{
+      "filename":"StoneHeads.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45450,6 +46274,7 @@
       "section":"Hell & Magic"
    },
    "Strife Bloody Columns":{
+      "filename":"StrifeBloodyColumns.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45503,6 +46328,7 @@
       "section":"Hell & Magic"
    },
    "Tentacle Barrier":{
+      "filename":"TentacleBarrier.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45562,6 +46388,7 @@
       "section":"Hell & Magic"
    },
    "Warrior Statue":{
+      "filename":"WarriorStatue.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45621,6 +46448,7 @@
       "section":"Hell & Magic"
    },
    "Chicken":{
+      "filename":"Chicken.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45686,6 +46514,7 @@
       "section":"Friendlies & Fauna"
    },
    "Crow":{
+      "filename":"Crow.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45748,6 +46577,7 @@
       "section":"Friendlies & Fauna"
    },
    "Fly":{
+      "filename":"Fly.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45813,6 +46643,7 @@
       "section":"Friendlies & Fauna"
    },
    "Piggy":{
+      "filename":"Piggy.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45875,6 +46706,7 @@
       "section":"Friendlies & Fauna"
    },
    "Sheep":{
+      "filename":"Sheep.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45916,6 +46748,7 @@
       "section":"Friendlies & Fauna"
    },
    "Squirrel":{
+      "filename":"Squirrel.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -45963,6 +46796,7 @@
       "section":"Friendlies & Fauna"
    },
    "Wandering Eye":{
+      "filename":"WanderingEye.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46028,6 +46862,7 @@
       "section":"Friendlies & Fauna"
    },
    "Bubble Boiling":{
+      "filename":"BubbleBoiling.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46087,6 +46922,7 @@
       "section":"Elemental Effects"
    },
    "Clouds":{
+      "filename":"Clouds.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46134,6 +46970,7 @@
       "section":"Elemental Effects"
    },
    "Doom Terrain Splashes":{
+      "filename":"DoomTerrainSplashes.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46196,6 +47033,7 @@
       "section":"Elemental Effects"
    },
    "Ember":{
+      "filename":"Ember.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46249,6 +47087,7 @@
       "section":"Elemental Effects"
    },
    "Fire":{
+      "filename":"Fire.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46302,6 +47141,7 @@
       "section":"Elemental Effects"
    },
    "Fog":{
+      "filename":"Fog.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46355,6 +47195,7 @@
       "section":"Elemental Effects"
    },
    "Lavaball":{
+      "filename":"Lavaball.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46408,6 +47249,7 @@
       "section":"Elemental Effects"
    },
    "Sparks":{
+      "filename":"Sparks.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46455,6 +47297,7 @@
       "section":"Elemental Effects"
    },
    "Steam":{
+      "filename":"Steam.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46508,6 +47351,7 @@
       "section":"Elemental Effects"
    },
    "Thunder FX":{
+      "filename":"ThunderFX.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46564,6 +47408,7 @@
       "section":"Elemental Effects"
    },
    "Thunder Portal":{
+      "filename":"ThunderPortal.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46626,6 +47471,7 @@
       "section":"Elemental Effects"
    },
    "Toxic Clouds":{
+      "filename":"ToxicClouds.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46679,6 +47525,7 @@
       "section":"Elemental Effects"
    },
    "Underwater Bubbles":{
+      "filename":"UnderwaterBubbles.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46695,6 +47542,7 @@
       "section":"Elemental Effects"
    },
    "Casing Spawners":{
+      "filename":"CasingSpawners.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46711,6 +47559,7 @@
       "section":"Particle Spawners"
    },
    "Forcefield Laserbeams":{
+      "filename":"ForcefieldLaserbeams.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46770,6 +47619,7 @@
       "section":"Particle Spawners"
    },
    "Fountain of Rejuvenation":{
+      "filename":"FountainofRejuvenation.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46829,6 +47679,7 @@
       "section":"Particle Spawners"
    },
    "Magic Sparkle":{
+      "filename":"MagicSparkle.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46888,6 +47739,7 @@
       "section":"Particle Spawners"
    },
    "Pond Frogs":{
+      "filename":"PondFrogs.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -46944,6 +47796,7 @@
       "section":"Particle Spawners"
    },
    "PowerUp Ring Spawners":{
+      "filename":"PowerUpRingSpawners.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47003,6 +47856,7 @@
       "section":"Particle Spawners"
    },
    "Scurrying Rats":{
+      "filename":"ScurryingRats.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47024,6 +47878,7 @@
       "section":"Particle Spawners"
    },
    "Soul Spawners":{
+      "filename":"SoulSpawners.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47056,6 +47911,7 @@
       "section":"Particle Spawners"
    },
    "Sparkle Spawners":{
+      "filename":"SparkleSpawners.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47112,6 +47968,7 @@
       "section":"Particle Spawners"
    },
    "Stronghold PowerPad":{
+      "filename":"StrongholdPowerPad.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47168,6 +48025,7 @@
       "section":"Particle Spawners"
    },
    "Swarm Spawner":{
+      "filename":"SwarmSpawner.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47227,6 +48085,7 @@
       "section":"Particle Spawners"
    },
    "Teleport Smoke Spawner":{
+      "filename":"TeleportSmokeSpawner.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47283,6 +48142,7 @@
       "section":"Particle Spawners"
    },
    "Ash Spawner":{
+      "filename":"AshSpawner.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47299,6 +48159,7 @@
       "section":"Weather Generators"
    },
    "Cinder":{
+      "filename":"Cinder.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47352,6 +48213,7 @@
       "section":"Weather Generators"
    },
    "Rain Simple":{
+      "filename":"RainSimple.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47408,6 +48270,7 @@
       "section":"Weather Generators"
    },
    "Snow Simple":{
+      "filename":"SnowSimple.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47424,6 +48287,7 @@
       "section":"Weather Generators"
    },
    "Alternate/Gib Deaths":{
+      "filename":"Alternate/GibDeaths.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47447,6 +48311,7 @@
       "section":"Other"
    },
    "Animated UAC Logo":{
+      "filename":"AnimatedUACLogo.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47482,6 +48347,7 @@
       "section":"Other"
    },
    "Damage and Low Health Effects":{
+      "filename":"DamageandLowHealthEffects.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47526,6 +48392,7 @@
       "section":"Other"
    },
    "Doom 3 Blood Decals":{
+      "filename":"Doom3BloodDecals.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47567,6 +48434,7 @@
       "section":"Other"
    },
    "IWad Brightmaps":{
+      "filename":"IWadBrightmaps.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47596,6 +48464,7 @@
       "section":"Other"
    },
    "Parallaxing Sky Viewpoint":{
+      "filename":"ParallaxingSkyViewpoint.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47649,6 +48518,7 @@
       "section":"Other"
    },
    "Wind":{
+      "filename":"Wind.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47702,6 +48572,7 @@
       "section":"Nature"
    },
    "Wolf Howl":{
+      "filename":"WolfHowl.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47752,6 +48623,7 @@
       "section":"Nature"
    },
    "Lava Flow":{
+      "filename":"LavaFlow.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47805,6 +48677,7 @@
       "section":"Underground"
    },
    "Computer Machines":{
+      "filename":"ComputerMachines.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47858,6 +48731,7 @@
       "section":"Industrial / Tech"
    },
    "Explosions 'n Stuff":{
+      "filename":"ExplosionsnStuff.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47911,6 +48785,7 @@
       "section":"Urban / Military"
    },
    "Clock Tower Bell":{
+      "filename":"ClockTowerBell.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -47970,6 +48845,7 @@
       "section":"Medieval / Fantasy"
    },
    "Magical Drones":{
+      "filename":"MagicalDrones.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48023,6 +48899,7 @@
       "section":"Medieval / Fantasy"
    },
    "Demonic Drones":{
+      "filename":"DemonicDrones.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48076,6 +48953,7 @@
       "section":"Hell / Horror"
    },
    "Demonic Power Down":{
+      "filename":"DemonicPowerDown.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48129,6 +49007,7 @@
       "section":"Hell / Horror"
    },
    "Hell Bass":{
+      "filename":"HellBass.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48182,6 +49061,7 @@
       "section":"Hell / Horror"
    },
    "Screams, Screams, Screams!":{
+      "filename":"ScreamsScreamsScreams.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48235,6 +49115,7 @@
       "section":"Hell / Horror"
    },
    "Sinister Machine":{
+      "filename":"SinisterMachine.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48285,6 +49166,7 @@
       "section":"Digital / Surreal"
    },
    "5th Episode Texture Pack":{
+      "filename":"5thEpisodeTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48332,6 +49214,7 @@
       "section":"Doom Style"
    },
    "Black and Green Textures Pack":{
+      "filename":"BlackandGreenTexturesPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48373,6 +49256,7 @@
       "section":"Doom Style"
    },
    "Cage's Texture Pack":{
+      "filename":"CagesTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48420,6 +49304,7 @@
       "section":"Doom Style"
    },
    "Cage's Texture Pack Vol.2":{
+      "filename":"CagesTexturePackVol2.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48461,6 +49346,7 @@
       "section":"Doom Style"
    },
    "DarkBase Texture Pack":{
+      "filename":"DarkBaseTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48508,6 +49394,7 @@
       "section":"Doom Style"
    },
    "Doom Potpourri Texs":{
+      "filename":"DoomPotpourriTexs.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48555,6 +49442,7 @@
       "section":"Doom Style"
    },
    "Doom Textures for Doom II":{
+      "filename":"DoomTexturesforDoomII.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48602,6 +49490,7 @@
       "section":"Doom Style"
    },
    "DrDoctor's Texture Pack":{
+      "filename":"DrDoctorsTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48618,6 +49507,7 @@
       "section":"Doom Style"
    },
    "Dusk's Texture Pack":{
+      "filename":"DusksTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48659,6 +49549,7 @@
       "section":"Doom Style"
    },
    "Final Doom Textures":{
+      "filename":"FinalDoomTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48700,6 +49591,7 @@
       "section":"Doom Style"
    },
    "Ghostbusters Doom Tex's":{
+      "filename":"GhostbustersDoomTexs.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48747,6 +49639,7 @@
       "section":"Doom Style"
    },
    "Gothic Texture Pack":{
+      "filename":"GothicTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48794,6 +49687,7 @@
       "section":"Doom Style"
    },
    "Gray Texture Pack":{
+      "filename":"GrayTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48841,6 +49735,7 @@
       "section":"Doom Style"
    },
    "IDTex Texture Pack":{
+      "filename":"IDTexTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48888,6 +49783,7 @@
       "section":"Doom Style"
    },
    "Lock Marker Textures":{
+      "filename":"LockMarkerTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48932,6 +49828,7 @@
       "section":"Doom Style"
    },
    "Mars 3D Textures":{
+      "filename":"Mars3DTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -48973,6 +49870,7 @@
       "section":"Doom Style"
    },
    "Mortiser Texture Pack":{
+      "filename":"MortiserTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49020,6 +49918,7 @@
       "section":"Doom Style"
    },
    "Nightmare Animations Pack":{
+      "filename":"NightmareAnimationsPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49067,6 +49966,7 @@
       "section":"Doom Style"
    },
    "Nightmare Texture Pack":{
+      "filename":"NightmareTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49114,6 +50014,7 @@
       "section":"Doom Style"
    },
    "Noir Pack":{
+      "filename":"NoirPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49152,6 +50053,7 @@
       "section":"Doom Style"
    },
    "Patched Up Textures":{
+      "filename":"PatchedUpTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49193,6 +50095,7 @@
       "section":"Doom Style"
    },
    "PSX Fire Skies":{
+      "filename":"PSXFireSkies.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49211,6 +50114,7 @@
       "section":"Doom Style"
    },
    "Psyren Texture Pack":{
+      "filename":"PsyrenTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49258,6 +50162,7 @@
       "section":"Doom Style"
    },
    "Recolored Doom Texture Pack":{
+      "filename":"RecoloredDoomTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49305,6 +50210,7 @@
       "section":"Doom Style"
    },
    "SailorScout Texture Pack":{
+      "filename":"SailorScoutTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49352,6 +50258,7 @@
       "section":"Doom Style"
    },
    "Silver Texture Pack":{
+      "filename":"SilverTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49399,6 +50306,7 @@
       "section":"Doom Style"
    },
    "Useful Doom Edits":{
+      "filename":"UsefulDoomEdits.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49415,6 +50323,7 @@
       "section":"Doom Style"
    },
    "Useful Flats Texture Pack":{
+      "filename":"UsefulFlatsTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49462,6 +50371,7 @@
       "section":"Doom Style"
    },
    "Xtra Lites Texture Pack":{
+      "filename":"XtraLitesTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49509,6 +50419,7 @@
       "section":"Doom Style"
    },
    "Baker's Legacy Texture Pack":{
+      "filename":"BakersLegacyTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49550,6 +50461,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Heretic II Textures Pack":{
+      "filename":"HereticIITexturesPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49591,6 +50503,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Hexen II Texture Pack":{
+      "filename":"HexenIITexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49607,6 +50520,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Mageslayer Textures Pack":{
+      "filename":"MageslayerTexturesPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49648,6 +50562,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Medieval Textures":{
+      "filename":"MedievalTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49689,6 +50604,7 @@
       "section":"Heretic / Hexen Style"
    },
    "ShadowCaster Textures":{
+      "filename":"ShadowCasterTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49730,6 +50646,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Stained Glass Windows":{
+      "filename":"StainedGlassWindows.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49771,6 +50688,7 @@
       "section":"Heretic / Hexen Style"
    },
    "Adrenix Texture Pack":{
+      "filename":"AdrenixTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49818,6 +50736,7 @@
       "section":"Other Sources / Styles"
    },
    "Alien vs Predator 2 Textures":{
+      "filename":"AlienvsPredator2Textures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49859,6 +50778,7 @@
       "section":"Other Sources / Styles"
    },
    "Amulets & Armor Texture Pack":{
+      "filename":"Amulets&ArmorTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49906,6 +50826,7 @@
       "section":"Other Sources / Styles"
    },
    "Anachronox Texture Pack":{
+      "filename":"AnachronoxTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49922,6 +50843,7 @@
       "section":"Other Sources / Styles"
    },
    "Arx Fatalis Textures":{
+      "filename":"ArxFatalisTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49960,6 +50882,7 @@
       "section":"Other Sources / Styles"
    },
    "Blood 1 Textures":{
+      "filename":"Blood1Textures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49976,6 +50899,7 @@
       "section":"Other Sources / Styles"
    },
    "Blood 2 Textures":{
+      "filename":"Blood2Textures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -49992,6 +50916,7 @@
       "section":"Other Sources / Styles"
    },
    "Chasm - The Rift Beta Pack":{
+      "filename":"Chasm-TheRiftBetaPack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50033,6 +50958,7 @@
       "section":"Other Sources / Styles"
    },
    "Chasm - The Rift Texture Pack":{
+      "filename":"Chasm-TheRiftTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50074,6 +51000,7 @@
       "section":"Other Sources / Styles"
    },
    "Counterstrike Textures":{
+      "filename":"CounterstrikeTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50121,6 +51048,7 @@
       "section":"Other Sources / Styles"
    },
    "Crusaders Of Might & Magic Textures":{
+      "filename":"CrusadersOfMight&MagicTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50159,6 +51087,7 @@
       "section":"Other Sources / Styles"
    },
    "CyClones Texture Pack":{
+      "filename":"CyClonesTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50206,6 +51135,7 @@
       "section":"Other Sources / Styles"
    },
    "Daggerfall Texture Pack":{
+      "filename":"DaggerfallTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50222,6 +51152,7 @@
       "section":"Other Sources / Styles"
    },
    "Daikatana Texture Pack":{
+      "filename":"DaikatanaTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50269,6 +51200,7 @@
       "section":"Other Sources / Styles"
    },
    "Dark Forces Texture Pack":{
+      "filename":"DarkForcesTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50316,6 +51248,7 @@
       "section":"Other Sources / Styles"
    },
    "Deconstruct Industrial Textures":{
+      "filename":"DeconstructIndustrialTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50360,6 +51293,7 @@
       "section":"Other Sources / Styles"
    },
    "Descent I & II Textures":{
+      "filename":"DescentI&IITextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50398,6 +51332,7 @@
       "section":"Other Sources / Styles"
    },
    "Doom64 Texture Variants":{
+      "filename":"Doom64TextureVariants.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50439,6 +51374,7 @@
       "section":"Other Sources / Styles"
    },
    "Duke Nukem 3D Textures":{
+      "filename":"DukeNukem3DTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50486,6 +51422,7 @@
       "section":"Other Sources / Styles"
    },
    "Erratic Texture Pack":{
+      "filename":"ErraticTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50536,6 +51473,7 @@
       "section":"Other Sources / Styles"
    },
    "Eternal Doom Resource Pack":{
+      "filename":"EternalDoomResourcePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50583,6 +51521,7 @@
       "section":"Other Sources / Styles"
    },
    "Fate Texture Pack":{
+      "filename":"FateTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50599,6 +51538,7 @@
       "section":"Other Sources / Styles"
    },
    "Flesh Feast Textures":{
+      "filename":"FleshFeastTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50640,6 +51580,7 @@
       "section":"Other Sources / Styles"
    },
    "Half-Life Texture Pack":{
+      "filename":"Half-LifeTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50687,6 +51628,7 @@
       "section":"Other Sources / Styles"
    },
    "Heavy Metal F.A.K.K. II Textures":{
+      "filename":"HeavyMetalFAKKIITextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50728,6 +51670,7 @@
       "section":"Other Sources / Styles"
    },
    "IKPack Texture Pack":{
+      "filename":"IKPackTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50772,6 +51715,7 @@
       "section":"Other Sources / Styles"
    },
    "In Pursuit of Greed Textures":{
+      "filename":"InPursuitofGreedTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50810,6 +51754,7 @@
       "section":"Other Sources / Styles"
    },
    "Kingpin Texture Pack":{
+      "filename":"KingpinTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50854,6 +51799,7 @@
       "section":"Other Sources / Styles"
    },
    "Lameduke Texture Pack":{
+      "filename":"LamedukeTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50901,6 +51847,7 @@
       "section":"Other Sources / Styles"
    },
    "Laser Arena Texture Pack":{
+      "filename":"LaserArenaTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50945,6 +51892,7 @@
       "section":"Other Sources / Styles"
    },
    "Legend of the Seven Paladins":{
+      "filename":"LegendoftheSevenPaladins.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -50986,6 +51934,7 @@
       "section":"Other Sources / Styles"
    },
    "Malice Texture Pack":{
+      "filename":"MaliceTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51033,6 +51982,7 @@
       "section":"Other Sources / Styles"
    },
    "Map Development Textures":{
+      "filename":"MapDevelopmentTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51074,6 +52024,7 @@
       "section":"Other Sources / Styles"
    },
    "Max Payne Textures":{
+      "filename":"MaxPayneTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51115,6 +52066,7 @@
       "section":"Other Sources / Styles"
    },
    "Mysteries o.t. Sith Tex's":{
+      "filename":"MysteriesotSithTexs.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51153,6 +52105,7 @@
       "section":"Other Sources / Styles"
    },
    "NMN Corp. Vol. 1 Texture Pack":{
+      "filename":"NMNCorpVol1TexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51197,6 +52150,7 @@
       "section":"Other Sources / Styles"
    },
    "NMN Corp. Vol. 2 Texture Pack":{
+      "filename":"NMNCorpVol2TexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51244,6 +52198,7 @@
       "section":"Other Sources / Styles"
    },
    "Ogro Texture Pack":{
+      "filename":"OgroTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51288,6 +52243,7 @@
       "section":"Other Sources / Styles"
    },
    "Outlaws Texture Pack":{
+      "filename":"OutlawsTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51304,6 +52260,7 @@
       "section":"Other Sources / Styles"
    },
    "Powerslave Texture Pack":{
+      "filename":"PowerslaveTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51320,6 +52277,7 @@
       "section":"Other Sources / Styles"
    },
    "Quake I Texture Pack":{
+      "filename":"QuakeITexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51336,6 +52294,7 @@
       "section":"Other Sources / Styles"
    },
    "Quake II Texture Pack":{
+      "filename":"QuakeIITexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51352,6 +52311,7 @@
       "section":"Other Sources / Styles"
    },
    "Quake III Texture Pack":{
+      "filename":"QuakeIIITexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51368,6 +52328,7 @@
       "section":"Other Sources / Styles"
    },
    "Quiver Textures":{
+      "filename":"QuiverTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51409,6 +52370,7 @@
       "section":"Other Sources / Styles"
    },
    "Radix Texture Pack":{
+      "filename":"RadixTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51456,6 +52418,7 @@
       "section":"Other Sources / Styles"
    },
    "Redneck Rampage Textures":{
+      "filename":"RedneckRampageTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51497,6 +52460,7 @@
       "section":"Other Sources / Styles"
    },
    "Return To Castle Wolfenstein Textures":{
+      "filename":"ReturnToCastleWolfensteinTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51538,6 +52502,7 @@
       "section":"Other Sources / Styles"
    },
    "Rise of the Triad Texture Pack":{
+      "filename":"RiseoftheTriadTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51585,6 +52550,7 @@
       "section":"Other Sources / Styles"
    },
    "Shadow Warrior Texture Pack":{
+      "filename":"ShadowWarriorTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51601,6 +52567,7 @@
       "section":"Other Sources / Styles"
    },
    "Soldier Of Fortune":{
+      "filename":"SoldierOfFortune.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51642,6 +52609,7 @@
       "section":"Other Sources / Styles"
    },
    "Star Trek Elite Force Texs":{
+      "filename":"StarTrekEliteForceTexs.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51658,6 +52626,7 @@
       "section":"Other Sources / Styles"
    },
    "System Shock 2 Textures":{
+      "filename":"SystemShock2Textures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51702,6 +52671,7 @@
       "section":"Other Sources / Styles"
    },
    "System Shock Texture Pack":{
+      "filename":"SystemShockTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51743,6 +52713,7 @@
       "section":"Other Sources / Styles"
    },
    "Tek War Texture Pack":{
+      "filename":"TekWarTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51784,6 +52755,7 @@
       "section":"Other Sources / Styles"
    },
    "The Circle Texture Pack":{
+      "filename":"TheCircleTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51800,6 +52772,7 @@
       "section":"Other Sources / Styles"
    },
    "Too Much Brown Texture Pack":{
+      "filename":"TooMuchBrownTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51844,6 +52817,7 @@
       "section":"Other Sources / Styles"
    },
    "Undying Textures":{
+      "filename":"UndyingTextures.zip",
       "info":{
          "title":"Info",
          "entries":[
@@ -51885,6 +52859,7 @@
       "section":"Other Sources / Styles"
    },
    "Witchaven Texture Pack":{
+      "filename":"WitchavenTexturePack.zip",
       "info":{
          "title":"Info",
          "entries":[
