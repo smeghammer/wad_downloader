@@ -37,7 +37,7 @@ class MongoConnection(object):
         try:
             if not self.isStored('downloads',linkobj['url']):
                 print('storing')
-                self.db['downloads'].insert(linkobj)
+                self.db['downloads'].insert_one(linkobj)
                 return True
             print('already stored')
             return False
@@ -52,7 +52,12 @@ class MongoConnection(object):
     collection is 'downloads' or 'crawl'
     '''
     def isStored(self,collection,url): 
-        return(self.db[collection].find({'url':url}).count())
+        result = dict(self.db[collection].find({'url':url}))
+        print('RESULT:',result)
+        if result:
+            return True
+        return False
+        # return(dict(self.db[collection].find({'url':url})))
     
     
     
