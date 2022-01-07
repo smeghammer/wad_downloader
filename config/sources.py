@@ -16,16 +16,6 @@ storeIn - filesystem root location for downloaded files. The trailing slash is e
 
 '''
 crawlerData = {
-    
-    'W':{
-            'name':'WAD Archive',
-            'module':'wadarchivecrawler',
-            'class':'WADArchiveCrawler',
-            'startAt':'Category/WADs/',
-            'crawlroot':'https://www.wad-archive.com/',
-            'downloadroot':'https://assets.wad-archive.com/wadarchive/files/',
-            'storeIn':'wad-archive/'
-        },
     'D':{
             'name':'Doomworld',
             'module':'doomworldcrawler',
@@ -35,6 +25,15 @@ crawlerData = {
             'downloadroot':'ftp://ftp.fu-berlin.de/pc/games/idgames/',
             'storeIn':'doomworld/'
         },
+    'W':{
+            'name':'WAD Archive',
+            'module':'wadarchivecrawler',
+            'class':'WADArchiveCrawler',
+            'startAt':'Category/WADs/',
+            'crawlroot':'https://www.wad-archive.com/',
+            'downloadroot':'https://assets.wad-archive.com/wadarchive/files/',
+            'storeIn':'wad-archive/'
+        },
     'T':{
             'name':'Sentinels Playground',
             'module':'tspgcrawler',
@@ -43,6 +42,24 @@ crawlerData = {
             'crawlroot':'https://allfearthesentinel.net/',
             'downloadroot':'https://allfearthesentinel.net/zandronum/download.php?file=',
             'storeIn':'tspg/'
+        },
+    'DWS':{
+            'name':'Doom WAD Station',
+            'module':'dwscrawler',
+            'class':'WADStationCrawler',
+            'startAt':'mega/',
+            'crawlroot':'http://www.doomwadstation.net/',
+            'downloadroot':'http://www.doomwadstation.net/mega/',
+            'storeIn':'dws/'
+        },
+    'R667':{
+            'name':'Realm 667',
+            'module':'r667crawler',
+            'class':'R667Crawler',
+            'startAt':'armory-mainmenu-157-97317/doom-style-mainmenu-158-94349',
+            'crawlroot':'https://www.realm667.com/index.php/en/',
+            'downloadroot':'https://www.realm667.com/index.php/en/',
+            'storeIn':'r667/'
         }
     }
 
