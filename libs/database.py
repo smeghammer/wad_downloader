@@ -7,7 +7,9 @@ import requests
 import urllib.request
 from pymongo import MongoClient
 from pathlib import Path            #see https://stackoverflow.com/questions/273192/how-can-i-safely-create-a-nested-directory
-
+import config.sources
+from random import randint
+from config.sources import userAgents
 
 
 class MongoConnection(object):
@@ -25,6 +27,7 @@ class MongoConnection(object):
         self.mongoPort = mongoPort
         self.downloadBase = 'downloads/'
         self.downloadPath = storeIn             #frpm dowloader initialisation
+        self.ualist = userAgents
         
         #self.db = MongoClient(host=dbServer,port=dbPort)[treecreeperDBName]
         client = MongoClient(connect=False, localThresholdMS=100, host=mongoIp, port=mongoPort)
@@ -52,7 +55,8 @@ class MongoConnection(object):
     collection is 'downloads' or 'crawl'
     '''
     def isStored(self,collection,url): 
-        result = dict(self.db[collection].find({'url':url}))
+        _cursor = self.db[collection].find({'url':url},{'_id':0});
+        result = list(_cursor)
         print('RESULT:',result)
         if result:
             return True
@@ -66,8 +70,7 @@ class MongoConnection(object):
         
         _res = self.db['downloads'].find_one({'state':'NOTFETCHED'},{'_id':0})
         if _res:
-            #flag it as locked
-            self.db['downloads'].update({'url':_res['url']},{'$set':{'state':'LOCKED'}})
+           
             
             #pull the file
             print('trying to retrieve file ' + _res['metadata']['filename'])
@@ -80,26 +83,40 @@ class MongoConnection(object):
             #http only
             try:
                 print('trying with requests...')
-                r = requests.get(_res['url'])
-                with open(self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'] + _res['metadata']['filename'], 'wb') as outfile:
-                    outfile.write(r.content)
-                    _fetched = True
+                print(len(self.ualist))
+                _index = randint(0,len(self.ualist))
+                _ua = self.ualist[_index]
+                _headers = {'user-agent': self.ualist[randint(0,len(self.ualist))]['useragentString']}
+                r = requests.get(_res['url'],headers=_headers)
+                if r.status_code == 200:
+                    #flag it as locked
+                    self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'LOCKED'}})
+                    with open(self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'] + _res['metadata']['filename'], 'wb') as outfile:
+                        outfile.write(r.content)
+                        _fetched = True
+                else: 
+                    raise Exception("Request error: " +  r.status_code)
+                    
             #ftp
             except Exception as ex:
                 print('requests lib failed, trying with urllib...')
                 try:
+                    #flag it as locked
+                    self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'LOCKED'}})
                     urllib.request.urlretrieve(_res['url'], self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'] + _res['metadata']['filename'])
                     _fetched = True
                 
                 except Exception as ex:
+                    #flag it as not fetched
+                    self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'NOTFETCHED'}})
                     print(ex)
                     
             
             if _fetched:
                 print('fetched OK. Stored in ' + self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'])
-                self.db['downloads'].update({'url':_res['url']},{'$set':{'state':'FETCHED'}})
+                self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'FETCHED'}})
             else:
-                self.db['downloads'].update({'url':_res['url']},{'$set':{'state':'FAILED'}})
+                self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'FAILED'}})
         
         else:
             print('Notihng to retrieve!')
