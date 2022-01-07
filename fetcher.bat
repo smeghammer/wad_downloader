@@ -10,7 +10,7 @@ echo "running fetcher"
 
 :loop
 
-	python fetcher.py -d 192.168.1.106
+	python fetcher.py -d 192.168.1.123
 
 goto loop
 
