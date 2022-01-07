@@ -84,7 +84,7 @@ class DoomworldCrawler(AbstractCrawler):
                 '''
                 recursively instantiate the crawler with each new directory URL:
                 '''
-                _crawler = DoomworldCrawler(self._dwapiroot + str(item['id']),self._dwapiroot,self.downloadRoot,self.db)
+                _crawler = DoomworldCrawler(str(item['id']),self._dwapiroot,self.downloadRoot,self.db)
                 _crawler.open()
         if 'file' in self.data['content'] and self.data['content']['file']:
             for item in self.data['content']['file']: 
