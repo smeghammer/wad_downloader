@@ -31,6 +31,8 @@ class SentinelsPlaygroundCrawler(AbstractCrawler):
     instantiating in the start module:
     '''
     
+    MAX_PAGES = 240
+    
     def __init__(self,startnode,crawlroot,downloadRoot,database,counter=1):
         self.url = crawlroot + startnode
         self.downloadRoot = downloadRoot
@@ -82,13 +84,13 @@ class SentinelsPlaygroundCrawler(AbstractCrawler):
         
         where xxx is filename. 
         
-        I know there are 270 pages of downloads, so I  can  count up to this
+        I know there are MAX_PAGES pages of downloads, so I  can  count up to this
         and build corresponding URLs.
         
         I don't need to recurse.
         '''
 
-        while self.counter < 271:
+        while self.counter < self.MAX_PAGES:
             '''  look for download links and store them
             You may need to fiddle with this selector as the column has changed at least
             once...
