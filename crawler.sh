@@ -25,7 +25,7 @@ if [ $# -lt 2 ];
 		echo
 		echo "where:"
 		echo "  \$1=IP address of mongo database"
-		echo "  \$2=Download source flag (D, W ot T currently)"
+		echo "  \$2=Download source flag (D, W, T or DWS currently)"
 	else
 		DATABASEIP="$1"
 		DOWNLOADSOURCE="$2"
