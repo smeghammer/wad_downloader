@@ -17,6 +17,7 @@ storeIn - filesystem root location for downloaded files. The trailing slash is e
 '''
 crawlerData = {
     'D':{
+            'id':'doomworld',
             'name':'Doomworld',
             'module':'doomworldcrawler',
             'class':'DoomworldCrawler',
@@ -26,6 +27,7 @@ crawlerData = {
             'storeIn':'doomworld/'
         },
     'W':{
+            'id':'wad-archive',
             'name':'WAD Archive',
             'module':'wadarchivecrawler',
             'class':'WADArchiveCrawler',
@@ -35,7 +37,8 @@ crawlerData = {
             'storeIn':'wad-archive/'
         },
     'T':{
-            'name':'Sentinels Playground',
+            'id':'tspg',
+            'name':'The Sentinels Playground',
             'module':'tspgcrawler',
             'class':'SentinelsPlaygroundCrawler',
             'startAt':'zandronum/wads.php',
@@ -44,6 +47,7 @@ crawlerData = {
             'storeIn':'tspg/'
         },
     'DWS':{
+            'id':'doomwadstation',
             'name':'Doom WAD Station',
             'module':'dwscrawler',
             'class':'WADStationCrawler',
@@ -53,6 +57,7 @@ crawlerData = {
             'storeIn':'dws/'
         },
     'R667':{
+            'id':'realm667',
             'name':'Realm 667',
             'module':'r667crawler',
             'class':'R667Crawler',
