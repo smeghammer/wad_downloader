@@ -56,6 +56,18 @@ crawlerData = {
             'downloadroot':'http://www.doomwadstation.net/mega/',
             'storeIn':'dws/'
         },
+    
+    'C':{
+            'id':'camoy',
+            'name':'Camoys WAD list',
+            'module':'camoycrawler',
+            'class':'CamoyCrawler',
+            'startAt':'wads/',
+            'crawlroot':'https://camoy.sdf.org/',
+            'downloadroot':'https://camoy.sdf.org/wads/',
+            'storeIn':'amoy/'
+        },
+    
     'R667':{
             'id':'realm667',
             'name':'Realm 667',
