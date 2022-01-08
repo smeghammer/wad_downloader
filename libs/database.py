@@ -65,10 +65,12 @@ class MongoConnection(object):
     
     
     
-    def fetchFile(self):
+    def fetchFile(self,crawlerId):
         _fetched = False
-        
-        _res = self.db['downloads'].find_one({'state':'NOTFETCHED'},{'_id':0})
+        _query = {'state':'NOTFETCHED'}
+        if crawlerId:
+            _query = {'state':'NOTFETCHED','source':crawlerId}
+        _res = self.db['downloads'].find_one(_query,{'_id':0})
         if _res:
            
             
