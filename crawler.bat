@@ -30,5 +30,6 @@ echo -                                               -
 echo - D = doomworks IDGames mirror                  -
 echo - W = WAD archive                               -
 echo - T = The Sentinels Playground                  -
+echo - C = Camo Yoshi WAD list                       -
 echo - DWS = Doom WAD Station                        -
 echo -------------------------------------------------
