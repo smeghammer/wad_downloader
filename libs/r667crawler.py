@@ -168,7 +168,7 @@ class R667Crawler(AbstractCrawler):
                 
                 print(_info)
                 _dataitems[_itemtitle] = {
-                    'dir':_crawllinks[_crawllink]['topic'].replace(" ","") +'/' +_crawllinks[_crawllink]['section'] + "/",
+                    'dir':_crawllinks[_crawllink]['topic'].lower().replace(" ","") +'/' +_crawllinks[_crawllink]['section'].lower().replace(" ","") + "/",
                     'filename':_filename,
                     'imagefile':_img,
                     'info':_info,
@@ -180,9 +180,30 @@ class R667Crawler(AbstractCrawler):
                 ''' I also want to write each entry to the DB as a download queue '''
                 # https://www.realm667.com/index.php/en/downloads/prop-stop/1165-candlesticks/file
                 ''' I need to determine the ID and the  '''
-                print(_currdataitem.select('span.download a')[0].get('href'))
+                try:
+                    print(_currdataitem.select('span.download a')[0].get('href'))
+                except Exception as ex:
+                    print(ex)
+                    print('failed to find href!')
+                    
+                try:
+                    print(_dataitems[_itemtitle])
+                    print(_currdataitem)
+                    print(_currdataitem.select('span.download a')[0])
+                    print("TEST: "+_currdataitem.select('span.download a')[0].get('href'))
+                except Exception as ex:
+                    print(ex)
+                    print('error parsing for link!')
                 
-                self.storeDownloadLink(_dataitems[_itemtitle], 'https://www.realm667.com' + _currdataitem.select('span.download a')[0].get('href'))
+                try:
+                    self.storeDownloadLink(
+                        _dataitems[_itemtitle], 
+                        'https://www.realm667.com' 
+                        + _currdataitem.select('span.download a')[0].get('href')
+                        )
+                except Exception as ex:
+                    print(ex)
+                    print('error storing link!')
 
             '''
             Once we have the list of pages, load each one and grab the data from the DOM
