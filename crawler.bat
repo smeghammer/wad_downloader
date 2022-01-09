@@ -32,4 +32,5 @@ echo - W = WAD archive                               -
 echo - T = The Sentinels Playground                  -
 echo - C = Camo Yoshi WAD list                       -
 echo - DWS = Doom WAD Station                        -
+echo - R667 = Realm 667                              -
 echo -------------------------------------------------

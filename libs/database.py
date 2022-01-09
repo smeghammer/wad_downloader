@@ -9,7 +9,7 @@ from pymongo import MongoClient
 from pathlib import Path            #see https://stackoverflow.com/questions/273192/how-can-i-safely-create-a-nested-directory
 import config.sources
 from random import randint
-from config.sources import userAgents
+from config.sources import userAgents, crawlerData
 
 
 class MongoConnection(object):
@@ -65,11 +65,12 @@ class MongoConnection(object):
     
     
     
-    def fetchFile(self,crawlerId):
+    def fetchFile(self,crawlerId=None):
         _fetched = False
         _query = {'state':'NOTFETCHED'}
         if crawlerId:
-            _query = {'state':'NOTFETCHED','source':crawlerId}
+            print(crawlerData[crawlerId])
+            _query = {'state':'NOTFETCHED','source':crawlerData[crawlerId]['id']}
         _res = self.db['downloads'].find_one(_query,{'_id':0})
         if _res:
            
@@ -109,8 +110,8 @@ class MongoConnection(object):
                     _fetched = True
                 
                 except Exception as ex:
-                    #flag it as not fetched
-                    self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'NOTFETCHED'}})
+                    #flag it as failed
+                    self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'ERROR'}})
                     print(ex)
                     
             
