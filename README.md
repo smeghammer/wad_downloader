@@ -24,7 +24,7 @@ So far, there are five implementations:
  - [WAD Archive](https://www.wad-archive.com/Category/WADs) (web scrape)
  - [The Sentinels Playground](https://allfearthesentinel.net/zandronum/wads.php) (web scrape)
  - [Doom WAD Station](http://www.doomwadstation.net/mega/) (web scrape, not SSL!)
- - [Realm 667](https://www.realm667.com/index.php/en/repository-18489)
+ - [Realm 667](https://www.realm667.com/index.php/en/repository-18489) (web scrape)
 
 #### Example
 The current ID Games concrete implementation of a crawler uses the Doomworld API and the root endpoint is
