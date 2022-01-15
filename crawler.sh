@@ -30,7 +30,7 @@ if [ $# -lt 2 ];
 		DATABASEIP="$1"
 		DOWNLOADSOURCE="$2"
 	
-		python3.6 start.py -d ${DATABASEIP} -a ${DOWNLOADSOURCE}
+		python3 start.py -d ${DATABASEIP} -a ${DOWNLOADSOURCE}
 fi
 
 

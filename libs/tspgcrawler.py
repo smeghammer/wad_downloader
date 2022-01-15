@@ -36,13 +36,16 @@ class SentinelsPlaygroundCrawler(AbstractCrawler):
             downloadLinks = self.data.select('#zandronum td:nth-child(2) a:nth-child(2)')
             for downloadLink in downloadLinks:
                 ''' find hrefs and any metadata: '''
-                self.storeDownloadLink({
-                    '_id' : downloadLink['href'][29:],
-                    'href' : downloadLink['href'],
-                    'filename' : downloadLink['title'][9:],
-                    'dir' : 'page' + str(self.counter) + '/'
-                    },self.downloadRoot + downloadLink['title'][9:]
-                )
+                try:
+                    self.storeDownloadLink({
+                        '_id' : downloadLink['href'][29:],
+                        'href' : downloadLink['href'],
+                        'filename' : downloadLink['title'][9:],
+                        'dir' : 'page' + str(self.counter) + '/'
+                        },self.downloadRoot + downloadLink['title'][9:]
+                    )
+                except Exception as ex:
+                    print(ex)
             
             ''' and load the next page '''
             self.counter+=1

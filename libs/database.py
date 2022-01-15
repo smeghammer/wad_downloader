@@ -33,6 +33,8 @@ class MongoConnection(object):
         client = MongoClient(connect=False, localThresholdMS=100, host=mongoIp, port=mongoPort)
         self.db = client[databaseName]
     
+    
+    
             
 #     def setDatabase(self,mongoIp='127.0.0.1', mongoPort=27017):
 
@@ -48,7 +50,13 @@ class MongoConnection(object):
             print(ex)
             return False
         
-       
+    
+    def getQueueItem(self,url):
+        _cursor = self.db['downloads'].find({'url':url},{'_id':0});
+        result = list(_cursor)
+        if result:
+            return(result)
+        return({'result':'no record found for '+url})
         
     '''
     have we got this link already?
@@ -64,7 +72,7 @@ class MongoConnection(object):
         # return(dict(self.db[collection].find({'url':url})))
     
     
-    
+     
     def fetchFile(self,crawlerId=None):
         _fetched = False
         _query = {'state':'NOTFETCHED'}

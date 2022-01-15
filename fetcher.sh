@@ -17,15 +17,18 @@ if [ $# -lt 1 ];
 		echo "Please supply all positional arguments:";
 		echo
 		echo "./fetcher.sh \$1"
+		echo "or:"
+		echo "./fetcher.sh \$1 \%2"
 		echo
 		echo "where:"
 		echo "  \$1=IP address of mongo database"
+		echo "  \$2=Key for download source"
 	else
 		DATABASEIP="%1"
 		# loop until the user presses ctrl+c
 		while true
 		do
-			python3.6 fetcher.py -d ${DATABASEIP}
+			python3 fetcher.py -d ${DATABASEIP}
 		done
 fi
 
