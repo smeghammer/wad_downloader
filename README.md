@@ -17,6 +17,11 @@ I have used an abstract base class model for the crawler (https://github.com/sme
 ## Storage
 The crawler requires access to a MongoDB database. This may be local or remote. See https://docs.mongodb.com/manual/administration/install-community/ for installation details. Note, if you wish to use a non-local database, you must configure the MongoDB server to accept connections from an IP address other than localhost (127.0.0.1). This may be done in the `mongod.conf` file, as specified in, for example, https://stackoverflow.com/questions/58323458/connecting-to-a-remote-mongodb-server. 
 
+## Chrome extension
+Added first cut of API server and Chrome extension. The extension code is currently expecting the server to be at 127.0.0.1:5000/api (see code in `/extension/action/pagescanner.js`) so it will need to be started like so:
+
+`>/your/deploy/path/wad_downloader/python3 server.py -d [mongo IP address]`
+
 ### Concrete crawlers
 So far, there are five implementations:
 
