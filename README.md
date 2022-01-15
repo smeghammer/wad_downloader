@@ -18,13 +18,14 @@ I have used an abstract base class model for the crawler (https://github.com/sme
 The crawler requires access to a MongoDB database. This may be local or remote. See https://docs.mongodb.com/manual/administration/install-community/ for installation details. Note, if you wish to use a non-local database, you must configure the MongoDB server to accept connections from an IP address other than localhost (127.0.0.1). This may be done in the `mongod.conf` file, as specified in, for example, https://stackoverflow.com/questions/58323458/connecting-to-a-remote-mongodb-server. 
 
 ### Concrete crawlers
-So far, there are four implementations:
+So far, there are five implementations:
 
  - [Doomworld API](https://www.doomworld.com/idgames/api/api.php?action=getcontents&out=json&id=0) (JSON)
  - [WAD Archive](https://www.wad-archive.com/Category/WADs) (web scrape)
  - [The Sentinels Playground](https://allfearthesentinel.net/zandronum/wads.php) (web scrape)
  - [Doom WAD Station](http://www.doomwadstation.net/mega/) (web scrape, not SSL!)
- 
+ - [Realm 667](https://www.realm667.com/index.php/en/repository-18489) (web scrape)
+
 #### Example
 The current ID Games concrete implementation of a crawler uses the Doomworld API and the root endpoint is
 
