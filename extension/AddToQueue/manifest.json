@@ -1,0 +1,27 @@
+{
+	"name": "Add to WAD Download Queue",
+	"description": "Allows you to right-click on a WAD link and add it to the configured download queue database",
+	"version": "1.0",
+	"manifest_version": 3,
+	"background" : {
+		"service_worker" : "/action/pagescanner.js"
+	},
+	"host_permissions":["http://127.0.0.1:5000/api/*"],
+	"permissions": ["storage","contextMenus", "activeTab", "scripting"],
+	"action": {
+		"default_popup": "/ui/settings.html",
+		"default_icon": {
+			"16": "/icons/addwad16.png",
+			"32": "/icons/addwad32.png",
+			"48": "/icons/addwad48.png",
+			"128": "/icons/addwad128.png"
+		}
+	},
+
+	"icons": {
+		"16": "/icons/addwad16.png",
+		"32": "/icons/addwad32.png",
+		"48": "/icons/addwad48.png",
+		"128": "/icons/addwad128.png"
+	}
+}
