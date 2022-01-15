@@ -84,5 +84,6 @@ if __name__ == '__main__':
     parser.add_argument( '-n', '--database', help='Mongo database name [string]', type=str, required=False,default='DoomWadDownloader')
     args = parser.parse_args()
     dbWrapper = MongoConnection(args.dbserver,args.dbport,args.database)
-    app.run()
+    #see https://stackoverflow.com/questions/7023052/configure-flask-dev-server-to-be-visible-across-the-network
+    app.run(host="0.0.0.0")
     
