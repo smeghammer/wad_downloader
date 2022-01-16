@@ -22,10 +22,10 @@ if [ $# -lt 2 ];
 		echo "  \$1=IP address of mongo database"
 		echo "  \$2=Key for download source (A, D, W, T, C, R667 or DWS currently)"
 	else
-		echo %1
-		echo %2
-		DATABASEIP="%1"
-		SOURCE="%2"
+		echo $1
+		echo $2
+		DATABASEIP="$1"
+		SOURCE="$2"
 		# loop until the user presses ctrl+c
 
 		while true
