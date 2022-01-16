@@ -1,29 +1,18 @@
 from libs.database import MongoConnection
 from flask import Flask
-from flask import jsonify,request,Response
+from flask import jsonify,request
 from urllib.parse import urlparse
 import requests
-import json
 import argparse
 
 app = Flask(__name__)
 
 @app.route('/api/')
 def root():
-    # if request.args.get('test'):
-    #     #https://stackabuse.com/get-request-query-parameters-with-flask/
-    #     resp = Response("foo bar baz")
-    #     resp.headers['Access-Control-Allow-Origin'] = '*'
-    #     return(jsonify({'arg': request.args.get('test')}))
-    #
-    # return(jsonify({'message':'REST API for Doom WAD downloader'}))
-    # _out = json.dumps({'message':'REST API for Doom WAD downloader'})
-    # print(_out)
-    resp = Response(json.dumps({'message':'REST API for Doom WAD downloader'}))
-    resp.headers['Access-Control-Allow-Origin'] = '*'
-    resp.headers['Content-Type'] = 'application/json'
-    return(resp)
-
+    if request.args.get('test'):
+        #https://stackabuse.com/get-request-query-parameters-with-flask/
+        return(jsonify({'arg': request.args.get('test')}))
+    return(jsonify({'message':'REST API for Doom WAD downloader'}))
 
 @app.route('/api/list_all')
 def list_all():
@@ -43,20 +32,13 @@ def summary():
     
 @app.route('/api/exists')
 def exists():
-    print('exists')
     _out = {'status':'ok','exists':False}
     if request.args.get('url') and dbWrapper.db['downloads'].find_one({'url' : request.args.get('url')},{'_id':False}):
         _out = {'status':'ok','exists':True,'data': dbWrapper.db['downloads'].find_one({'url' : request.args.get('url')},{'_id':False})}
-    # return(jsonify(_out))
-    resp = Response(json.dumps(_out))
-    resp.headers['Access-Control-Allow-Origin'] = '*'
-    resp.headers['Content-Type'] = 'application/json'
-    return(resp)
-
+    return(jsonify(_out))
 
 @app.route('/api/store')
 def store():
-    print('store')
     _out = {'status':'warning','inserted':False}
     _url =  request.args.get('url')
     if _url:
@@ -89,12 +71,7 @@ def store():
             _out = {'status':'ok','inserted':True,'data': {'url': _url}}
         print(_out)
         
-    # return(jsonify(_out))
-    resp = Response(json.dumps(_out))
-    resp.headers['Access-Control-Allow-Origin'] = '*'
-    resp.headers['Content-Type'] = 'application/json'
-    return(resp)
-
+    return(jsonify(_out))
 
     
 if __name__ == '__main__':
@@ -108,6 +85,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     dbWrapper = MongoConnection(args.dbserver,args.dbport,args.database)
     #see https://stackoverflow.com/questions/7023052/configure-flask-dev-server-to-be-visible-across-the-network
-    
     app.run(host="0.0.0.0")
     
