@@ -29,12 +29,8 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 		 - is teh database connection configured? (perhaps only show the right-click option if it is?)
 		 - Are we connected to the database?
 		 - Is the current URL present in the database? 
-		 - what is its status?
-		*/
-		
+		 - what is its status? */
 		var _root = "http://127.0.0.1:5000/";	/** this will come from the settings page stored data */
-		
-		
 		let _summary = _root + "/api/summary";
 		let _check = _root + "/api/exists?url=" + info.linkUrl;
 		let _store = _root + "/api/store?url=";
@@ -44,12 +40,9 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 		//get all keys at once:
 		//https://stackoverflow.com/questions/18150774/get-all-keys-from-chrome-storage
 		chrome.storage.sync.get(null,function(result){
-			console.log('ARSE: '+result['ip_address']);
 			_root=result['ip_address'] + ":" + result['port']
-			console.log("_root: "+ _root);
 		
 			//see https://stackoverflow.com/questions/53405535/how-to-enable-fetch-post-in-chrome-extension-contentscript
-       		console.log(info.linkUrl);
 			/* let's use ES6
 			https://stackoverflow.com/questions/25107774/how-do-i-send-an-http-get-request-from-a-chrome-extension*/
 			fetch(_check)
@@ -65,7 +58,6 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 								.then(result => {
 									console.log(result);
 								});
-						
 						}
 						else{
 							if(result['data']['fetched'] === 'NOTFETCHED'){
@@ -78,42 +70,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 							}
 						}
 					}
-			});
-//		console.log("_root: "+ _root);
-//		
-//		//see https://stackoverflow.com/questions/53405535/how-to-enable-fetch-post-in-chrome-extension-contentscript
-//       console.log(info.linkUrl);
-//		/* let's use ES6
-//		https://stackoverflow.com/questions/25107774/how-do-i-send-an-http-get-request-from-a-chrome-extension*/
-//		fetch(_check)
-//			.then(r => r.json())
-//			.then(result => {
-//				console.log(result);
-//				if(result && result['status'] && result['status'] === 'ok'){
-//					if(result['exists'] === false){
-//						console.log('URL ' + info.linkUrl + ' is not stored');
-//						/** store it */	
-//						fetch(_store + info.linkUrl)
-//							.then(r => r.json())
-//							.then(result => {
-//								console.log(result);
-//							});
-//						
-//					}
-//					else{
-//						if(result['data']['fetched'] === 'NOTFETCHED'){
-//							/** don't 'store it */
-//							console.log('URL ' + info.linkUrl + ' is stored but not fetched');
-//						}
-//						if(result['data']['fetched'] === 'FETCHED'){
-//							/** don't 'store it */	
-//							console.log('URL ' + info.linkUrl + ' is already fetched');
-//						}
-//					}
-//				}
-//			    // Result now contains the response text, do what you want...
-//				/** result contains the status of the tested URL -  */
-		
-			})
+			});	
+		})
     }
 });
