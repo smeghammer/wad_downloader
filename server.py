@@ -1,18 +1,30 @@
 from libs.database import MongoConnection
 from flask import Flask
-from flask import jsonify,request
+from flask import jsonify,request,Response
 from urllib.parse import urlparse
 import requests
+import json
 import argparse
 
 app = Flask(__name__)
 
 @app.route('/api/')
 def root():
-    if request.args.get('test'):
-        #https://stackabuse.com/get-request-query-parameters-with-flask/
-        return(jsonify({'arg': request.args.get('test')}))
-    return(jsonify({'message':'REST API for Doom WAD downloader'}))
+    # if request.args.get('test'):
+    #     #https://stackabuse.com/get-request-query-parameters-with-flask/
+    #     resp = Response("foo bar baz")
+    #     resp.headers['Access-Control-Allow-Origin'] = '*'
+    #     return(jsonify({'arg': request.args.get('test')}))
+    #
+    # return(jsonify({'message':'REST API for Doom WAD downloader'}))
+    _out = json.dumps({'message':'REST API for Doom WAD downloader'})
+    print(_out)
+    resp = Response(_out)
+    # resp = Response('test')
+    resp.headers['Access-Control-Allow-Origin'] = '*'
+    resp.headers['Content-Type'] = 'application/json'
+    return(resp)
+
 
 @app.route('/api/list_all')
 def list_all():
@@ -85,5 +97,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     dbWrapper = MongoConnection(args.dbserver,args.dbport,args.database)
     #see https://stackoverflow.com/questions/7023052/configure-flask-dev-server-to-be-visible-across-the-network
-    app.run(host="0.0.0.0",port=80)
+    
+    app.run(host="0.0.0.0")
     
