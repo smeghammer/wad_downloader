@@ -85,5 +85,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     dbWrapper = MongoConnection(args.dbserver,args.dbport,args.database)
     #see https://stackoverflow.com/questions/7023052/configure-flask-dev-server-to-be-visible-across-the-network
-    app.run(host="0.0.0.0",port="80")
+    app.run(host="0.0.0.0",port=80)
     
