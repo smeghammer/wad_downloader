@@ -17,10 +17,9 @@ def root():
     #     return(jsonify({'arg': request.args.get('test')}))
     #
     # return(jsonify({'message':'REST API for Doom WAD downloader'}))
-    _out = json.dumps({'message':'REST API for Doom WAD downloader'})
-    print(_out)
-    resp = Response(_out)
-    # resp = Response('test')
+    # _out = json.dumps({'message':'REST API for Doom WAD downloader'})
+    # print(_out)
+    resp = Response(json.dumps({'message':'REST API for Doom WAD downloader'}))
     resp.headers['Access-Control-Allow-Origin'] = '*'
     resp.headers['Content-Type'] = 'application/json'
     return(resp)
