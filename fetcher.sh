@@ -16,8 +16,6 @@ if [ $# -lt 2 ];
 	then
 		echo "Please supply all positional arguments:";
 		echo
-		echo "./fetcher.sh \$1"
-		echo "or:"
 		echo "./fetcher.sh \$1 \%2"
 		echo
 		echo "where:"
