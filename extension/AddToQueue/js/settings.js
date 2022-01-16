@@ -26,32 +26,25 @@ let settings = {
 	},
 	
 	testHandler : function(){
-		document.getElementById('message').innerHTML = 'testing connection...<br />';
+		document.getElementById('message').innerHTML = 'testing connection<br />';
+//		chrome.storage.sync.get(['ip_address'],function(result){
 		chrome.storage.sync.get(null,function(result){
-			/** build link to API */
-			let APIRoot= 'http://' + result['ip_address'] + ":" + result['port'] + '/api/';
-
-			document.getElementById('message').innerHTML += APIRoot + "<br />";
-			//see https://developer.mozilla.org/en-US/docs/Web/API/fetch
-			//and https://github.com/mdn/fetch-examples/blob/master/fetch-request/index.html
-			try{
-				fetch(APIRoot)
-					.then(function(response){
-						document.getElementById('message').innerHTML += response.status+"<br />";
-						return response.json()
-						})
-					.then(function(data){
-						for(a in data){
-							document.getElementById('message').innerHTML += a+"="+data[a]+"<br />";
-						}
-					}
-					).catch(function(error){
-						document.getElementById('message').innerHTML += error.message;
-					}); 
-			}
-			catch(e){
-				document.getElementById('message').innerHTML += e;
-			}
+			document.getElementById('message').innerHTML += 'IP: '+result['ip_address'] +'<br />';
+			document.getElementById('message').innerHTML += 'IP: '+result['port'] +'<br />';
+			let _root=result['port'] + ":" + result['port']
+			console.log("_root: "+ _root);
+			let _out = "";
+			/*for(thing in result){
+				_out += thing + " = " + result[thing]+"\n";
+			}*/
+			document.getElementById('message').innerHTML += "Testing...<br />";
+			document.getElementById('message').innerHTML += _root + "<br />";
+//			fetch(_store + info.linkUrl)
+			fetch(_root)
+							.then(r => r.json())
+							.then(result => {
+								document.getElementById('message').innerHTML += r;
+							}); 
 		});
 	},
 	
@@ -63,6 +56,7 @@ let settings = {
 			document.getElementById('message').innerHTML = "Settings updated";
 		});
 	}
+	
 }
 
 settings.init();
