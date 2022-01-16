@@ -31,7 +31,7 @@ let settings = {
 		chrome.storage.sync.get(null,function(result){
 			document.getElementById('message').innerHTML += 'IP: '+result['ip_address'] +'<br />';
 			document.getElementById('message').innerHTML += 'IP: '+result['port'] +'<br />';
-			let _root=result['port'] + ":" + result['port']
+			let _root='http://'+result['ip_address'] + ":" + result['port']
 			console.log("_root: "+ _root);
 			let _out = "";
 			/*for(thing in result){
@@ -40,11 +40,14 @@ let settings = {
 			document.getElementById('message').innerHTML += "Testing...<br />";
 			document.getElementById('message').innerHTML += _root + "<br />";
 //			fetch(_store + info.linkUrl)
-			fetch(_root)
-							.then(r => r.json())
-							.then(result => {
-								document.getElementById('message').innerHTML += r;
-							}); 
+			try{
+				fetch(_root).then(r => r.json()).then(result => {
+					document.getElementById('message').innerHTML += result;
+				}); 
+			}
+			catch(e){
+				document.getElementById('message').innerHTML += e;
+			}
 		});
 	},
 	
