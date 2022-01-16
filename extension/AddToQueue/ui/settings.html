@@ -6,9 +6,16 @@
 		</title>
 	</head>
 	<body>
-		<h3>Configure MongoDB</h3>
-		<div><input type="text" id="ip_address" name="ip_address" /> Mongo database IP address</div>
-		<div><input type="text" id="Port" name="Port" value="27017" /> Mongo database IP address</div>
+		<h3>Configure WAD Downloader API connection</h3>
+		<div>IP address:</div>
+		<div><input type="text" id="ip_address" name="ip_address" value="" /></div>
+		<div>Port:</div>
+		<div> <input type="text" id="port" name="port" value="5000" /></div>
+		<div>
+			<button id="test_connection" title="Test database connection">Test</button>
+			<button id="save_connection" title="Save database connection">Save</button>
+		</div>
+		<div id="message"></div>
 	<script src="/js/settings.js"></script>
 	</body>
 </html>
