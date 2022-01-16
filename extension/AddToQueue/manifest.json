@@ -6,7 +6,7 @@
 	"background" : {
 		"service_worker" : "/action/pagescanner.js"
 	},
-	"host_permissions":["http://*/api/*"],
+	"host_permissions":["<all_urls>"],
 	"permissions": ["storage","contextMenus", "activeTab", "scripting"],
 	"action": {
 		"default_popup": "/ui/settings.html",
