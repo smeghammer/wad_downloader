@@ -46,7 +46,12 @@ def exists():
     _out = {'status':'ok','exists':False}
     if request.args.get('url') and dbWrapper.db['downloads'].find_one({'url' : request.args.get('url')},{'_id':False}):
         _out = {'status':'ok','exists':True,'data': dbWrapper.db['downloads'].find_one({'url' : request.args.get('url')},{'_id':False})}
-    return(jsonify(_out))
+    # return(jsonify(_out))
+    resp = Response(json.dumps(_out))
+    resp.headers['Access-Control-Allow-Origin'] = '*'
+    resp.headers['Content-Type'] = 'application/json'
+    return(resp)
+
 
 @app.route('/api/store')
 def store():
@@ -82,7 +87,12 @@ def store():
             _out = {'status':'ok','inserted':True,'data': {'url': _url}}
         print(_out)
         
-    return(jsonify(_out))
+    # return(jsonify(_out))
+    resp = Response(json.dumps(_out))
+    resp.headers['Access-Control-Allow-Origin'] = '*'
+    resp.headers['Content-Type'] = 'application/json'
+    return(resp)
+
 
     
 if __name__ == '__main__':
