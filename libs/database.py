@@ -84,7 +84,7 @@ class MongoConnection(object):
            
             
             #pull the file
-            print('trying to retrieve file ' + _res['metadata']['filename'])
+            # print('trying to retrieve file ' + _res['metadata']['filename'])
             
             ''' only do this if the request is a 200 '''
             Path(self.downloadBase + _res['source'] + '/' + _res['metadata']['dir']).mkdir(parents=True, exist_ok=True)
@@ -94,7 +94,6 @@ class MongoConnection(object):
             #http only
             try:
                 print('trying with requests...')
-                print(len(self.ualist))
                 _index = randint(0,len(self.ualist))
                 _ua = self.ualist[_index]
                 _headers = {'user-agent': self.ualist[randint(0,len(self.ualist))]['useragentString']}
@@ -114,7 +113,7 @@ class MongoConnection(object):
                 try:
                     #flag it as locked
                     self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'LOCKED'}})
-                    urllib.request.urlretrieve(_res['url'], self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'] + _res['metadata']['filename'])
+                    r = urllib.request.urlretrieve(_res['url'], self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'] + _res['metadata']['filename'])
                     _fetched = True
                 
                 except Exception as ex:

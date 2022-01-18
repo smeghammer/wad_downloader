@@ -1,21 +1,17 @@
-<doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>
-		Settings
-		</title>
+		<title>Summary</title>
+		<link rel="stylesheet" href="/css/styles.css"  type="text/css" />
 	</head>
 	<body>
-		<h3>Configure WAD Downloader API connection</h3>
-		<div>IP address:</div>
-		<div><input type="text" id="ip_address" name="ip_address" value="" /></div>
-		<div>Port:</div>
-		<div> <input type="text" id="port" name="port" value="5000" /></div>
-		<div>
-			<button id="test_connection" title="Test database connection">Test</button>
-			<button id="save_connection" title="Save database connection">Save</button>
-		</div>
-		<div id="message"></div>
-	<script src="/js/settings.js"></script>
+		<img src="/icons/addwad32.png" alt="Doom" title="WAD Downloader"><h2>WAD Downloader</h2>
+		<div>&nbsp;<div id="is_connected">(connecting...)</div></div>
+		<div>Database IP address: <span id="db_address"></span></div>
+		<div>Total in database: <span id="total"></span></div>
+		<div>Downloaded: <span id="downloaded"></span></div>
+		<div>Queued downloads: <span id="queued"></span></div>
+		<div>Downloads in progress:<span id="in_progress"></span></div>
+		<script src="/js/settings.js"></script>
 	</body>
 </html>

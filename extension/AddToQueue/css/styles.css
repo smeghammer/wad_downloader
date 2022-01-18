@@ -1,0 +1,18 @@
+body{
+	width: 230px;
+	background-color: black;
+	color: lightgrey;
+	border: 5px solid darkred;
+	padding: 4px;
+	margin: 0px;
+}
+h2{
+	margin-bottom: 1px;
+}
+img{
+	float: left;
+	padding-top: 10px;
+}
+body > div > span{
+	float:right;
+}

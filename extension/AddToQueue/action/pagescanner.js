@@ -30,7 +30,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 		 - Are we connected to the database?
 		 - Is the current URL present in the database? 
 		 - what is its status? */
-		var _root = "http://127.0.0.1:5000/";	/** this will come from the settings page stored data */
+		var _root = "http://127.0.0.1:5000/";
 		let _summary = _root + "/api/summary";
 		let _check = _root + "/api/exists?url=" + info.linkUrl;
 		let _store = _root + "/api/store?url=";
@@ -39,8 +39,8 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 		//TODO - need to reset the above to include the modified _root as per the 'var _root' above
 		//get all keys at once:
 		//https://stackoverflow.com/questions/18150774/get-all-keys-from-chrome-storage
-		chrome.storage.sync.get(null,function(result){
-			_root=result['ip_address'] + ":" + result['port']
+//		chrome.storage.sync.get(null,function(result){
+//			_root=result['ip_address'] + ":" + result['port']
 		
 			//see https://stackoverflow.com/questions/53405535/how-to-enable-fetch-post-in-chrome-extension-contentscript
 			/* let's use ES6
@@ -71,6 +71,6 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 						}
 					}
 			});	
-		})
+//		})
     }
 });

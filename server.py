@@ -6,7 +6,7 @@ import requests
 import argparse
 
 app = Flask(__name__)
-
+# args = None
 @app.route('/api/')
 def root():
     if request.args.get('test'):
@@ -22,7 +22,9 @@ def list_all():
 
 @app.route('/api/summary')
 def summary():
+    dbServer = args.dbserver
     return(jsonify({'summary':{
+            'db_address':dbServer,
             'total':dbWrapper.db['downloads'].count_documents({}),
             'downloaded':dbWrapper.db['downloads'].count_documents({'state':'FETCHED'}),
             'queued':dbWrapper.db['downloads'].count_documents({'state':'NOTFETCHED'}),
