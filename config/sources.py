@@ -30,6 +30,16 @@ crawlerData = {
             'downloadroot':'ftp://ftp.fu-berlin.de/pc/games/idgames/',
             'storeIn':'doomworld/'
         },
+     'DS':{
+             'id':'doomshack',
+            'name':'Doomshack',
+            'module':'doomshackcrawler',
+            'class':'DoomShackCrawler',
+            'startAt':'wadlist.php',
+            'crawlroot':'https://doomshack.org/',
+            'downloadroot':'https://doomshack.org/',
+            'storeIn':'doomshack/'
+         },
     'W':{
             'id':'wad-archive',
             'name':'WAD Archive',
