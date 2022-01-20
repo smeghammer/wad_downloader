@@ -37,7 +37,7 @@ crawlerData = {
             'class':'DoomShackCrawler',
             'startAt':'wadlist.php',
             'crawlroot':'https://doomshack.org/',
-            'downloadroot':'https://doomshack.org/',
+            'downloadroot':'https://doomshack.org',
             'storeIn':'doomshack/'
          },
     'W':{

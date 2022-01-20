@@ -24,12 +24,15 @@ class DoomShackCrawler(AbstractCrawler):
                 ''' find hrefs and any metadata: '''
                 # see https://stackoverflow.com/questions/4747397/calling-base-class-method-in-python
                 print(downloadLink['href'])
-                self.storeDownloadLink(
-                    {'_id' : downloadLink['href'],
+                
+                _obj =  {'_id' : downloadLink['href'],
                      'href' : self.downloadRoot + downloadLink['href'], 
-                     'filename' : downloadLink['href'].split('/')[1], 
+                     'filename' : downloadLink['href'].split('/')[2], 
                      'dir' : 'page1' + '/' 
-                     },
+                     }
+                
+                self.storeDownloadLink(
+                  _obj ,
                     self.downloadRoot + downloadLink['href'], 
                     ) 
             counter+=1
