@@ -9,10 +9,12 @@ app = Flask(__name__)
 # args = None
 @app.route('/api/')
 def root():
+    resp = flask.Response(jsonify({'message':'REST API for Doom WAD downloader'}))
+    resp.headers['Access-Control-Allow-Origin'] = '*'
     if request.args.get('test'):
         #https://stackabuse.com/get-request-query-parameters-with-flask/
         return(jsonify({'arg': request.args.get('test')}))
-    return(jsonify({'message':'REST API for Doom WAD downloader'}))
+    return(resp)
 
 @app.route('/api/list_all')
 def list_all():
