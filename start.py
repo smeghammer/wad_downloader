@@ -41,6 +41,10 @@ def selectCrawler(crawlerId,db):
     Here, I dynamically load the specified crawler class
     '''
     try:
+        print(crawlerData)
+        print(crawlerData[crawlerId]['module'])
+        print(crawlerData[crawlerId]['class'])
+        
         mod = importlib.import_module('libs.' + crawlerData[crawlerId]['module'], crawlerData[crawlerId]['class'])
         clss = getattr(mod, crawlerData[crawlerId]['class'])  
         inst = clss(str(crawlerData[args.archive]['startAt']), crawlerData[args.archive]['crawlroot'], crawlerData[args.archive]['downloadroot'],db,crawlerData[args.archive]['id']) #pass on loglevel to scraper module
