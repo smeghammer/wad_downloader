@@ -12,7 +12,7 @@ app = Flask(__name__)
 def root():
     try:
         resp = flask.Response(jsonify({'message':'REST API for Doom WAD downloader'}))
-        # resp.headers['Access-Control-Allow-Origin'] = '*'
+        resp.headers['Access-Control-Allow-Origin'] = '*'
         if request.args.get('test'):
             #https://stackabuse.com/get-request-query-parameters-with-flask/
             return(jsonify({'arg': request.args.get('test')}))
