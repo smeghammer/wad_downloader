@@ -66,7 +66,7 @@ if __name__ == '__main__':
     
     ''' Here I load a crawler based on the passed arg:  '''
     crawler = selectCrawler(str(args.archive),db)
-    
+    print(crawler)
     #run it:
     crawler.open()
 
