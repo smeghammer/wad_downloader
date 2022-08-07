@@ -70,6 +70,10 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 							}
 						}
 					}
+			})
+			.catch((error)=>{
+				console.log(error);
+				
 			});	
 //		})
     }
