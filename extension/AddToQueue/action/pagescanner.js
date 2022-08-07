@@ -30,7 +30,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 		 - Are we connected to the database?
 		 - Is the current URL present in the database? 
 		 - what is its status? */
-		var _root = "http://127.0.0.1:5000/";
+		var _root = "http://192.168.1.106:5000/";
 		let _summary = _root + "/api/summary";
 		let _check = _root + "/api/exists?url=" + info.linkUrl;
 		let _store = _root + "/api/store?url=";

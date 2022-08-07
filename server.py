@@ -4,16 +4,17 @@ from flask import jsonify,request,Response
 from urllib.parse import urlparse
 import requests
 import argparse
+import json
 
 app = Flask(__name__)
 # args = None
-@app.route('/api/')
+@app.route('/api')
 def root():
     resp = Response("{'message':'REST API for Doom WAD downloader'}")
     # resp = Response("fish")
     resp.headers["Access-Control-Allow-Origin"] = "*"
     resp.headers["Content-Type"] = "application/json"
-    print(resp)
+    # print(resp)
     if request.args.get('test'):
         #https://stackabuse.com/get-request-query-parameters-with-flask/
         return(jsonify({'arg': request.args.get('test')}))
@@ -23,27 +24,35 @@ def root():
 @app.route('/api/list_all')
 def list_all():
     ''' fucking pymongo 4!!! https://pymongo.readthedocs.io/en/stable/tutorial.html#getting-a-collection '''
-    _result = list(dbWrapper.db['downloads'].find({},{"_id":False}))
-    return(jsonify(_result))
+    resp = Response(str( list( dbWrapper.db['downloads'].find({},{"_id":False}) )))           
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+    resp.headers["Content-Type"] = "application/json"
+    return(resp)
 
 @app.route('/api/summary')
 def summary():
     dbServer = args.dbserver
-    return(jsonify({'summary':{
+    resp = Response(str({'summary':{
             'db_address':dbServer,
             'total':dbWrapper.db['downloads'].count_documents({}),
             'downloaded':dbWrapper.db['downloads'].count_documents({'state':'FETCHED'}),
             'queued':dbWrapper.db['downloads'].count_documents({'state':'NOTFETCHED'}),
-            'in_progress':dbWrapper.db['downloads'].count_documents({'state':'LOCKED'}),
-            }
-        }))
+            'in_progress':dbWrapper.db['downloads'].count_documents({'state':'LOCKED'})
+            }}))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+    resp.headers["Content-Type"] = "application/json"
+    return(resp)
     
 @app.route('/api/exists')
 def exists():
     _out = {'status':'ok','exists':False}
     if request.args.get('url') and dbWrapper.db['downloads'].find_one({'url' : request.args.get('url')},{'_id':False}):
         _out = {'status':'ok','exists':True,'data': dbWrapper.db['downloads'].find_one({'url' : request.args.get('url')},{'_id':False})}
-    return(jsonify(_out))
+    # return(jsonify(_out))
+    resp = Response(str(_out))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+    resp.headers["Content-Type"] = "application/json"
+    return(resp)
 
 @app.route('/api/store')
 def store():
@@ -79,9 +88,12 @@ def store():
             _out = {'status':'ok','inserted':True,'data': {'url': _url}}
         print(_out)
         
-    return(jsonify(_out))
+    # return(jsonify(_out))
+    resp = Response(str(_out))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+    resp.headers["Content-Type"] = "application/json"
+    return(resp)
 
-    
 if __name__ == '__main__':
     '''
     capture CLI args:
