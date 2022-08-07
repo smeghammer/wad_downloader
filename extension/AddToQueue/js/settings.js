@@ -26,7 +26,6 @@ let settings = {
 		catch(e){
 		}
 	},
-	
 };
 settings.init(true);
 //THIS WORKS!!
