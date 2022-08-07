@@ -1,6 +1,6 @@
 from libs.database import MongoConnection
 from flask import Flask
-from flask import jsonify,request
+from flask import jsonify,request,Response
 from urllib.parse import urlparse
 import requests
 import argparse
@@ -9,10 +9,16 @@ app = Flask(__name__)
 # args = None
 @app.route('/api/')
 def root():
+    resp = Response("{'message':'REST API for Doom WAD downloader'}")
+    # resp = Response("fish")
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+    resp.headers["Content-Type"] = "application/json"
+    print(resp)
     if request.args.get('test'):
         #https://stackabuse.com/get-request-query-parameters-with-flask/
         return(jsonify({'arg': request.args.get('test')}))
-    return(jsonify({'message':'REST API for Doom WAD downloader'}))
+    # return jsonify({'message':'REST API for Doom WAD downloader'}) 
+    return resp
 
 @app.route('/api/list_all')
 def list_all():
