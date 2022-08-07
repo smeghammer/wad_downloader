@@ -12,25 +12,23 @@
 # 
 # where nnnnn is mongoDB port and dbstring is the name of the mongoDB collection to use
 
-if [ $# -lt 2 ];
+if [ $# -lt 1 ];
 	then
 		echo "Please supply all positional arguments:";
 		echo
-		echo "./fetcher.sh \$1 \%2"
+		echo "./fetcher.sh \$1"
 		echo
 		echo "where:"
-		echo "  \$1=IP address of mongo database"
-		echo "  \$2=Key for download source (A, D, W, T, C, R667 or DWS currently)"
+		echo "  \$1=Key for download source (A, D, W, T, C, R667 or DWS currently)"
 	else
 		echo $1
-		echo $2
-		DATABASEIP="$1"
-		SOURCE="$2"
+
+		SOURCE="$1"
 		# loop until the user presses ctrl+c
 
 		while true
 		do
-			python3 fetcher.py -d ${DATABASEIP} -c ${SOURCE}
+			python3 fetcher.py -a ${SOURCE}
 		done
 fi
 

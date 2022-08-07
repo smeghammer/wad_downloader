@@ -18,10 +18,8 @@ capture CLI args:
 '''
 parser = argparse.ArgumentParser(description='Start metadata collection with startnode, db server, db port and DB name')
 # Required args:
-parser.add_argument( '-a', '--archive', help='archive source (D=doomworld, W=wad archive, S=sentinels playground)', type=str, required=True)
-parser.add_argument( '-d', '--dbserver', help='Mongo DB server IP [string]', type=str, required=True)  
-
-# optional args
+parser.add_argument( '-a', '--archive', help='archive source (A, C, D, DS, DWS, S, T, W )', type=str, required=True)
+parser.add_argument( '-d', '--dbserver', help='Mongo DB server IP [string]', type=str, required=False,default='127.0.0.1')  
 parser.add_argument( '-p', '--dbport', help='Mongo DB port [int]', required=False, type=int, default=27017)  
 parser.add_argument( '-n', '--database', help='Mongo database name [string]', type=str, required=False,default='DoomWadDownloader')
 args = parser.parse_args()

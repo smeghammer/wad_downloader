@@ -18,7 +18,9 @@ storeIn - filesystem root location for downloaded files. The trailing slash is e
 crawlerData = {
     'A':{
             'id':'api',
-            'description':'handles direct insertion via API (just Chrome plugin ATM)'
+            'name':'API',
+            'description':'handles direct insertion via API (just Chrome plugin ATM)',
+            'storeIn':'API/'
         },
     'D':{
             'id':'doomworld',
