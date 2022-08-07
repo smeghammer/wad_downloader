@@ -5,11 +5,21 @@ from urllib.parse import urlparse
 import requests
 import argparse
 import json
+from flask.templating import render_template
 
 app = Flask(__name__)
 # args = None
+
+@app.route('/')
+def index():
+    print(request.args)
+    return render_template('index.html',args = request.args)
+    # return jsonify({'message':'root'}) 
+
+
+
 @app.route('/api')
-def root():
+def api():
     if request.args.get('test'):
         #https://stackabuse.com/get-request-query-parameters-with-flask/
         return(jsonify({'arg': request.args.get('test')}))
