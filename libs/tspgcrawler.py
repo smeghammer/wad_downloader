@@ -42,7 +42,7 @@ class SentinelsPlaygroundCrawler(AbstractCrawler):
                         'href' : downloadLink['href'],
                         'filename' : downloadLink['title'][9:],
                         'dir' : 'page' + str(self.counter) + '/'
-                        },self.downloadRoot + downloadLink['title'][9:]
+                        },self.download_root + downloadLink['title'][9:]
                     )
                 except Exception as ex:
                     print(ex)

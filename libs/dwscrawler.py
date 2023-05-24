@@ -37,7 +37,7 @@ class WADStationCrawler(AbstractCrawler):
                  'filename' : downloadLink['href'][2:], 
                  'dir' : 'page1' + '/' 
                  },
-                self.downloadRoot + downloadLink['href'][2:], 
+                self.download_root + downloadLink['href'][2:], 
                 )
 
             

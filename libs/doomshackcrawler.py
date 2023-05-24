@@ -26,13 +26,13 @@ class DoomShackCrawler(AbstractCrawler):
                 print(downloadLink['href'])
                 
                 _obj =  {'_id' : downloadLink['href'],
-                     'href' : self.downloadRoot + downloadLink['href'], 
+                     'href' : self.download_root + downloadLink['href'], 
                      'filename' : downloadLink['href'].split('/')[2], 
                      'dir' : 'page1' + '/' 
                      }
                 
                 self.storeDownloadLink(
                   _obj ,
-                    self.downloadRoot + downloadLink['href'], 
+                    self.download_root + downloadLink['href'], 
                     ) 
             counter+=1
