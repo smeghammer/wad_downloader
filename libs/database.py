@@ -4,12 +4,12 @@ Created on 10 Jan 2021
 @author: smegh
 '''
 from random import randint
-from pathlib import Path            #see https://stackoverflow.com/questions/273192/how-can-i-safely-create-a-nested-directory
+#see https://stackoverflow.com/questions/273192/how-can-i-safely-create-a-nested-directory
+from pathlib import Path
 import urllib.request
 import requests
 from requests.exceptions import HTTPError
 from pymongo import MongoClient
-# import config.sources
 from config.sources import userAgents, crawlerData
 
 
@@ -26,7 +26,8 @@ class MongoConnection():
         self.mongoIp = mongo_ip
         self.mongoPort = mongo_port
         self.downloadBase = 'downloads/'
-        self.downloadPath = storeIn             #frpm dowloader initialisation
+        #frpm dowloader initialisation
+        self.downloadPath = storeIn
         self.ualist = userAgents
 
         #self.db = MongoClient(host=dbServer,port=dbPort)[treecreeperDBName]
@@ -37,16 +38,12 @@ class MongoConnection():
         '''
         store a download link in the queue ready for fetching
         '''
-        # try:
         if not self.is_stored('downloads',linkobj['url']):
             print('storing')
             self.db['downloads'].insert_one(linkobj)
             return True
         print('already stored')
         return False
-        # except Exception as ex:
-        #     print(ex)
-        #     return False
 
     def get_queue_item(self,url):
         '''
@@ -86,7 +83,7 @@ class MongoConnection():
                 print('trying with requests...')
                 _index = randint(0,len(self.ualist))
                 _ua = self.ualist[_index]
-                _headers = {'user-agent': self.ualist[randint(0,len(self.ualist))]['useragentString']}
+                _headers = {'user-agent': self.ualist[randint(0,len(self.ualist)-1)]['useragentString']}
                 r = requests.get(_res['url'],headers=_headers,timeout=45)
                 if r.status_code == 200:
                     #flag it as locked
@@ -95,11 +92,11 @@ class MongoConnection():
                         outfile.write(r.content)
                         _fetched = True
                 else:
-                    raise HTTPError("Request error: " +  r.status_code)
+                    raise HTTPError(f"Request error: {r.status_code}")
 
             #ftp
-            except Exception as ex:
-                print('requests lib failed, trying with urllib...')
+            except HTTPError as ex:
+                print(f'requests lib failed {ex}, trying with urllib...')
                 try:
                     #flag it as locked
                     self.db['downloads'].update_many({'url':_res['url']},{'$set':{'state':'LOCKED'}})
@@ -107,28 +104,16 @@ class MongoConnection():
                     _fetched = True
 
                 except Exception as ex2:
-                    #flag it as failed
-# <<<<<<< HEAD
-#                     self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'ERROR'}})
-#                     print(ex2)
-
-# =======
                     self.db['downloads'].update_many({'url':_res['url']},{'$set':{'state':'ERROR'}})
                     print(ex2)
-                    
-            
-# >>>>>>> branch 'master' of https://github.com/smeghammer/wad_downloader.git
+
             if _fetched:
                 print('fetched OK. Stored in ' + self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'])
                 res = self.db['downloads'].update_many({'url':_res['url']},{'$set':{'state':'FETCHED'}})
                 print(res)
             else:
-# <<<<<<< HEAD
-#                 self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'FAILED'}})
 
-# =======
                 self.db['downloads'].update_many({'url':_res['url']},{'$set':{'state':'FAILED'}})
-        
-# >>>>>>> branch 'master' of https://github.com/smeghammer/wad_downloader.git
+
         else:
             print('Notihng to retrieve!')
