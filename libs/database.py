@@ -90,7 +90,7 @@ class MongoConnection():
                 r = requests.get(_res['url'],headers=_headers,timeout=45)
                 if r.status_code == 200:
                     #flag it as locked
-                    self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'LOCKED'}})
+                    self.db['downloads'].update_many({'url':_res['url']},{'$set':{'state':'LOCKED'}})
                     with open(self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'] + _res['metadata']['filename'], 'wb') as outfile:
                         outfile.write(r.content)
                         _fetched = True
@@ -102,20 +102,33 @@ class MongoConnection():
                 print('requests lib failed, trying with urllib...')
                 try:
                     #flag it as locked
-                    self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'LOCKED'}})
+                    self.db['downloads'].update_many({'url':_res['url']},{'$set':{'state':'LOCKED'}})
                     r = urllib.request.urlretrieve(_res['url'], self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'] + _res['metadata']['filename'])
                     _fetched = True
 
                 except Exception as ex2:
                     #flag it as failed
-                    self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'ERROR'}})
-                    print(ex2)
+# <<<<<<< HEAD
+#                     self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'ERROR'}})
+#                     print(ex2)
 
+# =======
+                    self.db['downloads'].update_many({'url':_res['url']},{'$set':{'state':'ERROR'}})
+                    print(ex2)
+                    
+            
+# >>>>>>> branch 'master' of https://github.com/smeghammer/wad_downloader.git
             if _fetched:
                 print('fetched OK. Stored in ' + self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'])
-                self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'FETCHED'}})
+                res = self.db['downloads'].update_many({'url':_res['url']},{'$set':{'state':'FETCHED'}})
+                print(res)
             else:
-                self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'FAILED'}})
+# <<<<<<< HEAD
+#                 self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'FAILED'}})
 
+# =======
+                self.db['downloads'].update_many({'url':_res['url']},{'$set':{'state':'FAILED'}})
+        
+# >>>>>>> branch 'master' of https://github.com/smeghammer/wad_downloader.git
         else:
             print('Notihng to retrieve!')

@@ -30,7 +30,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 		 - Are we connected to the database?
 		 - Is the current URL present in the database? 
 		 - what is its status? */
-		var _root = "http://192.168.1.106:5000/";
+		var _root = "http://127.0.0.1:5000";
 		let _summary = _root + "/api/summary";
 		let _check = _root + "/api/exists?url=" + info.linkUrl;
 		let _store = _root + "/api/store?url=";
@@ -45,7 +45,9 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 			//see https://stackoverflow.com/questions/53405535/how-to-enable-fetch-post-in-chrome-extension-contentscript
 			/* let's use ES6
 			https://stackoverflow.com/questions/25107774/how-do-i-send-an-http-get-request-from-a-chrome-extension*/
-			fetch(_check)
+		test = 	fetch(_check)
+		console.log(test);
+		fetch(_check)
 				.then(r => r.json())
 				.then(result => {
 					console.log(result);
