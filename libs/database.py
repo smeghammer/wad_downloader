@@ -81,9 +81,9 @@ class MongoConnection():
 
             try:
                 print('trying with requests...')
-                _index = randint(0,len(self.ualist))
-                _ua = self.ualist[_index]
-                _headers = {'user-agent': self.ualist[randint(0,len(self.ualist)-1)]['useragentString']}
+                # _index = randint(0,len(self.ualist)-1)
+                # _ua = self.ualist[_index]
+                _headers = {'user-agent': self.ualist[randint(0,len(self.ualist)-1)]['useragent']}
                 r = requests.get(_res['url'],headers=_headers,timeout=45)
                 if r.status_code == 200:
                     #flag it as locked

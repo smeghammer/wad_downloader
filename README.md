@@ -29,11 +29,14 @@ Added first cut of API server and Chrome extension. The extension code is curren
 ### Concrete crawlers
 So far, there are five implementations:
 
- - [Doomworld API](https://www.doomworld.com/idgames/api/api.php?action=getcontents&out=json&id=0) (JSON)
- - [WAD Archive](https://www.wad-archive.com/Category/WADs) (web scrape)
- - [The Sentinels Playground](https://allfearthesentinel.net/zandronum/wads.php) (web scrape)
- - [Doom WAD Station](http://www.doomwadstation.net/mega/) (web scrape, not SSL!)
- - [Realm 667](https://www.realm667.com/index.php/en/repository-18489) (web scrape)
+ - [Doomworld API](https://www.doomworld.com/idgames/api/api.php?action=getcontents&out=json&id=0) (JSON), key=D
+ - [Doomworld API, by author](https://www.doomworld.com/idgames/api/api.php?action=getcontents&out=json&id=0) (JSON), key=DBA
+ - [Doomshack](https://doomshack.org/) (Web scrape), key=DS
+ - [WAD Archive](https://www.wad-archive.com/Category/WADs) (web scrape, may not be available any more), key=W
+ - [The Sentinels Playground](https://allfearthesentinel.net/zandronum/wads.php) (web scrape), key=T
+ - [Doom WAD Station](http://www.doomwadstation.net/mega/) (web scrape, not SSL!), key=DWS
+ - [Realm 667](https://www.realm667.com/index.php/en/repository-18489) (web scrape), key=R667
+ - [Camoy](https://camoy.sdf.org/) (web scrape), key=R667
 
 #### Example
 The current ID Games concrete implementation of a crawler uses the Doomworld API and the root endpoint is
@@ -66,7 +69,7 @@ See `fetcher.bat`/`fetcher.sh` for example usage.
 
 ## Dependencies
 
-### Python3.6 packages
+### Python3.10 packages
 Extra python packages that are needed:
 
  - json
@@ -80,4 +83,4 @@ Extra python packages that are needed:
  
 
 ## Future
-I may build this as a PIPENV eventually with python3.8, but for now, additional package requirements are as listed above.
+I may build this as a PIPENV eventually with python3.10, but for now, additional package requirements are as listed above.

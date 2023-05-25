@@ -19,7 +19,7 @@ if [ $# -lt 1 ];
 		echo "./fetcher.sh \$1"
 		echo
 		echo "where:"
-		echo "  \$1=Key for download source (A, D, W, T, C, R667 or DWS currently)"
+		echo "  \$1=Key for download source (A, D, DS, W, T, DWS, C, R667 or DBA currently)"
 	else
 		echo $1
 

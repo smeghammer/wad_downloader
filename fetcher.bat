@@ -9,9 +9,6 @@ rem make sure to use the actual name of your python3 alias!
 if "%1"=="" 	(goto missingarg1)
 if "%2"=="" (goto  runonearg) else (goto runtwoargs)
 
-
-
-
 :missingarg1
  	echo ---------------------------------------------------
 	echo -           MISSING DATABASE ARGUMENT!            -
@@ -30,6 +27,7 @@ if "%2"=="" (goto  runonearg) else (goto runtwoargs)
     echo ---------------------------------------------------
     pause
 	:loop
+		echo python fetcher.py -d %1
 		python fetcher.py -d %1
 	goto loop
 	exit 0
@@ -45,6 +43,7 @@ if "%2"=="" (goto  runonearg) else (goto runtwoargs)
     echo ---------------------------------------------------
     pause
 	:loop2
+		echo python fetcher.py -d %1 -c %2
 		python fetcher.py -d %1 -c %2
 	goto loop2
 	exit 0
@@ -62,7 +61,9 @@ if "%2"=="" (goto  runonearg) else (goto runtwoargs)
 	echo -                                                 -
 	echo - The source flags currently include:             -
 	echo -                                                 -
-	echo - D = doomworks IDGames mirror                    -
+	echo - D = doomworld IDGames mirror                    -
+	echo - DBA = doomworld IDGames mirror by Author        -
+	echo - DS = Doomshack                                  -
 	echo - W = WAD archive                                 -
 	echo - T = The Sentinels Playground                    -
 	echo - C = Camo Yoshi WAD list                         -
