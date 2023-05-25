@@ -77,7 +77,11 @@ class MongoConnection():
             _query = {'state':'NOTFETCHED','source':crawlerData[crawlerId]['id']}
         _res = self.db['downloads'].find_one(_query,{'_id':0})
         if _res:
-            Path(self.downloadBase + _res['source'] + '/' + _res['metadata']['dir']).mkdir(parents=True, exist_ok=True)
+            try:
+                Path(self.downloadBase + _res['source'] + '/' + _res['metadata']['dir']).mkdir(parents=True, exist_ok=True)
+            except OSError as err:
+                # something fuked up wit hthe path (quote in author name etc.) - default to XXX
+                Path(self.downloadBase + _res['source'] + '/xxx/').mkdir(parents=True, exist_ok=True)
 
             try:
                 print('trying with requests...')
@@ -88,9 +92,15 @@ class MongoConnection():
                 if r.status_code == 200:
                     #flag it as locked
                     self.db['downloads'].update_many({'url':_res['url']},{'$set':{'state':'LOCKED'}})
-                    with open(self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'] + _res['metadata']['filename'], 'wb') as outfile:
-                        outfile.write(r.content)
-                        _fetched = True
+                    try:
+                        with open(self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'] + _res['metadata']['filename'], 'wb') as outfile:
+                            outfile.write(r.content)
+                            _fetched = True
+                    except OSError as err:
+                        # bad path stored. Look at fixinfg this during th ecrawl.
+                        with open(self.downloadBase + _res['source'] + '/xxx/' + _res['metadata']['filename'], 'wb') as outfile:
+                            outfile.write(r.content)
+                            _fetched = True
                 else:
                     raise HTTPError(f"Request error: {r.status_code}")
 
