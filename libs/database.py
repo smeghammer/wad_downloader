@@ -3,77 +3,76 @@ Created on 10 Jan 2021
 
 @author: smegh
 '''
-import requests
-import urllib.request
-from pymongo import MongoClient
-from pathlib import Path            #see https://stackoverflow.com/questions/273192/how-can-i-safely-create-a-nested-directory
-import config.sources
 from random import randint
+from pathlib import Path            #see https://stackoverflow.com/questions/273192/how-can-i-safely-create-a-nested-directory
+import urllib.request
+import requests
+from requests.exceptions import HTTPError
+from pymongo import MongoClient
+# import config.sources
 from config.sources import userAgents, crawlerData
 
 
-class MongoConnection(object):
-    
+class MongoConnection():
 
     '''
-    classdocs
+    connect to database and wrap methods
     '''
-    def __init__(self, mongoIp='127.0.0.1', mongoPort=27017,databaseName='DoomWadDownloader',storeIn = 'other/'):
+    def __init__(self, mongo_ip='127.0.0.1', mongo_port=27017,database_name='DoomWadDownloader',storeIn = 'other/'):
         '''
         Constructor
         '''
         print('instantiating database')
-        self.mongoIp = mongoIp
-        self.mongoPort = mongoPort
+        self.mongoIp = mongo_ip
+        self.mongoPort = mongo_port
         self.downloadBase = 'downloads/'
         self.downloadPath = storeIn             #frpm dowloader initialisation
         self.ualist = userAgents
-        
-        #self.db = MongoClient(host=dbServer,port=dbPort)[treecreeperDBName]
-        client = MongoClient(connect=False, localThresholdMS=100, host=mongoIp, port=mongoPort)
-        self.db = client[databaseName]
-    
-    
-    
-            
-#     def setDatabase(self,mongoIp='127.0.0.1', mongoPort=27017):
 
-    def storeDownloadLinkObj(self,linkobj):
-        try:
-            if not self.isStored('downloads',linkobj['url']):
-                print('storing')
-                self.db['downloads'].insert_one(linkobj)
-                return True
-            print('already stored')
-            return False
-        except Exception as ex:
-            print(ex)
-            return False
-        
-    
-    def getQueueItem(self,url):
-        _cursor = self.db['downloads'].find({'url':url},{'_id':0});
+        #self.db = MongoClient(host=dbServer,port=dbPort)[treecreeperDBName]
+        client = MongoClient(connect=False, localThresholdMS=100, host=mongo_ip, port=mongo_port)
+        self.db = client[database_name]
+
+    def store_download_link_obj(self,linkobj):
+        '''
+        store a download link in the queue ready for fetching
+        '''
+        # try:
+        if not self.is_stored('downloads',linkobj['url']):
+            print('storing')
+            self.db['downloads'].insert_one(linkobj)
+            return True
+        print('already stored')
+        return False
+        # except Exception as ex:
+        #     print(ex)
+        #     return False
+
+    def get_queue_item(self,url):
+        '''
+        retrieve a queue item by URL
+        '''
+        _cursor = self.db['downloads'].find({'url':url},{'_id':0})
         result = list(_cursor)
         if result:
-            return(result)
-        return({'result':'no record found for '+url})
-        
-    '''
-    have we got this link already?
-    collection is 'downloads' or 'crawl'
-    '''
-    def isStored(self,collection,url): 
-        _cursor = self.db[collection].find({'url':url},{'_id':0});
+            return result
+        return {'result':'no record found for '+url}
+
+    def is_stored(self,collection,url):
+        '''
+        have we got this link already?
+        collection is 'downloads' or 'crawl'
+        '''
+        _cursor = self.db[collection].find({'url':url},{'_id':0})
         result = list(_cursor)
-        print('RESULT:',result)
         if result:
             return True
         return False
-        # return(dict(self.db[collection].find({'url':url})))
-    
-    
-     
-    def fetchFile(self,crawlerId=None):
+
+    def fetch_file(self,crawlerId=None):
+        '''
+        retrieve the binary specified in next available queue item
+        '''
         _fetched = False
         _query = {'state':'NOTFETCHED'}
         if crawlerId:
@@ -81,32 +80,23 @@ class MongoConnection(object):
             _query = {'state':'NOTFETCHED','source':crawlerData[crawlerId]['id']}
         _res = self.db['downloads'].find_one(_query,{'_id':0})
         if _res:
-           
-            
-            #pull the file
-            # print('trying to retrieve file ' + _res['metadata']['filename'])
-            
-            ''' only do this if the request is a 200 '''
             Path(self.downloadBase + _res['source'] + '/' + _res['metadata']['dir']).mkdir(parents=True, exist_ok=True)
-            #store on FS( or in gridFS?)
-            #lets try requests:
-            
-            #http only
+
             try:
                 print('trying with requests...')
                 _index = randint(0,len(self.ualist))
                 _ua = self.ualist[_index]
                 _headers = {'user-agent': self.ualist[randint(0,len(self.ualist))]['useragentString']}
-                r = requests.get(_res['url'],headers=_headers)
+                r = requests.get(_res['url'],headers=_headers,timeout=45)
                 if r.status_code == 200:
                     #flag it as locked
                     self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'LOCKED'}})
                     with open(self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'] + _res['metadata']['filename'], 'wb') as outfile:
                         outfile.write(r.content)
                         _fetched = True
-                else: 
-                    raise Exception("Request error: " +  r.status_code)
-                    
+                else:
+                    raise HTTPError("Request error: " +  r.status_code)
+
             #ftp
             except Exception as ex:
                 print('requests lib failed, trying with urllib...')
@@ -115,19 +105,17 @@ class MongoConnection(object):
                     self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'LOCKED'}})
                     r = urllib.request.urlretrieve(_res['url'], self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'] + _res['metadata']['filename'])
                     _fetched = True
-                
-                except Exception as ex:
+
+                except Exception as ex2:
                     #flag it as failed
                     self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'ERROR'}})
-                    print(ex)
-                    
-            
+                    print(ex2)
+
             if _fetched:
                 print('fetched OK. Stored in ' + self.downloadBase + _res['source'] + '/' + _res['metadata']['dir'])
                 self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'FETCHED'}})
             else:
                 self.db['downloads'].update_one({'url':_res['url']},{'$set':{'state':'FAILED'}})
-        
+
         else:
             print('Notihng to retrieve!')
-        

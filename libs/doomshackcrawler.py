@@ -31,7 +31,7 @@ class DoomShackCrawler(AbstractCrawler):
                      'dir' : 'page1' + '/' 
                      }
                 
-                self.storeDownloadLink(
+                self.store_download_link(
                   _obj ,
                     self.downloadRoot + downloadLink['href'], 
                     ) 

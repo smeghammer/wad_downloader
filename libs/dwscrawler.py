@@ -31,7 +31,7 @@ class WADStationCrawler(AbstractCrawler):
             ''' find hrefs and any metadata: '''
             # see https://stackoverflow.com/questions/4747397/calling-base-class-method-in-python
             print(downloadLink['href'])
-            self.storeDownloadLink(
+            self.store_download_link(
                 {'_id' : downloadLink['href'][2:],
                  'href' : downloadLink['href'][2:], 
                  'filename' : downloadLink['href'][2:], 

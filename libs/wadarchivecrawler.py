@@ -45,7 +45,7 @@ class WADArchiveCrawler(AbstractCrawler):
                 crawl = False
             for downloadLink in downloadLinks:
                 ''' find hrefs and any metadata: '''
-                self.storeDownloadLink({
+                self.store_download_link({
                     '_id' : downloadLink['href'][5:],
                     'href' : downloadLink['href'] + '/',
                     'filename' : downloadLink['title'],

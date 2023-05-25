@@ -18,7 +18,7 @@ is a crazy idea...
 Once the file metadata is stored in mongo, I can run a downloader against that and flag each
 entry as retrieved appropriately. That way, I do not have to run the retriever in one go.
 
-This superclass uses the base class methods __init__() and storeDownloadLink()
+This superclass uses the base class methods __init__() and store_download_link()
 '''
 class R667Crawler(AbstractCrawler):
     
@@ -196,7 +196,7 @@ class R667Crawler(AbstractCrawler):
                     print('error parsing for link!')
                 
                 try:
-                    self.storeDownloadLink(
+                    self.store_download_link(
                         _dataitems[_itemtitle], 
                         'https://www.realm667.com' 
                         + _currdataitem.select('span.download a')[0].get('href')

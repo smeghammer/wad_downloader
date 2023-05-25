@@ -37,7 +37,7 @@ class SentinelsPlaygroundCrawler(AbstractCrawler):
             for downloadLink in downloadLinks:
                 ''' find hrefs and any metadata: '''
                 try:
-                    self.storeDownloadLink({
+                    self.store_download_link({
                         '_id' : downloadLink['href'][29:],
                         'href' : downloadLink['href'],
                         'filename' : downloadLink['title'][9:],

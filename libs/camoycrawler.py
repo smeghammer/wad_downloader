@@ -24,7 +24,7 @@ class CamoyCrawler(AbstractCrawler):
                 ''' find hrefs and any metadata: '''
                 # see https://stackoverflow.com/questions/4747397/calling-base-class-method-in-python
                 print(downloadLink['href'])
-                self.storeDownloadLink(
+                self.store_download_link(
                     {'_id' : downloadLink['href'],
                      'href' : self.downloadRoot + downloadLink['href'], 
                      'filename' : downloadLink['href'], 

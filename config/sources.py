@@ -27,7 +27,8 @@ crawlerData = {
             'class':'DoomworldCrawler',
             'startAt':6,
             'crawlroot':'https://www.doomworld.com/idgames/api/api.php?action=getcontents&out=json&id=',
-            'downloadroot':'ftp://ftp.fu-berlin.de/pc/games/idgames/',
+            # 'downloadroot':'ftp://ftp.fu-berlin.de/pc/games/idgames/',
+            'downloadroot' : 'https://www.quaddicted.com/files/idgames/',
             'storeIn':'doomworld/'
         },
      'DS':{
