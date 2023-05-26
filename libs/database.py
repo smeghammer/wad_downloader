@@ -23,22 +23,23 @@ class MongoConnection():
         Constructor
         '''
         print('instantiating database')
-        self.mongoIp = mongo_ip
-        self.mongoPort = mongo_port
+        #self.mongo_ip = mongo_ip
+        #self.mongoPort = mongo_port
         self.downloadBase = 'downloads/'
         #frpm dowloader initialisation
         self.downloadPath = storeIn
         self.ualist = userAgents
 
         #self.db = MongoClient(host=dbServer,port=dbPort)[treecreeperDBName]
-        client = MongoClient(connect=False, localThresholdMS=100, host=mongo_ip, port=mongo_port)
-        self.db = client[database_name]
+        #client = MongoClient(connect=False, localThresholdMS=100, host=mongo_ip, port=mongo_port)
+        #self.db = client[database_name]
+        self.db = MongoClient(connect=False, localThresholdMS=100, host=mongo_ip, port=mongo_port)[database_name]
 
     def store_download_link_obj(self,linkobj):
         '''
         store a download link in the queue ready for fetching
         '''
-        if not self.is_stored('downloads',linkobj['url']):
+        if not self.is_stored('downloads',linkobj['url'],linkobj['source']):
             print('storing')
             self.db['downloads'].insert_one(linkobj)
             return True
@@ -55,12 +56,12 @@ class MongoConnection():
             return result
         return {'result':'no record found for '+url}
 
-    def is_stored(self,collection,url):
+    def is_stored(self,collection,url,source):
         '''
         have we got this link already?
         collection is 'downloads' or 'crawl'
         '''
-        _cursor = self.db[collection].find({'url':url},{'_id':0})
+        _cursor = self.db[collection].find({'url':url,'source':source},{'_id':0})
         result = list(_cursor)
         if result:
             return True

@@ -29,7 +29,7 @@ class DBACrawler(AbstractCrawler):
                 print(item['id'])
 
                 # recursively instantiate the crawler with each new directory URL:
-                _crawler = DBACrawler(str(item['id']),self.crawlroot,self.downloadRoot,self.db, self.crawlerId)
+                _crawler = DBACrawler(str(item['id']),self.crawlroot,self.download_root,self.db, self.crawler_id)
                 _crawler.open()
         if 'file' in self.data['content'] and self.data['content']['file']:
             for item in self.data['content']['file']:
@@ -38,7 +38,7 @@ class DBACrawler(AbstractCrawler):
                     print(item['title'])
                     
                     # first, we need the URL to download:
-                    orig_url = self.downloadRoot + item['dir']+item['filename']
+                    orig_url = self.download_root + item['dir']+item['filename']
                     
                     # then reset the store directory to the author prefix:
                     item['dir'] = self.get_name_prefix(item)
