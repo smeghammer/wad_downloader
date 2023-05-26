@@ -51,7 +51,7 @@ class WADArchiveCrawler(AbstractCrawler):
                     'filename' : downloadLink['title'],
                     'dir' : 'page' + str(self.counter) + '/'
                     },
-                    self.downloadRoot + downloadLink['href'][5:] + '/' + downloadLink['title'], 
+                    self.download_root + downloadLink['href'][5:] + '/' + downloadLink['title'], 
                 )
             
             ''' and load the next page '''

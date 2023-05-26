@@ -13,6 +13,18 @@ downloadroot - the base url from which download URLs are constructed
 storeIn - filesystem root location for downloaded files. The trailing slash is essential.
 '''
 crawlerData = {
+    'DMC':{
+        'id':'dmc',
+        'name':'Doomworld API metadata colletor',
+        'description':'extracts metadata from the ID Games API JSON output and inserts/updates to a SQL database table',
+            'module':'dwmetadatacrawler',
+            'class':'DWMetadataCrawler',
+            'startAt':6,    # maps root
+            'crawlroot':'https://www.doomworld.com/idgames/api/api.php?action=getcontents&out=json&id=',
+            'downloadroot':None,
+            'storeIn':None
+    
+    },
     'A':{
             'id':'api',
             'name':'API',

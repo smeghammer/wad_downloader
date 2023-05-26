@@ -26,11 +26,11 @@ class CamoyCrawler(AbstractCrawler):
                 print(downloadLink['href'])
                 self.store_download_link(
                     {'_id' : downloadLink['href'],
-                     'href' : self.downloadRoot + downloadLink['href'], 
+                     'href' : self.download_root + downloadLink['href'], 
                      'filename' : downloadLink['href'], 
                      'dir' : 'page1' + '/' 
                      },
-                    self.downloadRoot + downloadLink['href'], 
+                    self.download_root + downloadLink['href'], 
                     ) 
             counter+=1
             

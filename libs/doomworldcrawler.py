@@ -26,12 +26,15 @@ class DoomworldCrawler(AbstractCrawler):
         if 'dir' in self.data['content'] and self.data['content']['dir']:
             for item in self.data['content']['dir']:
                 print(item['id'])
-
                 # recursively instantiate the crawler with each new directory URL:
-                _crawler = DoomworldCrawler(str(item['id']),self.crawlroot,self.downloadRoot,self.db, self.crawlerId)
+                _crawler = DoomworldCrawler(str(item['id']),self.crawlroot,self.download_root,self.db, self.crawler_id)
+
                 _crawler.open()
         if 'file' in self.data['content'] and self.data['content']['file']:
             for item in self.data['content']['file']:
-                # We have a file listing, so process it (into mongoDB) for subsequent download:
-                print(item['title'])
-                self.store_download_link(item, self.downloadRoot + item['dir']+item['filename'])
+                try:
+                    # We have a file listing, so process it (into mongoDB) for subsequent download:
+                    print(item['title'])
+                    self.store_download_link(item, self.download_root + item['dir']+item['filename'])
+                except Exception as ex:
+                    print(ex)
