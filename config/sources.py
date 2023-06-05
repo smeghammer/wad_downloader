@@ -15,7 +15,7 @@ storeIn - filesystem root location for downloaded files. The trailing slash is e
 crawlerData = {
     'DMC':{
         'id':'dmc',
-        'name':'Doomworld API metadata colletor',
+        'name':'Doomworld API metadata collector',
         'description':'extracts metadata from the ID Games API JSON output and inserts/updates to a SQL database table',
             'module':'dwmetadatacrawler',
             'class':'DWMetadataCrawler',

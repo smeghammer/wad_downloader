@@ -10,7 +10,7 @@ from abc import ABC, abstractmethod
 class AbstractCrawler(ABC):
 
     @classmethod
-    def __init__(self,startnode,crawlroot,download_root,database,crawler_id,counter=1):
+    def __init__(self,startnode,crawlroot,download_root,database,crawler_id,counter=1,metadatadb='metadata.db'):
         '''  initialise class instance with the url, root of API, root for downloads and a database 
         object - we only want to instantiate the database object one time, so pass it around after
         instantiating in the start module:  '''
@@ -20,6 +20,7 @@ class AbstractCrawler(ABC):
         self.download_root = download_root
         self.crawlroot = crawlroot
         self.db = database
+        self.metadatadb = metadatadb
         self.crawler_id = crawler_id
         self.counter=counter
         self.soup = None

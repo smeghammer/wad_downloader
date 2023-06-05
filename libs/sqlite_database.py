@@ -15,7 +15,7 @@ class ServerDatabaseActions():
     FETCH_ALL = 10
     FETCH_ONE = 11
 
-    def __init__(self):
+    def __init__(self,metadatabd):
         ''' Constructor '''
         path = os.path.abspath(os.getcwd())
 
@@ -25,7 +25,7 @@ class ServerDatabaseActions():
             os.makedirs(path + '/database/')
 
         # create a database file, if needed:
-        self.dbname = path + '/database/idgamesdata.db'
+        self.dbname = f'{path}/database/{metadatabd}'
 
         # create database if not exists:
         if not os.path.isfile(self.dbname):
@@ -126,12 +126,31 @@ class ServerDatabaseActions():
             conn.close()
             return({'status':'error','message':'update, Other: '+str(e)})
 
-    def insertRecord(self,item_id,title,author,timestamp):
+    def insert_idgames_data(self,item_id,title,author,timestamp):
         res = self.executeSelectSql('select count (*) as count from idgames_metadata where id=? ',(item_id, ), self.FETCH_ONE)
         if not res['count']:  #it is None - i.e. no matching entry
             self.executeInsertSql('insert into idgames_metadata (id, title, author, timestamp) values (?,?,?,?)'
                       ,(item_id, title, author, timestamp), 'added new entry OK')
 
+    def get_dw_counts_by_author(self,author):
+        # select count (*) as count from idgames_metadata where upper(author) = 'SMEGHAMMER';
+        if author:
+            out = self.executeSelectSql('select count (*) as mapcount from idgames_metadata where upper(author)=? ',(author.upper(), ), self.FETCH_ONE)
+            out['author'] = author
+            return out
+        return {}
+
+    def get_dw_maps_by_author(self,author):
+        # select count (*) as count from idgames_metadata where upper(author) = 'SMEGHAMMER';
+        if author:
+            out = self.executeSelectSql('select count (*) as mapcount from idgames_metadata where upper(author)=? ',(author.upper(), ), self.FETCH_ONE)
+            out['author'] = author
+            return out
+        return {}
+    
+    def get_dw_counts_by_all_authors(self,paginate=False,pagenum=1,pagelength=50):
+        return None
+    
 # select count(*) as count from idgames_metadata;
 # select * from idgames_metadata where author like '%meghammer%';
 # select distinct author from idgames_metadata;
