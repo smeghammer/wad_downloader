@@ -14,7 +14,7 @@ if "%db%"=="" (goto end)
 if "%src%"=="" (goto end)
 
 echo Run the crawler
-python start.py -d %db% -a %src%
+python crawler.py -d %db% -a %src%
 
 :end
 

@@ -22,16 +22,15 @@ I don't need to recurse.
 I might need to filter out pages that throw up an ad. '''
 
 import requests
-from libs.abstractcrawler import AbstractCrawler
 from bs4 import BeautifulSoup
-
+from libs.abstractcrawler import AbstractCrawler
 
 class WADArchiveCrawler(AbstractCrawler):
     '''
     load the URL and - for the case of JSON, load it as a dict.
     '''
     def open(self):
-        response = requests.get(self.url)
+        response = requests.get(self.url,timeout=30)
         self.data = BeautifulSoup(response.content,'html.parser')
         self.crawl()
 
@@ -39,29 +38,22 @@ class WADArchiveCrawler(AbstractCrawler):
         print('WAD Archive crawling...')
         crawl = True
         while crawl:
-            '''  look for download links and store them  '''
-            downloadLinks = self.data.select('div.result-image > a')
-            if not len(downloadLinks):
+            # look for download links and store them
+            download_links = self.data.select('div.result-image > a')
+            if not len(download_links)==0:
                 crawl = False
-            for downloadLink in downloadLinks:
-                ''' find hrefs and any metadata: '''
+            for download_link in download_links:
+                # find hrefs and any metadata:
                 self.store_download_link({
-                    '_id' : downloadLink['href'][5:],
-                    'href' : downloadLink['href'] + '/',
-                    'filename' : downloadLink['title'],
+                    '_id' : download_link['href'][5:],
+                    'href' : download_link['href'] + '/',
+                    'filename' : download_link['title'],
                     'dir' : 'page' + str(self.counter) + '/'
                     },
-                    self.download_root + downloadLink['href'][5:] + '/' + downloadLink['title'], 
+                    self.download_root + download_link['href'][5:] + '/' + download_link['title'],
                 )
-            
-            ''' and load the next page '''
+
+            # and load the next page
             self.counter+=1
-            response = requests.get(self.url + str(self.counter))
+            response = requests.get(self.url + str(self.counter), timeout=30)
             self.data = BeautifulSoup(response.content,'html.parser')
-            
-
-            
-            
-
-        
-    
