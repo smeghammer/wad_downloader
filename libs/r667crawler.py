@@ -3,328 +3,170 @@ Created on 9 Jan 2021
 
 @author: smegh
 '''
-import json
+import os
 import urllib
 import requests
-# import os
 from bs4 import BeautifulSoup
 from libs.abstractcrawler import AbstractCrawler
 
-# from abc import ABC, abstractmethod
-
 class R667Crawler(AbstractCrawler):
-    '''
-    the crawler is designed to collect metadata only - having a recursive download function
-    is a crazy idea...
+    ''' retrieve Realm 667 queue items from the repository '''
     
-    Once the file metadata is stored in mongo, I can run a downloader against that and flag each
-    entry as retrieved appropriately. That way, I do not have to run the retriever in one go.
-    
-    This superclass uses the base class methods __init__() and store_download_link()
-    '''
     def open(self):
-        '''
-        load the URL and - for the case of JSON, load it as a dict.
-        '''
+        ''' load the URL and - for the case of JSON, load it as a dict. '''
         response = requests.get(self.url, timeout=30)
         self.data = BeautifulSoup(response.content,'html.parser')
         self.crawl()
 
-#     def old__crawl(self):
-#         ''' deprecated  '''
-#         print('TEST')
-#         _crawllink = 'http://localhost:8008/test.htm'
-#         _response = requests.get(_crawllink, timeout=30)
-#         # second pass: get the individual item blocks:
-#
-#         _dataitems = {}
-#         _soup = BeautifulSoup(_response.content,'html.parser')
-#         _currdataitems = _soup.select('div.separated-item-8')
-# #         _crawllinks = dict()
-# #         _crawllinks[_crawllink]
-#         for _currdataitem in _currdataitems:
-#             # and fron each item block, extract somedetails about the thing
-#             _itemtitle = _currdataitem.select('article > h2')[0].text.strip()
-#             print(_currdataitem)
-#             _info = {}
-#             try:
-#                 # INFO
-#                 _info = self.extractItemInfo(_currdataitem.select('div.tab-content > div.tab-pane:nth-of-type(2)')[0].encode_contents())
-#             except Exception as ex:
-#                 print(ex)
-#
-#             # CREDITS
-#             _credits = {}
-#             try:
-#                 _credits = self.extractItemInfo(_currdataitem.select('div.tab-content > div.tab-pane:nth-of-type(3)')[0].encode_contents())
-#             except Exception as ex:
-#                 print(ex)
-#
-#             print(_info)
-#             try:
-#                 _dataitems[_itemtitle] = {
-#                     'info':_info,
-#                     'credits':_credits,
-#     #                 'topic':_crawllinks[_crawllink]['topic'],
-#     #                 'section':_crawllinks[_crawllink]['section']
-#                 }
-#             except Exception as ex:
-#                 print(ex)
-#         print(_dataitems)
-
     def crawl(self):
-        '''
-        For R667, I want to collect the metadata for each download (and possibly the download binary itself).
+        ''' For R667, I want to collect the metadata for each download (and possibly the download binary itself).
 
         Identify any download links and associated surrounding HTML that defines
         metadata and extract that as JSON
          - the download link can go into the mongoDD, and wan probably put the metadata JSON in there too to associate 
-         them together...
-        '''
+         them together... '''
         print('crawling...')
-        #.item-194
-        # crawl_links = self.data.select('div.bd-vmenu-1:nth-child(2) li > div > ul > li ')
+
         # get the category links on the meganav - these should encompass all subcategories
         # Each of these should be loaded, and links extracted as the items to download:
         crawl_links = self.data.select('ul.bd-menu-18.nav:nth-of-type(1) > li:nth-of-type(1) div.container-fluid > div > div')
-        counter = 1
-        # _data = None
-        # _soup = None
-        # item_response = None
-        # _pagination = None
-        # _dataDOMblocks = dict()
-        data_items = {} #output
+
         items_links = {}
 
-        # TODO: REFACTOR THIS
+        # TODO: REFACTOR THIS INTO SEPARATE FUNCTIONS:
         # each crawl link has a list of each repo item on it. The code must LOAD each of these in urn and THEN extract the
         # metadata and lins from these...
         for crawl_link in crawl_links:
-            print('getting R667 crawl links...', counter)
+            print('getting R667 crawl links...')    #, counter)
             _href = 'https://www.realm667.com' + crawl_link.find('a')['href']
             item_response = requests.get(_href,timeout=30)
             _soup = BeautifulSoup(item_response.content,'html.parser')
 
             #now LOAD this link:
-            # NEED TO RESET THIS!!
-            # _topic = _soup.select('li.parent > a.active')[0].text.strip()
             _section = _soup.select('div.content-category > h2')[0].text.strip()
-            # items_links[_href] = {'crawled' : False,'topic':_topic,'section':_section}
             items_links[_href] = {'crawled' : False, 'section':_section}
 
-            # here, we find footer pagination links for more pages holding repository items
-            # and also the repo items on the current page. TODO: work out what is put into DB and what is processed at runtime
-            # find paginarion links:
-
-            # _pagination = _soup.select('div > ul.pagination > li > a')
-            # if _pagination:
-            #     for _page in _pagination:
-            #         print(_page['href'])
-            #         _href = 'https://www.realm667.com' + _page['href']
-            #         items_links[_href] = {'crawled' : False,'topic':_topic,'section':_section}
-            #         counter+=1
-
-            # and for each crawl link:
-            # - get the items on the page
-            # - identify any pagination links and follow these
             _soup = None
-            counter+=1
 
         # once we have the crawl links list, load each one and extract the relevant metadata from the DOM:
-        counter_2 = 0
         for items_link in items_links:
-            print(items_links[items_link])
-            counter_2+=1
+            # need to extract the correct section!
+            current_section = items_links[items_link]['section']
 
             # second pass: get the individual item blocks:
             item_response = requests.get(items_link,timeout=30)
             _soup = BeautifulSoup(item_response.content,'html.parser')
-            
+
             # and now we can extract the individual items from the list:
             item_links = _soup.select('table > tbody > tr > td > a')
-            print(item_links)
             for item_link in item_links:
                 # this is the url that will be CRAWLED TO. The download is on each individual page
                 print(item_link['href'])
                 # here, we actually have a single item, so we just need to get the href and metadata to insert into the database:
-                item_page = requests.get(f"https://www.realm667.com{item_link['href']}",timeout=30)
-                
-                # load the HTML of the page 
-                soup = BeautifulSoup(item_page.content,'html.parser')
-                
-                item_title = soup.select('article > h2')[0].text.strip()
-                print(item_title)
-                
-                item_download_link = soup.select('article span.download > a')[0]['href']
-                print(item_download_link)
-                
-                
+                try:
+                    item_page = requests.get(f"https://www.realm667.com{item_link['href']}",timeout=30)
 
-            
-#             _currdataitems = _soup.select('div.separated-item-8')
-#             for _currdataitem in _currdataitems:
-#                 # and fron each item block, extract somedetails about the thing
-#                 _itemtitle = _currdataitem.select('article > h2')[0].text.strip()
-#                 _filename = _itemtitle.replace(' ','').replace('\'','').replace(',','').replace('.','').replace(':','').replace('!','')+'.zip'
-#                 print(_currdataitem)
-#                 _info = {}
-#
-#                 # image. See https://stackoverflow.com/questions/61530606/how-to-save-pictures-from-a-website-to-a-local-folder
-#                 try:
-#                     # image
-# #                     _img = _currdataitem.select('div.tab-content > div.tab-pane:nth-of-type(1)')
-#                     _img = self.extractImageInfo(_currdataitem.select('div.tab-content > div.tab-pane:nth-of-type(1)')[0].encode_contents())
-#
-#                 except:
-#                     pass
-#
-#                 try:
-#                     # INFO
-#                     _info = self.extractItemInfo(_currdataitem.select('div.tab-content > div.tab-pane:nth-of-type(2)')[0].encode_contents())
-#                 except:
-#                     pass
-#
-#                 # CREDITS
-#                 _credits = {}
-#                 try:
-#                     _credits = self.extractItemInfo(_currdataitem.select('div.tab-content > div.tab-pane:nth-of-type(3)')[0].encode_contents())
-#                 except:
-#                     pass
-#
-#                 print(_info)
-#                 data_items[_itemtitle] = {
-#                     'dir':items_links[items_link]['topic'].lower().replace(" ","") +'/' +items_links[items_link]['section'].lower().replace(" ","") + "/",
-#                     'filename':_filename,
-#                     'imagefile':_img,
-#                     'info':_info,
-#                     'credits':_credits,
-#                     'topic':items_links[items_link]['topic'],
-#                     'section':items_links[items_link]['section']
-#                 }
-#
-#                 # I also want to write each entry to the DB as a download queue
-#                 # https://www.realm667.com/index.php/en/downloads/prop-stop/1165-candlesticks/file
-#                 # I need to determine the ID and the
-#                 try:
-#                     print(_currdataitem.select('span.download a')[0].get('href'))
-#                 except Exception as ex:
-#                     print(ex)
-#                     print('failed to find href!')
-#
-#                 # try:
-#                 #     print(_dataitems[_itemtitle])
-#                 #     print(_currdataitem)
-#                 #     print(_currdataitem.select('span.download a')[0])
-#                 #     print("TEST: "+_currdataitem.select('span.download a')[0].get('href'))
-#                 # except Exception as ex:
-#                 #     print(ex)
-#                 #     print('error parsing for link!')
-#
-#                 try:
-#                     self.store_download_link(
-#                         data_items[_itemtitle], f"https://www.realm667.com{_currdataitem.select('span.download a')[0].get('href')}"
-#                         )
-#                 except Exception as ex:
-#                     print(ex)
-#                     print('error storing link!')
+                    # load the HTML of the page
+                    curr_data_item = BeautifulSoup(item_page.content,'html.parser')
+    
+                    item_title = curr_data_item.select('article > h2')[0].text.strip()
+                    try:
+                        item_download_link = curr_data_item.select('article span.download > a')[0]['href']
+                    except IndexError as ex:
+                        # occasionally breaks...
+                        print(ex)
+                        # so try alt DOM:
+                        try:
+                            item_download_link = curr_data_item.select('article span.doclink> a')[0]['href']
+                        except IndexError as ex2:
+                            print(f"Index Error: Failed to obtain download link: {ex2}")
+                    except KeyError as ex2:
+                        print(f"Key Error: Failed to obtain download link: {ex2}")
 
-            # Once we have the list of pages, load each one and grab the data from the DOM
-            # [I might want to cache the pages, otherwise I will be loading the top level ones twice...]
-        # with open('r667output.json','w') as f :
-        #     f.write(json.dumps(data_items))
+                    try:
+                        _info = self.extract_item_info(curr_data_item.select('div.tab-content > div.tab-pane:nth-of-type(2)')[0].encode_contents())
+                    except Exception as ex:
+                        print(f"Error extracting info. {ex}")
+    
+                    _credits = {}
+                    try:
+                        _credits = self.extract_item_info(curr_data_item.select('div.tab-content > div.tab-pane:nth-of-type(3)')[0].encode_contents())
+                    except Exception as ex:
+                        print(f"Error extracting credits. {ex}")
+    
+                    topic = self.get_metadata_list_value(_info['entries'],'Palette')
+    
+                    # This works fine, but currently not used. leave teh method in place!
+                    # # image. See https://stackoverflow.com/questions/61530606/how-to-save-pictures-from-a-website-to-a-local-folder
+                    # try:
+                    #     _img = self.extract_image_info(curr_data_item.select('div.tab-content > div.tab-pane:nth-of-type(1)')[0].encode_contents(),current_section,topic)
+                    # except Exception as ex:
+                    #     print(f"Error extracting image. {ex}")                
+                    
+                    try:
+                        self.store_download_link(
+                            {
+                                'dir':os.path.join(current_section,topic,""),        # filesystem path to store in (section/topic/)
+                                'filename':item_title.replace(' ','').replace('\'','').replace(',','').replace('.','').replace(':','').replace('!','')+'.zip',   # extracta meaningful zipped filename here
+                                'state':'NOTFETCHED',   # 
+    #                            'imagefile':_img,        # UTF8 bytestring. May not be needed
+                                'info':_info,           # info metadata
+                                'credits':_credits,     # credits metadata
+                                'topic':topic,           # from Palette entry of info
+                                'section':current_section
+                             }, f"https://www.realm667.com{item_download_link}"
+                            )
+                    except Exception as ex:
+                        print(f"Failed to store download link. {ex}")
+                except ConnectionError as ex:
+                    print(f"Failed to retrieve content. {ex}")
 
-            # Finally, put the JSON im in the database
         print('done')
 
-    # pull out src and alt. Create image in folder corresponding to path
-    def extractImageInfo(self,bytestr):
+    def get_metadata_list_value(self,metadata_list,key):
+        ''' retrieve a dict item by key '''
+        return metadata_list.get(key,"xxx")
+
+    def extract_image_info(self,bytestr,section="section",topic="topic"):
+        ''' retrieve some image metadata from the passed HTML. CURRENTLY NOT USED '''
         _root =  'https://www.realm667.com'
         htmlstr = bytestr.decode('utf-8').replace('\n', ' ').replace('\r', '')
-        print('---------ITEM INPUT-------------')
-        print(htmlstr)
-        print('---------END ITEM INPUT-------------')
-        _soup = BeautifulSoup(htmlstr,'html.parser')
-        _img = _soup.select('img')[0]
-        _src = _img.get('src').replace('\\', '/')
-        _alt = _img.get('alt').replace('\\', '/')
+        soup = BeautifulSoup(htmlstr,'html.parser')
+        img = soup.select('img')[0]
+        src = img.get('src').replace('\\', '/')
+        # alt = img.get('alt').replace('\\', '/')
 
         try:
-            _imagename = _src.split('/')[-1]
-            # _sp = self.args.savepath+ '/r667/'+ _imagename
-            _sp = '/r667/'+ _imagename
-            print(_sp)
-            with urllib.request.urlopen(_root + _src) as response, open(_sp, 'wb') as out_file:
+            root_dir = os.path.realpath('')
+            image_name = src.split('/')[-1]
+            image_save_path = f'{root_dir}/downloads/realm667/{section}/{topic}/{image_name}'
+            with urllib.request.urlopen(_root + src) as response, open(image_save_path, 'wb') as out_file:
                 data = response.read() # a `bytes` object
                 out_file.write(data)
         except Exception as ex:
             print(ex)
 
-        print(_img)
-        return _imagename
+        return image_name
 
-    def extractItemInfo(self,bytestr):
+    def extract_item_info(self,bytestr):
+        ''' retrieve some metadata about an item, from supplied HTML '''
         htmlstr = bytestr.decode('utf-8').replace('\n', ' ').replace('\r', '')
-        print('---------ITEM INPUT-------------')
-        print(htmlstr)
-        print('---------END ITEM INPUT-------------')
         _soup = BeautifulSoup(htmlstr,'html.parser')
-        _title = _soup.select('h2')[0].text.strip()
-        print('---------TITLE-------------')
-        print(_title)
-        print('---------/TITLE-------------')
-        _out = {'title':_title,'entries':[]}
-        # ''' split on BR (crappy HTML) '''
-        # _items = htmlstr.split('<br/>')
-        _items = htmlstr.split('<strong>')
-        _items.pop(0)   #remove first entry as we already have the title:
-        for _item in _items:
-            print('---------ITEM-------------')
-            print(_item)
-            print('---------/ITEM-------------')
-            try:
-                #split on cloding stong tag:
-                _param = _item.split('</strong>')[0].replace('<br/>','').strip()
-                _val = _item.split('</strong>')[1].replace('<br/>','').strip()
-                # will ignore the first entry (title)
-#                 _s = BeautifulSoup(_item,'html.parser')
-#                 ''' assumes a given structure '''
-#                 print(_s.find('strong'))
-#                 print(_s.contents[1].strip())
-                _out['entries'].append({_param : _val})
-            except Exception as ex:
-                print(ex)
-
-        print(_out)
-        return _out
-
-    # original
-    def old_extractItemInfo(self,bytestr):
-        htmlstr = bytestr.decode('utf-8').replace('\n', ' ').replace('\r', '')
-        print('---------ITEM INPUT-------------')
-        print(htmlstr)
-        print('---------END ITEM INPUT-------------')
-        _soup = BeautifulSoup(htmlstr,'html.parser')
-        _title = _soup.select('h2')[0].text.strip()
-        print('---------TITLE-------------')
-        print(_title)
-        print('---------/TITLE-------------')
-        _out = {'title':_title,'entries':[]}
+        try:
+            _title = _soup.select('h2')[0].text.strip()
+        except Exception as ex:
+            print(ex)
+        _out = {'title':_title,'entries':{}}
         # split on BR (crappy HTML)
-        _items = htmlstr.split('<br/>')
-        _items.pop(0)   #remove first entry as we already have the title:
+        _items = htmlstr.split('<strong>')
+        _items.pop(0)   # remove first entry as we already have the title:
         for _item in _items:
-            print('---------ITEM-------------')
-            print(_item)
-            print('---------/ITEM-------------')
             try:
-                # will ignore the first entry (title)
-                _s = BeautifulSoup(_item,'html.parser')
-                # assumes a given structure
-                print(_s.find('strong'))
-                print(_s.contents[1].strip())
-                _out['entries'].append({_s.find('strong').text : _s.contents[1].strip()})
+                # split on cloding stong tag:
+                _param = _item.split('</strong>')[0].replace('<br/>','').replace(':','').strip()
+                _val = _item.split('</strong>')[1].replace('<br/>','').strip()
+                _out['entries'][_param] = _val
             except Exception as ex:
                 print(ex)
 
-        print(_out)
         return _out
