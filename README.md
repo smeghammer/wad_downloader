@@ -27,7 +27,7 @@ Added first cut of API server and Chrome extension. The extension code is curren
 `>/your/deploy/path/wad_downloader/python3 server.py -d [mongo IP address]`
 
 ### Concrete crawlers
-So far, there are five implementations:
+So far, there are the following implementations:
 
  - [Doomworld API](https://www.doomworld.com/idgames/api/api.php?action=getcontents&out=json&id=0) (JSON), key=D
  - [Doomworld API, by author](https://www.doomworld.com/idgames/api/api.php?action=getcontents&out=json&id=0) (JSON), key=DBA
@@ -36,7 +36,7 @@ So far, there are five implementations:
  - [The Sentinels Playground](https://allfearthesentinel.net/zandronum/wads.php) (web scrape), key=T
  - [Doom WAD Station](http://www.doomwadstation.net/mega/) (web scrape, not SSL!), key=DWS
  - [Realm 667](https://www.realm667.com/index.php/en/repository-18489) (web scrape), key=R667
- - [Camoy](https://camoy.sdf.org/) (web scrape), key=R667
+ - [Camoy](https://camoy.sdf.org/) (web scrape), key=C
 
 #### Example
 The current ID Games concrete implementation of a crawler uses the Doomworld API and the root endpoint is
@@ -84,3 +84,19 @@ Extra python packages that are needed:
 
 ## Future
 I may build this as a PIPENV eventually with python3.10, but for now, additional package requirements are as listed above.
+
+db.getCollection("downloads").find({})
+db.getCollection("downloads").distinct(
+"source", {}
+)
+db.getCollection("downloads").find({'source':"realm667"},{}).count()
+db.getCollection("downloads").find({'source':"doomwadstation"},{}).count() //21/6/23
+db.getCollection("downloads").find({'source':"tspg"},{}).count() //21/6/23
+db.getCollection("downloads").find({'source':"wad-archive"},{}).count() //n/a
+db.getCollection("downloads").find({'source':"doomshack"},{}).count() //21/6/23
+db.getCollection("downloads").find({'source':"doomworld"},{}).count()
+db.getCollection("downloads").find({'source':"camoy"},{}).count() //21/6/23
+db.getCollection("downloads").find().count()
+db.getCollection("downloads").find({'source':"tspg"}).count()
+
+db.getCollection("downloads").deleteMany({'source':"tspg"})
