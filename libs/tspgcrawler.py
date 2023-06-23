@@ -12,48 +12,42 @@ For TSPG, the download pages are all
 where xxx is filename.  I know there are MAX_PAGES pages of downloads, so I  can  count up to this
 and build corresponding URLs. I don't need to recurse. '''
 
-import lxml
 import requests
-from libs.abstractcrawler import AbstractCrawler
 from bs4 import BeautifulSoup
+from libs.abstractcrawler import AbstractCrawler
 
 class SentinelsPlaygroundCrawler(AbstractCrawler):
-    
+    ''' crawler for The Sentinels Playground (https://allfearthesentinel.com - note TLD change!) '''
     MAX_PAGES = 240
-    
+
     '''  load the URL and content: '''
     def open(self):
-        response = requests.get(self.url)
+        response = requests.get(self.url,timeout=30)
         self.data = BeautifulSoup(response.content,'lxml')
         self.crawl()
 
     def crawl(self):
+        '''  look for download links and store them
+        You may need to fiddle with this selector as the column has changed at least
+        once... '''
         print('TSGP crawling...')
         while self.counter < self.MAX_PAGES:
-            '''  look for download links and store them
-            You may need to fiddle with this selector as the column has changed at least
-            once... '''
-            downloadLinks = self.data.select('#zandronum td:nth-child(2) a:nth-child(2)')
-            for downloadLink in downloadLinks:
-                ''' find hrefs and any metadata: '''
+            download_links = self.data.select('#zandronum td:nth-child(2) a:nth-child(2)')
+            for download_link in download_links:
+                # find hrefs and any metadata:
                 try:
                     self.store_download_link({
-                        '_id' : downloadLink['href'][29:],
-                        'href' : downloadLink['href'],
-                        'filename' : downloadLink['title'][9:],
+                        '_id' : download_link['href'][29:],
+                        'href' : download_link['href'],
+                        'filename' : download_link['title'][9:],
                         'dir' : 'page' + str(self.counter) + '/'
-                        },self.download_root + downloadLink['title'][9:]
+                        },self.download_root + download_link['title'][9:]
                     )
                 except Exception as ex:
+                    # This may fail for legitimate reasons, so log it and continue
                     print(ex)
-            
-            ''' and load the next page '''
+
+            # and load the next page:
             self.counter+=1
-            response = requests.get(self.url + '?page=' + str(self.counter))
+            response = requests.get(f"{self.url}?page={str(self.counter)}",timeout=30)
             self.data = BeautifulSoup(response.content,'lxml')
-
-            
-            
-
-        
-    

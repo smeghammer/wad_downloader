@@ -31,10 +31,15 @@ class DoomworldCrawler(AbstractCrawler):
 
                 _crawler.open()
         if 'file' in self.data['content'] and self.data['content']['file']:
-            for item in self.data['content']['file']:
-                try:
-                    # We have a file listing, so process it (into mongoDB) for subsequent download:
-                    print(item['title'])
-                    self.store_download_link(item, self.download_root + item['dir']+item['filename'])
-                except Exception as ex:
-                    print(ex)
+            if isinstance(self.data['content']['file'], dict):
+                print(self.data['content']['file']['title'])
+                self.store_download_link(self.data['content']['file'], f"{self.download_root}{self.data['content']['file']['dir']}{self.data['content']['file']['filename']}")
+            
+            else:    
+                for item in self.data['content']['file']:
+                    try:
+                        # We have a file listing, so process it (into mongoDB) for subsequent download:
+                        print(item['title'])
+                        self.store_download_link(item, f"{self.download_root}{item['dir']}{item['filename']}")
+                    except Exception as ex:
+                        print(ex)

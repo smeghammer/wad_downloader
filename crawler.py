@@ -13,9 +13,7 @@ import importlib
 from libs.database import MongoConnection
 from config.sources import crawlerData
 
-'''
-capture CLI args:
-'''
+# capture CLI args:
 parser = argparse.ArgumentParser(description='Start metadata collection with startnode, db server, db port and DB name')
 # Required args:
 parser.add_argument( '-a', '--archive', help='archive source (A, C, D, DS, DWS, S, T, W )', type=str, required=True)
@@ -23,6 +21,7 @@ parser.add_argument( '-d', '--dbserver', help='Mongo DB server IP [string]', typ
 parser.add_argument( '-p', '--dbport', help='Mongo DB port [int]', required=False, type=int, default=27017)
 parser.add_argument( '-n', '--database', help='Mongo database name [string]', type=str, required=False,default='DoomWadDownloader')
 parser.add_argument( '-m', '--metadatadb', help='Metadata database name [string]', type=str, required=False,default='metadata.db')
+parser.add_argument( '-c', '--count_only', help='Crawl, but just count number of WADs[string]', type=bool, required=False,default=False)
 args = parser.parse_args()
 
 '''
