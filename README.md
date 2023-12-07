@@ -85,6 +85,10 @@ Extra python packages that are needed:
 ## Future
 I may build this as a PIPENV eventually with python3.10, but for now, additional package requirements are as listed above.
 
+## VENV
+ - `> source bin/activate .`
+ - `> deactivate`
+
 db.getCollection("downloads").find({})
 db.getCollection("downloads").distinct(
 "source", {}
