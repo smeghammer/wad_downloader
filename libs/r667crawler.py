@@ -162,10 +162,29 @@ class R667Crawler(AbstractCrawler):
         _items.pop(0)   # remove first entry as we already have the title:
         for _item in _items:
             try:
-                # split on cloding stong tag:
-                _param = _item.split('</strong>')[0].replace('<br/>','').replace(':','').strip()
+                # split on closing strong tag:
+                # if "(" in _item:
+                #     breakpoint()
+
+                _param = _item.split('</strong>')[0].replace('<br/>','')    \
+                    .replace('-','')    \
+                    .replace(':','')    \
+                    .replace(';','')    \
+                    .replace('.','')    \
+                    .replace(',','')    \
+                    .replace(' ','')    \
+                    .replace('(','')    \
+                    .replace(')','')    \
+                    .replace('[','')    \
+                    .replace(']','')    \
+                    .replace('/','_').strip().lower()
+                # argh! hacky
+                if _param == 'class':
+                    _param = 'thingclass'
                 _val = _item.split('</strong>')[1].replace('<br/>','').strip()
-                _out['entries'][_param] = _val
+                if _param:  # account for empty param:
+                    print(f"Using calculated parameter {_param}")
+                    _out['entries'][_param] = _val
             except Exception as ex:
                 print(ex)
 

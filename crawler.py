@@ -33,18 +33,16 @@ T - Sentinels Playground
 
 Note that these will likely be extended, and perhaps abstracted to actual config files...
 '''
-def selectCrawler(crawlerId,db):
+def select_crawler(crawler_id,db):
     '''
     Here, I dynamically load the specified crawler class
     '''
-    print("Using crawler ", crawlerData[crawlerId])
-    # try:
-    print(crawlerData)
-    print(crawlerData[crawlerId]['module'])
-    print(crawlerData[crawlerId]['class'])
+    # breakpoint()
+    print(crawlerData[crawler_id])
+    print("Using crawler ", crawlerData[crawler_id])
 
-    mod = importlib.import_module('libs.' + crawlerData[crawlerId]['module'], crawlerData[crawlerId]['class'])
-    clss = getattr(mod, crawlerData[crawlerId]['class'])
+    mod = importlib.import_module('libs.' + crawlerData[crawler_id]['module'], crawlerData[crawler_id]['class'])
+    clss = getattr(mod, crawlerData[crawler_id]['class'])
     inst = clss(
         str(crawlerData[args.archive]['startAt']),
         crawlerData[args.archive]['crawlroot'],
@@ -53,25 +51,25 @@ def selectCrawler(crawlerId,db):
         1,
         args.metadatadb
         ) #pass on loglevel to scraper module
-    
+
     print(inst)
-    
-    return(inst)  #this method must exist on your class
-    # except Exception as err:
-    #     return({'status' : 'error','message' : str(err)})
+
+    return inst  #this method must exist on your class
+
 
 if __name__ == '__main__':
-    '''
-    Entry point:
-    '''
-    print(args.archive)
-    print('starting crawler with ' + crawlerData[args.archive]['name'] )
-    db = MongoConnection(args.dbserver,args.dbport,args.database,crawlerData[args.archive]['storeIn'])
-    
-    ''' Here I load a crawler based on the passed arg:  '''
-    crawler = selectCrawler(str(args.archive),db)
-    print(crawler)
-    #run it:
-    crawler.open()
+    # Entry point:
+    # print(args.archive)
+    # print('starting crawler with ' + crawlerData[args.archive]['name'] )
+    if crawlerData.get(args.archive,False):
+        db = MongoConnection(args.dbserver,args.dbport,args.database,crawlerData[args.archive]['storeIn'])
 
-    
+        ''' Here I load a crawler based on the passed arg:  '''
+        crawler = select_crawler(str(args.archive),db)
+        # print(crawler)
+        #run it:
+        crawler.open()
+    else:
+        print(f"Unknown archive key {args.archive}\n\nCurrently defined:")
+        for key in crawlerData.keys():
+            print(f"\t{key}")

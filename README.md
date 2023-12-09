@@ -89,6 +89,14 @@ I may build this as a PIPENV eventually with python3.10, but for now, additional
  - `> source bin/activate .`
  - `> deactivate`
 
+SSH:
+----
+ - https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+ - https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh
+ - https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+ - 
+
+
 db.getCollection("downloads").find({})
 db.getCollection("downloads").distinct(
 "source", {}
@@ -104,3 +112,10 @@ db.getCollection("downloads").find().count()
 db.getCollection("downloads").find({'source':"tspg"}).count()
 
 db.getCollection("downloads").deleteMany({'source':"tspg"})
+
+BREAKS:
+https://archive.org/download/wadarchive/DATA/2d.zip/2d%2Fb3921363684533ca12a2c7209d1e17fdc4c5e1%2F2db3921363684533ca12a2c7209d1e17fdc4c5e1.pk3.gz
+
+WORKS:
+https://archive.org/download/wadarchive/DATA/29.zip/29%2F06a8dc7074d966a9558d7b7337cea55ca13c3b%2F2906a8dc7074d966a9558d7b7337cea55ca13c3b.pk3.gz
+
