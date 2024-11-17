@@ -28,7 +28,7 @@ if [ $# -lt 1 ];
 
 		while true
 		do
-			python3 fetcher.py -a ${SOURCE}
+			python3 fetcher.py -c ${SOURCE}
 		done
 fi
 

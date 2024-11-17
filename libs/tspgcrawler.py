@@ -18,7 +18,7 @@ from libs.abstractcrawler import AbstractCrawler
 
 class SentinelsPlaygroundCrawler(AbstractCrawler):
     ''' crawler for The Sentinels Playground (https://allfearthesentinel.com - note TLD change!) '''
-    MAX_PAGES = 240
+    MAX_PAGES = 502
 
     '''  load the URL and content: '''
     def open(self):
