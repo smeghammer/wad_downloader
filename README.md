@@ -1,5 +1,7 @@
 # WAD Downloader
 
+TEST
+
 ## TODO
 ### folders AND files!!
 See https://www.doomworld.com/idgames/levels/doom2/deathmatch/Ports/. This currently errors!
