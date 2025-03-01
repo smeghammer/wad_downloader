@@ -162,11 +162,55 @@ class R667Crawler(AbstractCrawler):
         _items.pop(0)   # remove first entry as we already have the title:
         for _item in _items:
             try:
-                # split on cloding stong tag:
-                _param = _item.split('</strong>')[0].replace('<br/>','').replace(':','').strip()
+                # split on closing strong tag:
+                # if "(" in _item:
+                #     breakpoint()
+                
+                _param = self.get_processed_category(_item)
+                # _param = _item.split('</strong>')[0].replace('<br/>','')    \
+                #     .replace('-','')    \
+                #     .replace(':','')    \
+                #     .replace(';','')    \
+                #     .replace('.','')    \
+                #     .replace(',','')    \
+                #     .replace(' ','')    \
+                #     .replace('(','')    \
+                #     .replace(')','')    \
+                #     .replace('[','')    \
+                #     .replace(']','')    \
+                #     .replace('/','_').strip().lower()
+                # argh! hacky
+                # if _param == 'class':
+                #     _param = 'thingclass'
                 _val = _item.split('</strong>')[1].replace('<br/>','').strip()
-                _out['entries'][_param] = _val
+                if _param:  # account for empty param:
+                    print(f"Using calculated parameter {_param}")
+                    _out['entries'][_param] = _val
             except Exception as ex:
                 print(ex)
 
         return _out
+    
+    def get_processed_category(self, str):
+        ''' given there are a lot of spelling variations in some categories, map them to a single
+         value. This collects the mappings. '''
+        str.split('</strong>')[0].replace('<br/>','')    \
+                    .replace('-','')    \
+                    .replace(':','')    \
+                    .replace(';','')    \
+                    .replace('.','')    \
+                    .replace(',','')    \
+                    .replace(' ','')    \
+                    .replace('(','')    \
+                    .replace(')','')    \
+                    .replace('[','')    \
+                    .replace(']','')    \
+                    .replace('/','_').strip().lower()
+        if str == 'class':
+            str = 'thingclass'
+        return str
+    
+    category_mapper = {
+        # TODO: extract logic to sort out the categories.
+        # e.g. https://www.realm667.com/en/repository-18489/sfx-shoppe-mainmenu-139-58855/other-66854/1077-iwad-brightmaps#info
+    }

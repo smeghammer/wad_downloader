@@ -1,12 +1,19 @@
 ''' application view '''
 
+import math
 import argparse
 from urllib.parse import urlparse
-from flask import Flask
+from flask import Flask, redirect
 from flask import jsonify,request
 from flask.templating import render_template
 from libs.database import MongoConnection
 from libs.sqlite_database import ServerDatabaseActions
+from mongoengine import errors
+import json
+
+# test
+from libs.model.model import DownloadState, WADDownload, MetaData
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -19,17 +26,57 @@ def index():
 @app.route('/api/')
 def api():
     ''' API root '''
-    if request.args.get('test'):
-        #https://stackabuse.com/get-request-query-parameters-with-flask/
-        return(jsonify({'arg': request.args.get('test')}))
-    return jsonify({'message':'REST API for Doom WAD downloader'})
 
+    # try:
+    #     counter = 0
+    #     for thing in WADDownload.objects:
+    #         try:
+    #             counter += 1
+    #             print(f"Download #{counter}: {thing.url}")
+    #         except Exception as ex:
+    #             breakpoint()
+    # except errors.FieldDoesNotExist as ex:
+    #     print(ex)
+    #     breakpoint()
+    # except Exception as ex:
+    #     breakpoint()
+    
+    return jsonify({'message':'REST API for Doom WAD downloader'})
+    
 @app.route('/api/list_all/')
-def list_all():
-    ''' return all queued items.
-    fucking pymongo 4!!! https://pymongo.readthedocs.io/en/stable/tutorial.html#getting-a-collection '''
-    # TODO: needs to paginate!
-    return jsonify( list(  mongo_wrapper.db['downloads'].find({},{"_id":False})))
+def redirect_to_page1():
+    return redirect('/api/list_all/1/')
+
+
+@app.route('/api/list_all/<int:page_num>/')
+def list_all(page_num=1):
+    ''' return all queued items. fucking pymongo 4!!! https://pymongo.readthedocs.io/en/stable/tutorial.html#getting-a-collection '''
+    pagenum = 1     #start here
+    if page_num:
+        pagenum = page_num
+    items_per_page = 100
+    total_pages = math.ceil(WADDownload.objects.count() / items_per_page)
+
+    if pagenum > total_pages:
+        pagenum = total_pages
+    if pagenum < 1:
+        pagenum = 1
+
+    offset = (pagenum - 1) * items_per_page
+    
+    # https://docs.mongoengine.org/apireference.html#mongoengine.Document.to_json
+    # Nice! it works on a List of documents too!
+    current_page = WADDownload.objects.skip(offset).limit(items_per_page).to_json()
+    wrapper = {'page_length':items_per_page,
+               'total_pages':total_pages,
+               'current_page':pagenum,
+               'total_records':WADDownload.objects.count(),
+               'page_data':json.loads(current_page) # <- crucial. seems a bit convoluted to cast to JSON and then cast to list-of-dicts?
+               }
+    return jsonify(wrapper)
+    # return current_page
+
+
 
 @app.route('/api/summary/')
 def summary():

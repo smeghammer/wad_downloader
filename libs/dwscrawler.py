@@ -5,6 +5,7 @@ Created on 9 Jan 2021
 '''
 import requests
 from bs4 import BeautifulSoup
+from libs.model import model
 from libs.abstractcrawler import AbstractCrawler
 
 class WADStationCrawler(AbstractCrawler):
@@ -32,11 +33,26 @@ class WADStationCrawler(AbstractCrawler):
             # find hrefs and any metadata:
             # see https://stackoverflow.com/questions/4747397/calling-base-class-method-in-python
             print(download_link['href'])
-            self.store_download_link(
-                {'_id' : download_link['href'][2:],
-                 'href' : download_link['href'][2:], 
-                 'filename' : download_link['href'][2:], 
-                 'dir' : 'page1' + '/' 
-                 },
-                self.download_root + download_link['href'][2:],
-                )
+            breakpoint()
+            meta = model.MetaData(
+                href = self.download_root + download_link['href'][2:],
+                filename = download_link['href'],
+                dir = 'page1' + '/',
+            )
+
+            download = model.WADDownload(
+                _id = self.download_root + download_link['href'][2:],
+                url = self.download_root + download_link['href'][2:],
+                source = self.crawler_id,
+                metadata = meta,
+            )
+            # self.store_download_link(
+            #     {'_id' : download_link['href'][2:],
+            #      'href' : download_link['href'][2:], 
+            #      'filename' : download_link['href'][2:], 
+            #      'dir' : 'page1' + '/' 
+            #      },
+            #     self.download_root + download_link['href'][2:],
+            #     )
+            result = download.save()
+            print(result)
