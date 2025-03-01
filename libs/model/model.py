@@ -128,7 +128,7 @@ class R667InfoEntries(EmbeddedDocument):
     surround = StringField(max_length=40)
     thingclass = StringField(max_length=40)
     type = StringField(max_length=40)
-    typebrightmapsfordoomheretichexenandstrife = StringField(max_length=200)
+    typebrightmapsfordoomheretichexenandstrife = StringField(max_length=200) # <- crappy HTML? looks like a name/value pair... https://www.realm667.com/en/repository-18489/sfx-shoppe-mainmenu-139-58855/other-66854/1077-iwad-brightmaps#info
     usetype = StringField(max_length=200)
     variants = StringField(max_length=200)
     varients = StringField(max_length=200)
@@ -197,7 +197,7 @@ class R667Credits(EmbeddedDocument):
 # first cut
 class MetaData(EmbeddedDocument):
     # doomwadstation, tspg, wad-archive, camoy,doomshack
-    _id = StringField(max_length=40)
+    # _id = StringField(max_length=40)
     href = StringField(max_length=200)
     filename = StringField(max_length=200)
     dir = StringField(max_length=200)
@@ -219,6 +219,7 @@ class MetaData(EmbeddedDocument):
     #R667
     state = StringField(max_length=20)
     imagefile = StringField(max_length=100)
+    # this gets silly...
     info = EmbeddedDocumentField(document_type=R667Info)
     credits = EmbeddedDocumentField(document_type=R667Credits)
     section = StringField(max_length=20)
@@ -229,9 +230,11 @@ class MetaData(EmbeddedDocument):
 # see https://stackoverflow.com/questions/25466966/mongoengine-link-to-existing-collection
 class WADDownload(Document):
     meta = {'collection':'downloads'}   # specify the collection to use
-    _id = StringField(max_length=40, required=True)
+    _id = StringField(max_length=200, required=True, primary_key=True)
     url = StringField(max_length=200, required=True)
     state = EnumField(DownloadState,default=DownloadState.NOTFETCHED)
     source = StringField(max_length=20, required=True)
     metadata = EmbeddedDocumentField(document_type=MetaData)
 
+    def set_state(self, new_state:DownloadState):
+        self.state = new_state
