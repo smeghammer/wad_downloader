@@ -20,7 +20,6 @@ class CamoyCrawler(AbstractCrawler):
         self.crawl()
 
     def crawl(self):
-        breakpoint()
         qs = model.WADDownload.objects()
         
         print('Camoy repo crawling...')
@@ -40,7 +39,6 @@ class CamoyCrawler(AbstractCrawler):
                 #     self.download_root + download_link['href'],
                 #     )
                 # exists = qs.with_id(self.download_root + download_link['href'])
-                breakpoint()
                 # if not qs.with_id(model.WADDownload,self.download_root + download_link['href']):
                 meta = model.MetaData(
                     _id =self.download_root + download_link['href'],
@@ -62,7 +60,6 @@ class CamoyCrawler(AbstractCrawler):
 
                 result = download.save()
                 print(result)
-                breakpoint()
             counter+=1
 
     # def get_metadata_model_for_crawler(self, metadata) -> MetaData:

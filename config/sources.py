@@ -30,7 +30,7 @@ crawlerData = {
             'description':'handles direct insertion via API (just Chrome plugin ATM)',
             'storeIn':'API/'
         },
-    'D':{
+    'D':{   # OK
             'id':'doomworld',
             'name':'Doomworld',
             'module':'doomworldcrawler',
@@ -42,6 +42,7 @@ crawlerData = {
             'storeIn':'doomworld/'
         },
      'DS':{
+         # OK
             'id':'doomshack',
             'name':'Doomshack',
             'module':'doomshackcrawler',
@@ -52,6 +53,7 @@ crawlerData = {
             'storeIn':'doomshack/'
          },
     'W':{
+            # No
             'id':'wad-archive',
             'name':'WAD Archive',
             'module':'wadarchivecrawler',
@@ -62,6 +64,7 @@ crawlerData = {
             'storeIn':'wad-archive/'
         },
     'T':{
+            # OK
             'id':'tspg',
             'name':'The Sentinels Playground',
             'module':'tspgcrawler',
@@ -72,6 +75,7 @@ crawlerData = {
             'storeIn':'tspg/'
         },
     'DWS':{
+        # Fails
             'id':'doomwadstation',
             'name':'Doom WAD Station',
             'module':'dwscrawler',
@@ -83,6 +87,7 @@ crawlerData = {
         },
 
     'C':{
+        # No
             'id':'camoy',
             'name':'Camoys WAD list',
             'module':'camoycrawler',
@@ -94,6 +99,7 @@ crawlerData = {
         },
 
     'R667':{
+        # No
             'id':'realm667',
             'name':'Realm 667',
             'module':'r667crawler',
