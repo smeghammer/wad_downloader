@@ -33,7 +33,6 @@ class WADStationCrawler(AbstractCrawler):
             # find hrefs and any metadata:
             # see https://stackoverflow.com/questions/4747397/calling-base-class-method-in-python
             print(download_link['href'])
-            breakpoint()
             meta = model.MetaData(
                 href = self.download_root + download_link['href'][2:],
                 filename = download_link['href'],

@@ -37,7 +37,6 @@ def select_crawler(crawler_id,db):
     '''
     Here, I dynamically load the specified crawler class
     '''
-    # breakpoint()
     print(crawlerData[crawler_id])
     print("Using crawler ", crawlerData[crawler_id])
 
