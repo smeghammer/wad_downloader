@@ -12,8 +12,8 @@ from enum import Enum
 
 # https://docs.mongoengine.org/guide/connecting.html
 
-# connected = connect(host="mongodb://192.168.1.115:27017/DoomWadDownloader")
-connect("DoomWadDownloader", host="192.168.1.115", port=27017)
+# connected = connect(host="mongodb://localhost:27017/DoomWadDownloader")
+connect("DoomWadDownloader", host="localhost", port=27017)
 
 # https://docs.mongoengine.org/apireference.html#mongoengine.fields.EnumField
 class DownloadState(Enum):
